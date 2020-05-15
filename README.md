@@ -1,6 +1,6 @@
 # safety_assurance_adas
 
-Repository for the models generated during the safety assurance of an ADAS system.
+Repository for the models generated during the safety assurance of an ADAS system. The models are specified in FASTEN tool (to download the tool see: https://sites.google.com/site/fastenroot/features/)
 
 The project is done by a team of four students and their supervisor within a practical course TU München named 	
 Praktikum - From Sensors to driving functions - develop your own car in the sommer semester of 2020.
