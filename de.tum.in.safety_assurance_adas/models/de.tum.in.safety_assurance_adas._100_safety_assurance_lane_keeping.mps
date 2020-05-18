@@ -314,7 +314,7 @@
     </node>
   </node>
   <node concept="8gVzP" id="G$XGFsgYdQ">
-    <property role="TrG5h" value="_101_safety_assurance_lane_keeping_hazard_list" />
+    <property role="TrG5h" value="_101_safety_assurance_lane_keeping_hazard_list_ASIL_A_H04" />
     <node concept="1a6Z8w" id="G$XGFsgYdV" role="8gIbH">
       <property role="0lsPB" value="H01" />
       <property role="TrG5h" value="Missing of lane markers" />
@@ -952,9 +952,11 @@
             <node concept="oY6sn" id="4GKPLBASxTB" role="19SJt6">
               <ref role="oTUVg" node="G$XGFsgYex" resolve="delayed steering" />
             </node>
-            <node concept="19SUe$" id="4GKPLBASxTI" role="19SJt6">
-              <property role="19SUeA" value="" />
+            <node concept="19SUe$" id="4GKPLBASyg$" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASygz" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
             </node>
+            <node concept="19SUe$" id="4GKPLBASyg_" role="19SJt6" />
           </node>
         </node>
         <node concept="3XErhT" id="4GKPLBASxUJ" role="1E0tXb" />
@@ -1009,6 +1011,7 @@
             <node concept="19SUe$" id="4GKPLBASyee" role="19SJt6" />
           </node>
         </node>
+        <node concept="3XErhT" id="4GKPLBASygx" role="1E0tXb" />
       </node>
     </node>
     <node concept="1E0nOG" id="4GKPLBASxUX" role="1E0n_e">
@@ -1139,7 +1142,9 @@
             <node concept="oY6sn" id="4GKPLBASy1T" role="19SJt6">
               <ref role="oTUVg" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
             </node>
-            <node concept="19SUe$" id="4GKPLBASy1V" role="19SJt6" />
+            <node concept="19SUe$" id="4GKPLBASyeZ" role="19SJt6">
+              <property role="19SUeA" value="" />
+            </node>
           </node>
         </node>
         <node concept="1E0uc6" id="4GKPLBASy21" role="1E0tWM">
