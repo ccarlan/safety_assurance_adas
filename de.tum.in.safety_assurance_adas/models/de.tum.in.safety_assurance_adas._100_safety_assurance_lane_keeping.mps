@@ -273,6 +273,25 @@
       </node>
       <node concept="3z6Cyy" id="5et_HVSMSJy" role="0nOlf" />
     </node>
+    <node concept="0lhDl" id="5et_HVSMYCF" role="1QQeBF">
+      <property role="0lsPA" value="CR01" />
+      <property role="0ke_I" value="Carmen" />
+      <node concept="1QQeAY" id="5et_HVSMYDb" role="1QQeAC">
+        <node concept="0nzK2" id="5et_HVSMYDd" role="1QQeAV">
+          <node concept="19SGf9" id="5et_HVSMYDf" role="0nzdz">
+            <node concept="19SUe$" id="5et_HVSMYDg" role="19SJt6">
+              <property role="19SUeA" value="The LKA system will be activated in manually driven vehicles, in automated mode level 1 vehicles, where the driver is assisted by ACC, or in level 2 vehicles, able to drive in a platoon" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="5et_HVSMYCH" role="1QQeG9">
+        <node concept="19SUe$" id="5et_HVSMYCI" role="19SJt6">
+          <property role="19SUeA" value="Vehicle Assumptions" />
+        </node>
+      </node>
+      <node concept="1QQeFk" id="5et_HVSMYD6" role="0nOlf" />
+    </node>
   </node>
   <node concept="2HdtXS" id="5et_HVSMT4q">
     <property role="TrG5h" value="_000_lk_item_definition" />
