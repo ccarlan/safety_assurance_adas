@@ -176,7 +176,7 @@
         <node concept="0nzK2" id="5et_HVSMSHc" role="1QQeAV">
           <node concept="19SGf9" id="5et_HVSMSHe" role="0nzdz">
             <node concept="19SUe$" id="5et_HVSMSHf" role="19SJt6">
-              <property role="19SUeA" value="LK is active when the car starts deviating from the lane without to signal a left or right turn. It alerts the driver by vibrating the steering wheel. &#10;" />
+              <property role="19SUeA" value="LK is active when the car starts deviating from the lane without to signal a left or right turn. It alerts the driver by vibrating the steering wheel/display. &#10;" />
             </node>
           </node>
         </node>
@@ -236,6 +236,71 @@
         </node>
       </node>
     </node>
+    <node concept="0lhDl" id="5et_HVSMYoQ" role="1QQeBF">
+      <property role="0lsPA" value="FR04" />
+      <property role="0ke_I" value="Carmen" />
+      <node concept="1QQeAY" id="5et_HVSMYt0" role="1QQeAC">
+        <node concept="0nzK2" id="5et_HVSMYt2" role="1QQeAV">
+          <node concept="19SGf9" id="5et_HVSMYt4" role="0nzdz">
+            <node concept="19SUe$" id="5et_HVSMYt5" role="19SJt6">
+              <property role="19SUeA" value="LKA must detect both lane markers&#10;" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="5et_HVSMYoR" role="0nOlf" />
+      <node concept="19SGf9" id="5et_HVSMYoS" role="1QQeG9">
+        <node concept="19SUe$" id="5et_HVSMYoT" role="19SJt6">
+          <property role="19SUeA" value="Lane Detection" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="5et_HVSMYpu" role="1QQeBF" />
+    <node concept="0lhDl" id="5et_HVSMYqD" role="1QQeBF">
+      <property role="0lsPA" value="FR05" />
+      <property role="0ke_I" value="Carmen" />
+      <node concept="1QQeAY" id="5et_HVSMYtd" role="1QQeAC">
+        <node concept="0nzK2" id="5et_HVSMYtf" role="1QQeAV">
+          <node concept="19SGf9" id="5et_HVSMYth" role="0nzdz">
+            <node concept="19SUe$" id="5et_HVSMYti" role="19SJt6">
+              <property role="19SUeA" value="The LKA shall be able to identify the lane keeping zones&#10;" />
+            </node>
+            <node concept="3OoTgI" id="5et_HVSMYto" role="19SJt6">
+              <property role="3OpxtG" value="60" />
+              <node concept="3NXOOs" id="5et_HVSMYtt" role="3OoW2A">
+                <property role="3N1Lgt" value="figures/lane_keeping_zones.png" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="5et_HVSMYtp" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="5et_HVSMYqE" role="0nOlf" />
+      <node concept="19SGf9" id="5et_HVSMYqF" role="1QQeG9">
+        <node concept="19SUe$" id="5et_HVSMYqG" role="19SJt6">
+          <property role="19SUeA" value="Lane Zones" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="5et_HVSMYs0" role="1QQeBF">
+      <property role="0lsPA" value="FR06" />
+      <property role="0ke_I" value="Carmen" />
+      <node concept="1QQeAY" id="5et_HVSMYsN" role="1QQeAC">
+        <node concept="0nzK2" id="5et_HVSMYsP" role="1QQeAV">
+          <node concept="19SGf9" id="5et_HVSMYsR" role="0nzdz">
+            <node concept="19SUe$" id="5et_HVSMYsS" role="19SJt6">
+              <property role="19SUeA" value="LKA must be engaged if Vehicle Speed &lt; Vmax, Vehicle Speed &gt; Vmin, &#10;Turn Indicators = OFF, Reverse Gear = Not engaged" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="5et_HVSMYs1" role="0nOlf" />
+      <node concept="19SGf9" id="5et_HVSMYs2" role="1QQeG9">
+        <node concept="19SUe$" id="5et_HVSMYs3" role="19SJt6">
+          <property role="19SUeA" value="Engagement Conditions" />
+        </node>
+      </node>
+    </node>
     <node concept="0lH3_" id="5et_HVSMSFW" role="1QQeBF" />
   </node>
   <node concept="1QQeGf" id="5et_HVSMSIE">
@@ -278,6 +343,25 @@
         </node>
       </node>
       <node concept="3z6Cyy" id="5et_HVSMSJy" role="0nOlf" />
+    </node>
+    <node concept="0lhDl" id="5et_HVSMYCF" role="1QQeBF">
+      <property role="0lsPA" value="CR01" />
+      <property role="0ke_I" value="Carmen" />
+      <node concept="1QQeAY" id="5et_HVSMYDb" role="1QQeAC">
+        <node concept="0nzK2" id="5et_HVSMYDd" role="1QQeAV">
+          <node concept="19SGf9" id="5et_HVSMYDf" role="0nzdz">
+            <node concept="19SUe$" id="5et_HVSMYDg" role="19SJt6">
+              <property role="19SUeA" value="The LKA system will be activated in manually driven vehicles, in automated mode level 1 vehicles, where the driver is assisted by ACC, or in level 2 vehicles, able to drive in a platoon" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="5et_HVSMYCH" role="1QQeG9">
+        <node concept="19SUe$" id="5et_HVSMYCI" role="19SJt6">
+          <property role="19SUeA" value="Vehicle Assumptions" />
+        </node>
+      </node>
+      <node concept="1QQeFk" id="5et_HVSMYD6" role="0nOlf" />
     </node>
   </node>
   <node concept="2HdtXS" id="5et_HVSMT4q">
@@ -506,975 +590,6 @@
       <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
       <property role="1a6$V8" value="24PsEXFbNLt/C3" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
-    </node>
-  </node>
-  <node concept="1X_0jQ" id="4GKPLBASuhg">
-    <property role="TrG5h" value="_103_safety_assurance_lane_keeping_control_structure" />
-    <node concept="1XyJaU" id="4GKPLBASuiL" role="1X_0GB">
-      <property role="TrG5h" value="Control Box" />
-    </node>
-    <node concept="37mRI7" id="4GKPLBASuiP" role="lGtFl">
-      <node concept="37mRIm" id="4GKPLBASuiQ" role="37mRID">
-        <property role="37mO49" value="5418066857974424753" />
-        <node concept="gqqVs" id="4GKPLBASuiO" role="37mO4d">
-          <property role="gqqTZ" value="-60.0" />
-          <property role="gqqTW" value="25.0" />
-          <property role="gqqTX" value="832.0" />
-          <property role="gqqTy" value="40.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASuj5" role="37mRID">
-        <property role="37mO49" value="5418066857974424768" />
-        <node concept="gqqVs" id="4GKPLBASuj4" role="37mO4d">
-          <property role="gqqTZ" value="-23.446240474116223" />
-          <property role="gqqTW" value="272.88555626624577" />
-          <property role="gqqTX" value="97.0" />
-          <property role="gqqTy" value="48.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASujl" role="37mRID">
-        <property role="37mO49" value="5418066857974424783" />
-        <node concept="2VclpC" id="4GKPLBASujk" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASujm" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASujn" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASujo" role="3wpmZR">
-                <property role="2Vclpx" value="196.0" />
-                <property role="2Vclpz" value="121.0" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASujp" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASujV" role="37mRID">
-        <property role="37mO49" value="5418066857974424819" />
-        <node concept="2VclpC" id="4GKPLBASujU" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASujW" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASujX" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASujY" role="3wpmZR">
-                <property role="2Vclpx" value="206.389141820826" />
-                <property role="2Vclpz" value="85.694570910413" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASujZ" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASukT" role="37mRID">
-        <property role="37mO49" value="5418066857974424883" />
-        <node concept="gqqVs" id="4GKPLBASukS" role="37mO4d">
-          <property role="gqqTZ" value="316.11922759693016" />
-          <property role="gqqTW" value="176.00000000000003" />
-          <property role="gqqTX" value="116.0" />
-          <property role="gqqTy" value="30.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASulo" role="37mRID">
-        <property role="37mO49" value="5418066857974424910" />
-        <node concept="2VclpC" id="4GKPLBASuln" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASulp" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASulq" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASulr" role="3wpmZR">
-                <property role="2Vclpx" value="375.14525282630234" />
-                <property role="2Vclpz" value="122.0360629579453" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASuls" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASumg" role="37mRID">
-        <property role="37mO49" value="5418066857974424964" />
-        <node concept="2VclpC" id="4GKPLBASumf" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASumh" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASumi" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASumj" role="3wpmZR">
-                <property role="2Vclpx" value="314.36552093612687" />
-                <property role="2Vclpz" value="112.6273283834565" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASumk" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASunC" role="37mRID">
-        <property role="37mO49" value="5418066857974425057" />
-        <node concept="gqqVs" id="4GKPLBASunB" role="37mO4d">
-          <property role="gqqTZ" value="660.8491503690865" />
-          <property role="gqqTW" value="307.29025024602566" />
-          <property role="gqqTX" value="108.0" />
-          <property role="gqqTy" value="30.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASuop" role="37mRID">
-        <property role="37mO49" value="5418066857974425100" />
-        <node concept="2VclpC" id="4GKPLBASuoo" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASuoq" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASuor" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASuos" role="3wpmZR">
-                <property role="2Vclpx" value="391.8093490497433" />
-                <property role="2Vclpz" value="161.34902060282508" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASuot" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASupz" role="37mRID">
-        <property role="37mO49" value="5418066857974425171" />
-        <node concept="2VclpC" id="4GKPLBASupy" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASup$" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASup_" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASupA" role="3wpmZR">
-                <property role="2Vclpx" value="458.1259676226094" />
-                <property role="2Vclpz" value="162.49241057821934" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASupB" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASurc" role="37mRID">
-        <property role="37mO49" value="5418066857974425284" />
-        <node concept="gqqVs" id="4GKPLBASurb" role="37mO4d">
-          <property role="gqqTZ" value="631.3491503690864" />
-          <property role="gqqTW" value="176.00000000000003" />
-          <property role="gqqTX" value="167.0" />
-          <property role="gqqTy" value="30.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASusH" role="37mRID">
-        <property role="37mO49" value="5418066857974425375" />
-        <node concept="2VclpC" id="4GKPLBASusG" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASusI" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASusJ" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASusK" role="3wpmZR">
-                <property role="2Vclpx" value="661.2481842999728" />
-                <property role="2Vclpz" value="256.64512512301286" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASusL" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASuu5" role="37mRID">
-        <property role="37mO49" value="5418066857974425461" />
-        <node concept="2VclpC" id="4GKPLBASuu4" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASuu6" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASuu7" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASuu8" role="3wpmZR">
-                <property role="2Vclpx" value="664.4682006178248" />
-                <property role="2Vclpz" value="114.0779780925039" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASuu9" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASuvI" role="37mRID">
-        <property role="37mO49" value="5418066857974425573" />
-        <node concept="gqqVs" id="4GKPLBASuvH" role="37mO4d">
-          <property role="gqqTZ" value="476.05429955209615" />
-          <property role="gqqTW" value="176.0" />
-          <property role="gqqTX" value="124.0" />
-          <property role="gqqTy" value="30.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASuwQ" role="37mRID">
-        <property role="37mO49" value="5418066857974425583" />
-        <node concept="gqqVs" id="4GKPLBASuwP" role="37mO4d">
-          <property role="gqqTZ" value="51.7536419619404" />
-          <property role="gqqTW" value="176.00000000000003" />
-          <property role="gqqTX" value="197.0" />
-          <property role="gqqTy" value="30.0" />
-          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASuyx" role="37mRID">
-        <property role="37mO49" value="5418066857974425747" />
-        <node concept="2VclpC" id="4GKPLBASuyw" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASuyy" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASuyz" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASuy$" role="3wpmZR">
-                <property role="2Vclpx" value="185.68056579346964" />
-                <property role="2Vclpz" value="106.49753787499992" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASuy_" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASu$9" role="37mRID">
-        <property role="37mO49" value="5418066857974425849" />
-        <node concept="2VclpC" id="4GKPLBASu$8" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASu$a" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASu$b" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASu$c" role="3wpmZR">
-                <property role="2Vclpx" value="93.1843498212723" />
-                <property role="2Vclpz" value="252.14512512301286" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASu$d" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASu_S" role="37mRID">
-        <property role="37mO49" value="5418066857974425959" />
-        <node concept="2VclpC" id="4GKPLBASu_R" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASu_T" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASu_U" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASu_V" role="3wpmZR">
-                <property role="2Vclpx" value="176.83861982127303" />
-                <property role="2Vclpz" value="231.23155762301266" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASu_W" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASuBK" role="37mRID">
-        <property role="37mO49" value="5418066857974426076" />
-        <node concept="2VclpC" id="4GKPLBASuBJ" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASuBL" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASuBM" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASuBN" role="3wpmZR">
-                <property role="2Vclpx" value="134.4423254184692" />
-                <property role="2Vclpz" value="122.18271350000005" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASuBO" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASuFM" role="37mRID">
-        <property role="37mO49" value="5418066857974426336" />
-        <node concept="2VclpC" id="4GKPLBASuFL" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASuFN" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASuFO" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASuFP" role="3wpmZR">
-                <property role="2Vclpx" value="27.84699779679221" />
-                <property role="2Vclpz" value="134.03221667861834" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASuFQ" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASuHY" role="37mRID">
-        <property role="37mO49" value="5418066857974426475" />
-        <node concept="2VclpC" id="4GKPLBASuHX" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASuHZ" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASuI0" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASuI1" role="3wpmZR">
-                <property role="2Vclpx" value="535.4350785875382" />
-                <property role="2Vclpz" value="103.26534519808497" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASuI2" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37mRIm" id="4GKPLBASuKa" role="37mRID">
-        <property role="37mO49" value="5418066857974426612" />
-        <node concept="2VclpC" id="4GKPLBASuK9" role="37mO4d">
-          <node concept="3ul5H1" id="4GKPLBASuKb" role="3ul5Gx">
-            <property role="3ul5GH" value="label" />
-            <node concept="3wpmZ1" id="4GKPLBASuKc" role="3ul5Gz">
-              <node concept="2VclrF" id="4GKPLBASuKd" role="3wpmZR">
-                <property role="2Vclpx" value="477.3565855922484" />
-                <property role="2Vclpz" value="142.01750593272945" />
-              </node>
-              <node concept="2VclrF" id="4GKPLBASuKe" role="3wpmZP">
-                <property role="2Vclpx" value="0.0" />
-                <property role="2Vclpz" value="0.0" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1XyJaU" id="4GKPLBASuj0" role="1X_0GB">
-      <property role="TrG5h" value="steering&#10;" />
-    </node>
-    <node concept="1XyJaU" id="4GKPLBASukN" role="1X_0GB">
-      <property role="TrG5h" value="steering wheel" />
-    </node>
-    <node concept="Sq$B_" id="4GKPLBASule" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASukN" resolve="steering wheel" />
-      <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
-      <node concept="Sqzvu" id="4GKPLBASulf" role="Sq$B$">
-        <property role="TrG5h" value="provides steering angle" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="4GKPLBASum4" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASuiL" resolve="Control Box" />
-      <ref role="SrP07" node="4GKPLBASukN" resolve="steering wheel" />
-      <node concept="Sqzvu" id="4GKPLBASum5" role="Sq$B$">
-        <property role="TrG5h" value="vibration" />
-      </node>
-    </node>
-    <node concept="1XyJaU" id="4GKPLBASunx" role="1X_0GB">
-      <property role="TrG5h" value="camera sensor" />
-    </node>
-    <node concept="1XyJaU" id="4GKPLBASur4" role="1X_0GB">
-      <property role="TrG5h" value="image processing unit" />
-    </node>
-    <node concept="Sq$B_" id="4GKPLBASusv" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASunx" resolve="camera sensor" />
-      <ref role="SrP07" node="4GKPLBASur4" resolve="image processing unit" />
-      <node concept="Sqzvu" id="4GKPLBASusw" role="Sq$B$">
-        <property role="TrG5h" value="providese optical images" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4GKPLBASutP" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASur4" resolve="image processing unit" />
-      <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
-      <node concept="Sqzvu" id="4GKPLBASutQ" role="Sq$B$">
-        <property role="TrG5h" value="distance to lanes" />
-      </node>
-    </node>
-    <node concept="1XyJaU" id="4GKPLBASuv_" role="1X_0GB">
-      <property role="TrG5h" value="interface to UI" />
-    </node>
-    <node concept="1XyJaU" id="4GKPLBASuvJ" role="1X_0GB">
-      <property role="TrG5h" value="electronic power steering" />
-    </node>
-    <node concept="1XypPU" id="4GKPLBASuyj" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASuiL" resolve="Control Box" />
-      <ref role="SrP07" node="4GKPLBASuvJ" resolve="electronic power steering" />
-      <node concept="Sqzvu" id="4GKPLBASuyk" role="Sq$B$">
-        <property role="TrG5h" value="adjust steering angle" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="4GKPLBASuzT" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASuvJ" resolve="electronic power steering" />
-      <ref role="SrP07" node="4GKPLBASuj0" resolve="steering&#10;" />
-      <node concept="Sqzvu" id="4GKPLBASuzU" role="Sq$B$">
-        <property role="TrG5h" value="apply torque" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4GKPLBASuFw" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASuj0" resolve="steering&#10;" />
-      <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
-      <node concept="Sqzvu" id="4GKPLBASuFx" role="Sq$B$">
-        <property role="TrG5h" value="current steering angle" />
-      </node>
-    </node>
-    <node concept="Sq$B_" id="4GKPLBASuHF" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASuv_" resolve="interface to UI" />
-      <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
-      <node concept="Sqzvu" id="4GKPLBASuHG" role="Sq$B$">
-        <property role="TrG5h" value="activate/deactivate" />
-      </node>
-    </node>
-    <node concept="1XypPU" id="4GKPLBASuJO" role="1X_0G_">
-      <ref role="SrP08" node="4GKPLBASuiL" resolve="Control Box" />
-      <ref role="SrP07" node="4GKPLBASuv_" resolve="interface to UI" />
-      <node concept="Sqzvu" id="4GKPLBASuJP" role="Sq$B$">
-        <property role="TrG5h" value="display status" />
-      </node>
-    </node>
-  </node>
-  <node concept="1E0nO6" id="4GKPLBASuiH">
-    <property role="TrG5h" value="_104_safety_assurance_lane_keeping_unsafe_control_actions" />
-    <ref role="1E05RL" node="4GKPLBASuhg" resolve="_103_safety_assurance_lane_keeping_control_structure" />
-    <node concept="1E0nOG" id="4GKPLBASuiI" role="1E0n_e">
-      <ref role="1E0nOH" node="4GKPLBASunx" resolve="camera sensor" />
-      <node concept="1E0nOJ" id="4GKPLBASuiJ" role="1E0nOC">
-        <ref role="1E0n_N" node="4GKPLBASusw" resolve="providese optical images" />
-        <node concept="1E0uc6" id="4GKPLBASxT3" role="1E0ucd">
-          <node concept="19SGf9" id="4GKPLBASxTb" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxTg" role="19SJt6">
-              <property role="19SUeA" value="Lanes can't be detected without camera data " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxTf" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYeb" resolve="System does not recognize lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxUp" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASxTl" role="1E0tWM">
-          <node concept="19SGf9" id="4GKPLBASxTn" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxUE" role="19SJt6">
-              <property role="19SUeA" value="camera provides useless data " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxUD" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYmv" resolve="overexposed camera" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxUF" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASxTx" role="1E0tXe">
-          <node concept="19SGf9" id="4GKPLBASxTz" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxTC" role="19SJt6">
-              <property role="19SUeA" value="high latency of data transmission " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxTB" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYex" resolve="delayed steering" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASyg$" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASygz" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASyg_" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="3XErhT" id="4GKPLBASxUJ" role="1E0tXb" />
-      </node>
-    </node>
-    <node concept="1E0nOG" id="4GKPLBASxTU" role="1E0n_e">
-      <ref role="1E0nOH" node="4GKPLBASur4" resolve="image processing unit" />
-      <node concept="1E0nOJ" id="4GKPLBASxTV" role="1E0nOC">
-        <ref role="1E0n_N" node="4GKPLBASutQ" resolve="distance to lanes" />
-        <node concept="1E0uc6" id="4GKPLBASxUd" role="1E0tWM">
-          <node concept="19SGf9" id="4GKPLBASxUf" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxUk" role="19SJt6">
-              <property role="19SUeA" value="wrong data processing of lanes " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxUj" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYel" resolve="system recognizes wrong lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxWf" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASxWe" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYf_" resolve="steering into potholes" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxWn" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASxWm" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxWo" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASxUt" role="1E0tXe">
-          <node concept="19SGf9" id="4GKPLBASxUv" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxU$" role="19SJt6">
-              <property role="19SUeA" value="slow data processing " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxUz" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYex" resolve="delayed steering" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxU_" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASxUL" role="1E0ucd">
-          <node concept="19SGf9" id="4GKPLBASxUN" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxUS" role="19SJt6">
-              <property role="19SUeA" value="Lanes can't be detected without image processing " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxUR" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYeb" resolve="System does not recognize lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASyed" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASyec" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYdV" resolve="Missing of lane markers" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASyee" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="3XErhT" id="4GKPLBASygx" role="1E0tXb" />
-      </node>
-    </node>
-    <node concept="1E0nOG" id="4GKPLBASxUX" role="1E0n_e">
-      <ref role="1E0nOH" node="4GKPLBASuj0" resolve="steering&#10;" />
-      <node concept="1E0nOJ" id="4GKPLBASxUY" role="1E0nOC">
-        <ref role="1E0n_N" node="4GKPLBASuFx" resolve="current steering angle" />
-        <node concept="1E0uc6" id="4GKPLBASxWU" role="1E0tWM">
-          <node concept="19SGf9" id="4GKPLBASxWW" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxX1" role="19SJt6">
-              <property role="19SUeA" value="wrong sensor data " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxX0" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxX2" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASxXQ" role="1E0ucd">
-          <node concept="19SGf9" id="4GKPLBASxXS" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxXX" role="19SJt6">
-              <property role="19SUeA" value="system can't operate without sensor input " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxXW" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxY3" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASxY2" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYkr" resolve="failure of hardware" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxY4" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASxYb" role="1E0tXe">
-          <node concept="19SGf9" id="4GKPLBASxYd" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxYe" role="19SJt6">
-              <property role="19SUeA" value="high latency of data transmission " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxYh" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYex" resolve="delayed steering" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxYn" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASxYm" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxYv" role="19SJt6">
-              <property role="19SUeA" value="" />
-            </node>
-          </node>
-        </node>
-        <node concept="3XErhT" id="4GKPLBASxYH" role="1E0tXb" />
-      </node>
-    </node>
-    <node concept="1E0nOG" id="4GKPLBASxV_" role="1E0n_e">
-      <ref role="1E0nOH" node="4GKPLBASuvJ" resolve="electronic power steering" />
-      <node concept="1E0nOJ" id="4GKPLBASxVA" role="1E0nOC">
-        <ref role="1E0n_N" node="4GKPLBASuzU" resolve="apply torque" />
-        <node concept="1E0uc6" id="4GKPLBASxWx" role="1E0tWM">
-          <node concept="19SGf9" id="4GKPLBASxWz" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxWC" role="19SJt6">
-              <property role="19SUeA" value="unwanted steering " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxZ1" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxZ2" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASxYJ" role="1E0ucd">
-          <node concept="19SGf9" id="4GKPLBASxYL" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxYM" role="19SJt6">
-              <property role="19SUeA" value="system can't operate without steering " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxYP" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxYQ" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASxYU" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYkr" resolve="failure of hardware" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxYV" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASxZ6" role="1E0tXe">
-          <node concept="19SGf9" id="4GKPLBASxZ8" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxZ9" role="19SJt6">
-              <property role="19SUeA" value="loss of real time capability " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxZc" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYex" resolve="delayed steering" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxZi" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASxZh" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxZj" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASxZp" role="1E0tXb">
-          <node concept="19SGf9" id="4GKPLBASxZr" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASxZw" role="19SJt6">
-              <property role="19SUeA" value="wrong application of torque " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASxZv" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxZA" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASxZ_" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASxZB" role="19SJt6" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1E0nOG" id="4GKPLBASxZH" role="1E0n_e">
-      <ref role="1E0nOH" node="4GKPLBASukN" resolve="steering wheel" />
-      <node concept="1E0nOJ" id="4GKPLBASxZI" role="1E0nOC">
-        <ref role="1E0n_N" node="4GKPLBASulf" resolve="provides steering angle" />
-        <node concept="1E0uc6" id="4GKPLBASy1b" role="1E0ucd">
-          <node concept="19SGf9" id="4GKPLBASy1d" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASy1M" role="19SJt6">
-              <property role="19SUeA" value="System can't detect driver input " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASy1L" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy1U" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASy1T" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASyeZ" role="19SJt6">
-              <property role="19SUeA" value="" />
-            </node>
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASy21" role="1E0tWM">
-          <node concept="19SGf9" id="4GKPLBASy23" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASy24" role="19SJt6">
-              <property role="19SUeA" value="provides wrong steering angle " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASy27" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYiD" resolve="no correction of unintended user input" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy2d" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASy2c" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYi7" resolve="unwanted deactivation" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy2e" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASy2k" role="1E0tXe">
-          <node concept="19SGf9" id="4GKPLBASy2m" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASy2n" role="19SJt6">
-              <property role="19SUeA" value="prevents driver input, system does not deactivate in time " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASy2q" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy2r" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="3XErhT" id="4GKPLBASy2v" role="1E0tXb" />
-      </node>
-    </node>
-    <node concept="1E0nOG" id="4GKPLBASy2x" role="1E0n_e">
-      <ref role="1E0nOH" node="4GKPLBASuv_" resolve="interface to UI" />
-      <node concept="1E0nOJ" id="4GKPLBASy2y" role="1E0nOC">
-        <ref role="1E0n_N" node="4GKPLBASuHG" resolve="activate/deactivate" />
-        <node concept="1E0uc6" id="4GKPLBASy4k" role="1E0ucd">
-          <node concept="19SGf9" id="4GKPLBASy4m" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASy4r" role="19SJt6">
-              <property role="19SUeA" value="driver can't activate/deactivate lane keeping " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASy4q" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy4G" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASy4F" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy4H" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASy4N" role="1E0tWM">
-          <node concept="19SGf9" id="4GKPLBASy4P" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASy4U" role="19SJt6">
-              <property role="19SUeA" value="driver deactivates by mistake " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASy4T" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYi7" resolve="unwanted deactivation" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy4V" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASy4Z" role="1E0tXe">
-          <node concept="19SGf9" id="4GKPLBASy51" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASy56" role="19SJt6">
-              <property role="19SUeA" value="system does not activate/deactivate in time " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASy55" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy5c" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASy5b" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy5k" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASy5j" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy5l" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="3XErhT" id="4GKPLBASy5t" role="1E0tXb" />
-      </node>
-    </node>
-    <node concept="1E0nOG" id="4GKPLBASy5v" role="1E0n_e">
-      <ref role="1E0nOH" node="4GKPLBASuiL" resolve="Control Box" />
-      <node concept="1E0nOJ" id="4GKPLBASy5w" role="1E0nOC">
-        <ref role="1E0n_N" node="4GKPLBASuyk" resolve="adjust steering angle" />
-        <node concept="1E0uc6" id="4GKPLBASy7L" role="1E0ucd">
-          <node concept="19SGf9" id="4GKPLBASy7N" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASy7S" role="19SJt6">
-              <property role="19SUeA" value="missing of commands leads so system failure " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASy7R" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy7Y" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASy7X" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYgj" resolve="compensation of hardware faults" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy86" role="19SJt6">
-              <property role="19SUeA" value="" />
-            </node>
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASy8k" role="1E0tWM">
-          <node concept="19SGf9" id="4GKPLBASy8m" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASy8r" role="19SJt6">
-              <property role="19SUeA" value="wrong adjustment " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASy8q" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy8x" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASy8w" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy8y" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASy8C" role="1E0tXe">
-          <node concept="19SGf9" id="4GKPLBASy8E" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASy8J" role="19SJt6">
-              <property role="19SUeA" value="wrong adjustment " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASy8I" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYex" resolve="delayed steering" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy94" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASy93" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy9c" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASy9b" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy9d" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASy9l" role="1E0tXb">
-          <node concept="19SGf9" id="4GKPLBASy9n" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASy9s" role="19SJt6">
-              <property role="19SUeA" value="wrong application of steering angle " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASy9r" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy9z" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASy9x" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy9y" role="19SJt6">
-              <property role="19SUeA" value=" " />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1E0nOJ" id="4GKPLBASy7E" role="1E0nOC">
-        <ref role="1E0n_N" node="4GKPLBASuJP" resolve="display status" />
-        <node concept="1E0uc6" id="4GKPLBASy9E" role="1E0ucd">
-          <node concept="19SGf9" id="4GKPLBASy9G" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASy9L" role="19SJt6">
-              <property role="19SUeA" value="driver not informed about system state " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASy9K" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy9R" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASy9Q" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYhB" resolve="driver not informed about takeover" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASy9Z" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASy9Y" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASya9" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASya8" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYiD" resolve="no correction of unintended user input" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASyal" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASyak" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASyaz" role="19SJt6">
-              <property role="19SUeA" value="" />
-            </node>
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASyaX" role="1E0tWM">
-          <node concept="19SGf9" id="4GKPLBASyaZ" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASyb0" role="19SJt6">
-              <property role="19SUeA" value="wrong display status " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASyb9" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASybg" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASybe" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYhB" resolve="driver not informed about takeover" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASybn" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASybm" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASybx" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASybw" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYiD" resolve="no correction of unintended user input" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASybH" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASybG" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASybI" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASybU" role="1E0tXe">
-          <node concept="19SGf9" id="4GKPLBASybW" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASyc1" role="19SJt6">
-              <property role="19SUeA" value="delayed communication driver and system " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASyc0" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASyc7" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASyc6" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASycf" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASyce" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYiD" resolve="no correction of unintended user input" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASycg" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASyco" role="1E0tXb">
-          <node concept="19SGf9" id="4GKPLBASycq" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASycr" role="19SJt6">
-              <property role="19SUeA" value="delayed communication driver and system " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASycu" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASyc$" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASycz" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASycG" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASycF" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYiD" resolve="no correction of unintended user input" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASycH" role="19SJt6" />
-          </node>
-        </node>
-      </node>
-      <node concept="1E0nOJ" id="4GKPLBASy7H" role="1E0nOC">
-        <ref role="1E0n_N" node="4GKPLBASum5" resolve="vibration" />
-        <node concept="1E0uc6" id="4GKPLBASycP" role="1E0ucd">
-          <node concept="19SGf9" id="4GKPLBASycR" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASycW" role="19SJt6">
-              <property role="19SUeA" value="driver not informed about take over " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASycV" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASyd2" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASyd1" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASyda" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASyd9" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYhB" resolve="driver not informed about takeover" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASydb" role="19SJt6" />
-          </node>
-        </node>
-        <node concept="3XErhT" id="4GKPLBASydj" role="1E0tWM" />
-        <node concept="1E0uc6" id="4GKPLBASydl" role="1E0tXe">
-          <node concept="19SGf9" id="4GKPLBASydn" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASydo" role="19SJt6">
-              <property role="19SUeA" value="delayed communication driver and system " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASydr" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASydx" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASydw" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASydD" role="19SJt6">
-              <property role="19SUeA" value="" />
-            </node>
-          </node>
-        </node>
-        <node concept="1E0uc6" id="4GKPLBASydR" role="1E0tXb">
-          <node concept="19SGf9" id="4GKPLBASydT" role="1E0uc7">
-            <node concept="19SUe$" id="4GKPLBASydY" role="19SJt6">
-              <property role="19SUeA" value="delayed communication of driver and system " />
-            </node>
-            <node concept="oY6sn" id="4GKPLBASydX" role="19SJt6">
-              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASye4" role="19SJt6" />
-            <node concept="oY6sn" id="4GKPLBASye3" role="19SJt6">
-              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
-            </node>
-            <node concept="19SUe$" id="4GKPLBASye5" role="19SJt6" />
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="1X_0jQ" id="2fZol$t_0Lh">
@@ -2312,6 +1427,975 @@
       <ref role="SrP07" node="2fZol$t_0MX" resolve="Driver" />
       <node concept="Sqzvu" id="2fZol$t_1Zn" role="Sq$B$">
         <property role="TrG5h" value="alarm tone" />
+      </node>
+    </node>
+  </node>
+  <node concept="1E0nO6" id="4GKPLBASuiH">
+    <property role="TrG5h" value="_104_safety_assurance_lane_keeping_unsafe_control_actions" />
+    <ref role="1E05RL" node="4GKPLBASuhg" resolve="_103_safety_assurance_lane_keeping_control_structure" />
+    <node concept="1E0nOG" id="4GKPLBASuiI" role="1E0n_e">
+      <ref role="1E0nOH" node="4GKPLBASunx" resolve="camera sensor" />
+      <node concept="1E0nOJ" id="4GKPLBASuiJ" role="1E0nOC">
+        <ref role="1E0n_N" node="4GKPLBASusw" resolve="providese optical images" />
+        <node concept="1E0uc6" id="4GKPLBASxT3" role="1E0ucd">
+          <node concept="19SGf9" id="4GKPLBASxTb" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxTg" role="19SJt6">
+              <property role="19SUeA" value="Lanes can't be detected without camera data " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxTf" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYeb" resolve="System does not recognize lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxUp" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASxTl" role="1E0tWM">
+          <node concept="19SGf9" id="4GKPLBASxTn" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxUE" role="19SJt6">
+              <property role="19SUeA" value="camera provides useless data " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxUD" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYmv" resolve="overexposed camera" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxUF" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASxTx" role="1E0tXe">
+          <node concept="19SGf9" id="4GKPLBASxTz" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxTC" role="19SJt6">
+              <property role="19SUeA" value="high latency of data transmission " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxTB" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYex" resolve="delayed steering" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASyg$" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASygz" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASyg_" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XErhT" id="4GKPLBASxUJ" role="1E0tXb" />
+      </node>
+    </node>
+    <node concept="1E0nOG" id="4GKPLBASxTU" role="1E0n_e">
+      <ref role="1E0nOH" node="4GKPLBASur4" resolve="image processing unit" />
+      <node concept="1E0nOJ" id="4GKPLBASxTV" role="1E0nOC">
+        <ref role="1E0n_N" node="4GKPLBASutQ" resolve="distance to lanes" />
+        <node concept="1E0uc6" id="4GKPLBASxUd" role="1E0tWM">
+          <node concept="19SGf9" id="4GKPLBASxUf" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxUk" role="19SJt6">
+              <property role="19SUeA" value="wrong data processing of lanes " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxUj" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYel" resolve="system recognizes wrong lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxWf" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASxWe" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYf_" resolve="steering into potholes" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxWn" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASxWm" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxWo" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASxUt" role="1E0tXe">
+          <node concept="19SGf9" id="4GKPLBASxUv" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxU$" role="19SJt6">
+              <property role="19SUeA" value="slow data processing " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxUz" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYex" resolve="delayed steering" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxU_" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASxUL" role="1E0ucd">
+          <node concept="19SGf9" id="4GKPLBASxUN" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxUS" role="19SJt6">
+              <property role="19SUeA" value="Lanes can't be detected without image processing " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxUR" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYeb" resolve="System does not recognize lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASyed" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASyec" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYdV" resolve="Missing of lane markers" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASyee" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XErhT" id="4GKPLBASygx" role="1E0tXb" />
+      </node>
+    </node>
+    <node concept="1E0nOG" id="4GKPLBASxUX" role="1E0n_e">
+      <ref role="1E0nOH" node="4GKPLBASuj0" resolve="steering&#10;" />
+      <node concept="1E0nOJ" id="4GKPLBASxUY" role="1E0nOC">
+        <ref role="1E0n_N" node="4GKPLBASuFx" resolve="current steering angle" />
+        <node concept="1E0uc6" id="4GKPLBASxWU" role="1E0tWM">
+          <node concept="19SGf9" id="4GKPLBASxWW" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxX1" role="19SJt6">
+              <property role="19SUeA" value="wrong sensor data " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxX0" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxX2" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASxXQ" role="1E0ucd">
+          <node concept="19SGf9" id="4GKPLBASxXS" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxXX" role="19SJt6">
+              <property role="19SUeA" value="system can't operate without sensor input " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxXW" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxY3" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASxY2" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYkr" resolve="failure of hardware" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxY4" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASxYb" role="1E0tXe">
+          <node concept="19SGf9" id="4GKPLBASxYd" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxYe" role="19SJt6">
+              <property role="19SUeA" value="high latency of data transmission " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxYh" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYex" resolve="delayed steering" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxYn" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASxYm" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxYv" role="19SJt6">
+              <property role="19SUeA" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="3XErhT" id="4GKPLBASxYH" role="1E0tXb" />
+      </node>
+    </node>
+    <node concept="1E0nOG" id="4GKPLBASxV_" role="1E0n_e">
+      <ref role="1E0nOH" node="4GKPLBASuvJ" resolve="electronic power steering" />
+      <node concept="1E0nOJ" id="4GKPLBASxVA" role="1E0nOC">
+        <ref role="1E0n_N" node="4GKPLBASuzU" resolve="apply torque" />
+        <node concept="1E0uc6" id="4GKPLBASxWx" role="1E0tWM">
+          <node concept="19SGf9" id="4GKPLBASxWz" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxWC" role="19SJt6">
+              <property role="19SUeA" value="unwanted steering " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxZ1" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxZ2" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASxYJ" role="1E0ucd">
+          <node concept="19SGf9" id="4GKPLBASxYL" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxYM" role="19SJt6">
+              <property role="19SUeA" value="system can't operate without steering " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxYP" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxYQ" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASxYU" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYkr" resolve="failure of hardware" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxYV" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASxZ6" role="1E0tXe">
+          <node concept="19SGf9" id="4GKPLBASxZ8" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxZ9" role="19SJt6">
+              <property role="19SUeA" value="loss of real time capability " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxZc" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYex" resolve="delayed steering" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxZi" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASxZh" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxZj" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASxZp" role="1E0tXb">
+          <node concept="19SGf9" id="4GKPLBASxZr" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASxZw" role="19SJt6">
+              <property role="19SUeA" value="wrong application of torque " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASxZv" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxZA" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASxZ_" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASxZB" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="4GKPLBASxZH" role="1E0n_e">
+      <ref role="1E0nOH" node="4GKPLBASukN" resolve="steering wheel" />
+      <node concept="1E0nOJ" id="4GKPLBASxZI" role="1E0nOC">
+        <ref role="1E0n_N" node="4GKPLBASulf" resolve="provides steering angle" />
+        <node concept="1E0uc6" id="4GKPLBASy1b" role="1E0ucd">
+          <node concept="19SGf9" id="4GKPLBASy1d" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASy1M" role="19SJt6">
+              <property role="19SUeA" value="System can't detect driver input " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASy1L" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy1U" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASy1T" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASyeZ" role="19SJt6">
+              <property role="19SUeA" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASy21" role="1E0tWM">
+          <node concept="19SGf9" id="4GKPLBASy23" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASy24" role="19SJt6">
+              <property role="19SUeA" value="provides wrong steering angle " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASy27" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYiD" resolve="no correction of unintended user input" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy2d" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASy2c" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYi7" resolve="unwanted deactivation" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy2e" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASy2k" role="1E0tXe">
+          <node concept="19SGf9" id="4GKPLBASy2m" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASy2n" role="19SJt6">
+              <property role="19SUeA" value="prevents driver input, system does not deactivate in time " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASy2q" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy2r" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XErhT" id="4GKPLBASy2v" role="1E0tXb" />
+      </node>
+    </node>
+    <node concept="1E0nOG" id="4GKPLBASy2x" role="1E0n_e">
+      <ref role="1E0nOH" node="4GKPLBASuv_" resolve="interface to UI" />
+      <node concept="1E0nOJ" id="4GKPLBASy2y" role="1E0nOC">
+        <ref role="1E0n_N" node="4GKPLBASuHG" resolve="activate/deactivate" />
+        <node concept="1E0uc6" id="4GKPLBASy4k" role="1E0ucd">
+          <node concept="19SGf9" id="4GKPLBASy4m" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASy4r" role="19SJt6">
+              <property role="19SUeA" value="driver can't activate/deactivate lane keeping " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASy4q" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy4G" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASy4F" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy4H" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASy4N" role="1E0tWM">
+          <node concept="19SGf9" id="4GKPLBASy4P" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASy4U" role="19SJt6">
+              <property role="19SUeA" value="driver deactivates by mistake " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASy4T" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYi7" resolve="unwanted deactivation" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy4V" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASy4Z" role="1E0tXe">
+          <node concept="19SGf9" id="4GKPLBASy51" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASy56" role="19SJt6">
+              <property role="19SUeA" value="system does not activate/deactivate in time " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASy55" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy5c" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASy5b" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy5k" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASy5j" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy5l" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XErhT" id="4GKPLBASy5t" role="1E0tXb" />
+      </node>
+    </node>
+    <node concept="1E0nOG" id="4GKPLBASy5v" role="1E0n_e">
+      <ref role="1E0nOH" node="4GKPLBASuiL" resolve="Control Box" />
+      <node concept="1E0nOJ" id="4GKPLBASy5w" role="1E0nOC">
+        <ref role="1E0n_N" node="4GKPLBASuyk" resolve="adjust steering angle" />
+        <node concept="1E0uc6" id="4GKPLBASy7L" role="1E0ucd">
+          <node concept="19SGf9" id="4GKPLBASy7N" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASy7S" role="19SJt6">
+              <property role="19SUeA" value="missing of commands leads so system failure " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASy7R" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy7Y" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASy7X" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYgj" resolve="compensation of hardware faults" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy86" role="19SJt6">
+              <property role="19SUeA" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASy8k" role="1E0tWM">
+          <node concept="19SGf9" id="4GKPLBASy8m" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASy8r" role="19SJt6">
+              <property role="19SUeA" value="wrong adjustment " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASy8q" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy8x" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASy8w" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy8y" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASy8C" role="1E0tXe">
+          <node concept="19SGf9" id="4GKPLBASy8E" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASy8J" role="19SJt6">
+              <property role="19SUeA" value="wrong adjustment " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASy8I" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYex" resolve="delayed steering" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy94" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASy93" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy9c" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASy9b" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy9d" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASy9l" role="1E0tXb">
+          <node concept="19SGf9" id="4GKPLBASy9n" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASy9s" role="19SJt6">
+              <property role="19SUeA" value="wrong application of steering angle " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASy9r" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy9z" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASy9x" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy9y" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E0nOJ" id="4GKPLBASy7E" role="1E0nOC">
+        <ref role="1E0n_N" node="4GKPLBASuJP" resolve="display status" />
+        <node concept="1E0uc6" id="4GKPLBASy9E" role="1E0ucd">
+          <node concept="19SGf9" id="4GKPLBASy9G" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASy9L" role="19SJt6">
+              <property role="19SUeA" value="driver not informed about system state " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASy9K" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy9R" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASy9Q" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYhB" resolve="driver not informed about takeover" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASy9Z" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASy9Y" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASya9" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASya8" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYiD" resolve="no correction of unintended user input" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASyal" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASyak" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASyaz" role="19SJt6">
+              <property role="19SUeA" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASyaX" role="1E0tWM">
+          <node concept="19SGf9" id="4GKPLBASyaZ" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASyb0" role="19SJt6">
+              <property role="19SUeA" value="wrong display status " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASyb9" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASybg" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASybe" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYhB" resolve="driver not informed about takeover" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASybn" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASybm" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASybx" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASybw" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYiD" resolve="no correction of unintended user input" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASybH" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASybG" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASybI" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASybU" role="1E0tXe">
+          <node concept="19SGf9" id="4GKPLBASybW" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASyc1" role="19SJt6">
+              <property role="19SUeA" value="delayed communication driver and system " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASyc0" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASyc7" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASyc6" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASycf" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASyce" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYiD" resolve="no correction of unintended user input" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASycg" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASyco" role="1E0tXb">
+          <node concept="19SGf9" id="4GKPLBASycq" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASycr" role="19SJt6">
+              <property role="19SUeA" value="delayed communication driver and system " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASycu" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASyc$" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASycz" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASycG" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASycF" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYiD" resolve="no correction of unintended user input" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASycH" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E0nOJ" id="4GKPLBASy7H" role="1E0nOC">
+        <ref role="1E0n_N" node="4GKPLBASum5" resolve="vibration" />
+        <node concept="1E0uc6" id="4GKPLBASycP" role="1E0ucd">
+          <node concept="19SGf9" id="4GKPLBASycR" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASycW" role="19SJt6">
+              <property role="19SUeA" value="driver not informed about take over " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASycV" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASyd2" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASyd1" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASyda" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASyd9" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYhB" resolve="driver not informed about takeover" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASydb" role="19SJt6" />
+          </node>
+        </node>
+        <node concept="3XErhT" id="4GKPLBASydj" role="1E0tWM" />
+        <node concept="1E0uc6" id="4GKPLBASydl" role="1E0tXe">
+          <node concept="19SGf9" id="4GKPLBASydn" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASydo" role="19SJt6">
+              <property role="19SUeA" value="delayed communication driver and system " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASydr" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASydx" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASydw" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASydD" role="19SJt6">
+              <property role="19SUeA" value="" />
+            </node>
+          </node>
+        </node>
+        <node concept="1E0uc6" id="4GKPLBASydR" role="1E0tXb">
+          <node concept="19SGf9" id="4GKPLBASydT" role="1E0uc7">
+            <node concept="19SUe$" id="4GKPLBASydY" role="19SJt6">
+              <property role="19SUeA" value="delayed communication of driver and system " />
+            </node>
+            <node concept="oY6sn" id="4GKPLBASydX" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASye4" role="19SJt6" />
+            <node concept="oY6sn" id="4GKPLBASye3" role="19SJt6">
+              <ref role="oTUVg" node="4GKPLBASxXu" resolve="leaving of lane" />
+            </node>
+            <node concept="19SUe$" id="4GKPLBASye5" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1X_0jQ" id="4GKPLBASuhg">
+    <property role="TrG5h" value="_103_safety_assurance_lane_keeping_control_structure" />
+    <node concept="1XyJaU" id="4GKPLBASuiL" role="1X_0GB">
+      <property role="TrG5h" value="Control Box" />
+    </node>
+    <node concept="37mRI7" id="4GKPLBASuiP" role="lGtFl">
+      <node concept="37mRIm" id="4GKPLBASuiQ" role="37mRID">
+        <property role="37mO49" value="5418066857974424753" />
+        <node concept="gqqVs" id="4GKPLBASuiO" role="37mO4d">
+          <property role="gqqTZ" value="-60.0" />
+          <property role="gqqTW" value="25.0" />
+          <property role="gqqTX" value="832.0" />
+          <property role="gqqTy" value="40.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASuj5" role="37mRID">
+        <property role="37mO49" value="5418066857974424768" />
+        <node concept="gqqVs" id="4GKPLBASuj4" role="37mO4d">
+          <property role="gqqTZ" value="-23.446240474116223" />
+          <property role="gqqTW" value="272.88555626624577" />
+          <property role="gqqTX" value="97.0" />
+          <property role="gqqTy" value="48.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASujl" role="37mRID">
+        <property role="37mO49" value="5418066857974424783" />
+        <node concept="2VclpC" id="4GKPLBASujk" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASujm" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASujn" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASujo" role="3wpmZR">
+                <property role="2Vclpx" value="196.0" />
+                <property role="2Vclpz" value="121.0" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASujp" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASujV" role="37mRID">
+        <property role="37mO49" value="5418066857974424819" />
+        <node concept="2VclpC" id="4GKPLBASujU" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASujW" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASujX" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASujY" role="3wpmZR">
+                <property role="2Vclpx" value="206.389141820826" />
+                <property role="2Vclpz" value="85.694570910413" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASujZ" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASukT" role="37mRID">
+        <property role="37mO49" value="5418066857974424883" />
+        <node concept="gqqVs" id="4GKPLBASukS" role="37mO4d">
+          <property role="gqqTZ" value="316.11922759693016" />
+          <property role="gqqTW" value="176.00000000000003" />
+          <property role="gqqTX" value="116.0" />
+          <property role="gqqTy" value="30.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASulo" role="37mRID">
+        <property role="37mO49" value="5418066857974424910" />
+        <node concept="2VclpC" id="4GKPLBASuln" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASulp" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASulq" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASulr" role="3wpmZR">
+                <property role="2Vclpx" value="375.14525282630234" />
+                <property role="2Vclpz" value="122.0360629579453" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASuls" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASumg" role="37mRID">
+        <property role="37mO49" value="5418066857974424964" />
+        <node concept="2VclpC" id="4GKPLBASumf" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASumh" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASumi" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASumj" role="3wpmZR">
+                <property role="2Vclpx" value="314.36552093612687" />
+                <property role="2Vclpz" value="112.6273283834565" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASumk" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASunC" role="37mRID">
+        <property role="37mO49" value="5418066857974425057" />
+        <node concept="gqqVs" id="4GKPLBASunB" role="37mO4d">
+          <property role="gqqTZ" value="660.8491503690865" />
+          <property role="gqqTW" value="307.29025024602566" />
+          <property role="gqqTX" value="108.0" />
+          <property role="gqqTy" value="30.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASuop" role="37mRID">
+        <property role="37mO49" value="5418066857974425100" />
+        <node concept="2VclpC" id="4GKPLBASuoo" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASuoq" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASuor" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASuos" role="3wpmZR">
+                <property role="2Vclpx" value="391.8093490497433" />
+                <property role="2Vclpz" value="161.34902060282508" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASuot" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASupz" role="37mRID">
+        <property role="37mO49" value="5418066857974425171" />
+        <node concept="2VclpC" id="4GKPLBASupy" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASup$" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASup_" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASupA" role="3wpmZR">
+                <property role="2Vclpx" value="458.1259676226094" />
+                <property role="2Vclpz" value="162.49241057821934" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASupB" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASurc" role="37mRID">
+        <property role="37mO49" value="5418066857974425284" />
+        <node concept="gqqVs" id="4GKPLBASurb" role="37mO4d">
+          <property role="gqqTZ" value="631.3491503690864" />
+          <property role="gqqTW" value="176.00000000000003" />
+          <property role="gqqTX" value="167.0" />
+          <property role="gqqTy" value="30.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASusH" role="37mRID">
+        <property role="37mO49" value="5418066857974425375" />
+        <node concept="2VclpC" id="4GKPLBASusG" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASusI" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASusJ" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASusK" role="3wpmZR">
+                <property role="2Vclpx" value="661.2481842999728" />
+                <property role="2Vclpz" value="256.64512512301286" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASusL" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASuu5" role="37mRID">
+        <property role="37mO49" value="5418066857974425461" />
+        <node concept="2VclpC" id="4GKPLBASuu4" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASuu6" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASuu7" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASuu8" role="3wpmZR">
+                <property role="2Vclpx" value="664.4682006178248" />
+                <property role="2Vclpz" value="114.0779780925039" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASuu9" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASuvI" role="37mRID">
+        <property role="37mO49" value="5418066857974425573" />
+        <node concept="gqqVs" id="4GKPLBASuvH" role="37mO4d">
+          <property role="gqqTZ" value="476.05429955209615" />
+          <property role="gqqTW" value="176.0" />
+          <property role="gqqTX" value="124.0" />
+          <property role="gqqTy" value="30.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASuwQ" role="37mRID">
+        <property role="37mO49" value="5418066857974425583" />
+        <node concept="gqqVs" id="4GKPLBASuwP" role="37mO4d">
+          <property role="gqqTZ" value="51.7536419619404" />
+          <property role="gqqTW" value="176.00000000000003" />
+          <property role="gqqTX" value="197.0" />
+          <property role="gqqTy" value="30.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASuyx" role="37mRID">
+        <property role="37mO49" value="5418066857974425747" />
+        <node concept="2VclpC" id="4GKPLBASuyw" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASuyy" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASuyz" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASuy$" role="3wpmZR">
+                <property role="2Vclpx" value="185.68056579346964" />
+                <property role="2Vclpz" value="106.49753787499992" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASuy_" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASu$9" role="37mRID">
+        <property role="37mO49" value="5418066857974425849" />
+        <node concept="2VclpC" id="4GKPLBASu$8" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASu$a" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASu$b" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASu$c" role="3wpmZR">
+                <property role="2Vclpx" value="93.1843498212723" />
+                <property role="2Vclpz" value="252.14512512301286" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASu$d" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASu_S" role="37mRID">
+        <property role="37mO49" value="5418066857974425959" />
+        <node concept="2VclpC" id="4GKPLBASu_R" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASu_T" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASu_U" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASu_V" role="3wpmZR">
+                <property role="2Vclpx" value="176.83861982127303" />
+                <property role="2Vclpz" value="231.23155762301266" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASu_W" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASuBK" role="37mRID">
+        <property role="37mO49" value="5418066857974426076" />
+        <node concept="2VclpC" id="4GKPLBASuBJ" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASuBL" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASuBM" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASuBN" role="3wpmZR">
+                <property role="2Vclpx" value="134.4423254184692" />
+                <property role="2Vclpz" value="122.18271350000005" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASuBO" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASuFM" role="37mRID">
+        <property role="37mO49" value="5418066857974426336" />
+        <node concept="2VclpC" id="4GKPLBASuFL" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASuFN" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASuFO" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASuFP" role="3wpmZR">
+                <property role="2Vclpx" value="27.84699779679221" />
+                <property role="2Vclpz" value="134.03221667861834" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASuFQ" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASuHY" role="37mRID">
+        <property role="37mO49" value="5418066857974426475" />
+        <node concept="2VclpC" id="4GKPLBASuHX" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASuHZ" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASuI0" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASuI1" role="3wpmZR">
+                <property role="2Vclpx" value="535.4350785875382" />
+                <property role="2Vclpz" value="103.26534519808497" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASuI2" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4GKPLBASuKa" role="37mRID">
+        <property role="37mO49" value="5418066857974426612" />
+        <node concept="2VclpC" id="4GKPLBASuK9" role="37mO4d">
+          <node concept="3ul5H1" id="4GKPLBASuKb" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4GKPLBASuKc" role="3ul5Gz">
+              <node concept="2VclrF" id="4GKPLBASuKd" role="3wpmZR">
+                <property role="2Vclpx" value="477.3565855922484" />
+                <property role="2Vclpz" value="142.01750593272945" />
+              </node>
+              <node concept="2VclrF" id="4GKPLBASuKe" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1XyJaU" id="4GKPLBASuj0" role="1X_0GB">
+      <property role="TrG5h" value="steering&#10;" />
+    </node>
+    <node concept="1XyJaU" id="4GKPLBASukN" role="1X_0GB">
+      <property role="TrG5h" value="steering wheel" />
+    </node>
+    <node concept="Sq$B_" id="4GKPLBASule" role="1X_0G_">
+      <ref role="SrP08" node="4GKPLBASukN" resolve="steering wheel" />
+      <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
+      <node concept="Sqzvu" id="4GKPLBASulf" role="Sq$B$">
+        <property role="TrG5h" value="provides steering angle" />
+      </node>
+    </node>
+    <node concept="1XypPU" id="4GKPLBASum4" role="1X_0G_">
+      <ref role="SrP08" node="4GKPLBASuiL" resolve="Control Box" />
+      <ref role="SrP07" node="4GKPLBASukN" resolve="steering wheel" />
+      <node concept="Sqzvu" id="4GKPLBASum5" role="Sq$B$">
+        <property role="TrG5h" value="vibration" />
+      </node>
+    </node>
+    <node concept="1XyJaU" id="4GKPLBASunx" role="1X_0GB">
+      <property role="TrG5h" value="camera sensor" />
+    </node>
+    <node concept="1XyJaU" id="4GKPLBASur4" role="1X_0GB">
+      <property role="TrG5h" value="image processing unit" />
+    </node>
+    <node concept="Sq$B_" id="4GKPLBASusv" role="1X_0G_">
+      <ref role="SrP08" node="4GKPLBASunx" resolve="camera sensor" />
+      <ref role="SrP07" node="4GKPLBASur4" resolve="image processing unit" />
+      <node concept="Sqzvu" id="4GKPLBASusw" role="Sq$B$">
+        <property role="TrG5h" value="providese optical images" />
+      </node>
+    </node>
+    <node concept="Sq$B_" id="4GKPLBASutP" role="1X_0G_">
+      <ref role="SrP08" node="4GKPLBASur4" resolve="image processing unit" />
+      <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
+      <node concept="Sqzvu" id="4GKPLBASutQ" role="Sq$B$">
+        <property role="TrG5h" value="distance to lanes" />
+      </node>
+    </node>
+    <node concept="1XyJaU" id="4GKPLBASuv_" role="1X_0GB">
+      <property role="TrG5h" value="interface to UI" />
+    </node>
+    <node concept="1XyJaU" id="4GKPLBASuvJ" role="1X_0GB">
+      <property role="TrG5h" value="electronic power steering" />
+    </node>
+    <node concept="1XypPU" id="4GKPLBASuyj" role="1X_0G_">
+      <ref role="SrP08" node="4GKPLBASuiL" resolve="Control Box" />
+      <ref role="SrP07" node="4GKPLBASuvJ" resolve="electronic power steering" />
+      <node concept="Sqzvu" id="4GKPLBASuyk" role="Sq$B$">
+        <property role="TrG5h" value="adjust steering angle" />
+      </node>
+    </node>
+    <node concept="1XypPU" id="4GKPLBASuzT" role="1X_0G_">
+      <ref role="SrP08" node="4GKPLBASuvJ" resolve="electronic power steering" />
+      <ref role="SrP07" node="4GKPLBASuj0" resolve="steering&#10;" />
+      <node concept="Sqzvu" id="4GKPLBASuzU" role="Sq$B$">
+        <property role="TrG5h" value="apply torque" />
+      </node>
+    </node>
+    <node concept="Sq$B_" id="4GKPLBASuFw" role="1X_0G_">
+      <ref role="SrP08" node="4GKPLBASuj0" resolve="steering&#10;" />
+      <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
+      <node concept="Sqzvu" id="4GKPLBASuFx" role="Sq$B$">
+        <property role="TrG5h" value="current steering angle" />
+      </node>
+    </node>
+    <node concept="Sq$B_" id="4GKPLBASuHF" role="1X_0G_">
+      <ref role="SrP08" node="4GKPLBASuv_" resolve="interface to UI" />
+      <ref role="SrP07" node="4GKPLBASuiL" resolve="Control Box" />
+      <node concept="Sqzvu" id="4GKPLBASuHG" role="Sq$B$">
+        <property role="TrG5h" value="activate/deactivate" />
+      </node>
+    </node>
+    <node concept="1XypPU" id="4GKPLBASuJO" role="1X_0G_">
+      <ref role="SrP08" node="4GKPLBASuiL" resolve="Control Box" />
+      <ref role="SrP07" node="4GKPLBASuv_" resolve="interface to UI" />
+      <node concept="Sqzvu" id="4GKPLBASuJP" role="Sq$B$">
+        <property role="TrG5h" value="display status" />
       </node>
     </node>
   </node>
