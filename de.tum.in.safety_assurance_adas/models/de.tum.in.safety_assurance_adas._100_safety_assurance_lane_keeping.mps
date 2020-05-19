@@ -485,6 +485,27 @@
       <property role="1a6$V8" value="24PsEXFbNLp/C2" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
     </node>
+    <node concept="1a6Z8w" id="lV44fsLWj5" role="8gIbH">
+      <property role="0lsPB" value="H23" />
+      <property role="TrG5h" value="bad system feedback to driver (e.g. error reporting)" />
+      <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
+      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
+      <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
+    </node>
+    <node concept="1a6Z8w" id="lV44fsLWjR" role="8gIbH">
+      <property role="0lsPB" value="H24" />
+      <property role="TrG5h" value="redundant user interface devices not working properly" />
+      <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
+      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
+      <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
+    </node>
+    <node concept="1a6Z8w" id="lV44fsLWkF" role="8gIbH">
+      <property role="TrG5h" value="lane keeping system cannot be activated" />
+      <property role="0lsPB" value="H25" />
+      <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
+      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
+      <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
+    </node>
   </node>
   <node concept="1X_0jQ" id="4GKPLBASuhg">
     <property role="TrG5h" value="_103_safety_assurance_lane_keeping_control_structure" />
