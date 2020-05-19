@@ -2325,29 +2325,53 @@
         <node concept="1E0uc6" id="1J1VyY6JMrp" role="1E0tWM">
           <node concept="19SGf9" id="1J1VyY6JMrr" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JMrs" role="19SJt6">
-              <property role="19SUeA" value="Alarm signal issues in non emergency situations (H12)" />
+              <property role="19SUeA" value="Alarm signal issues in non emergency situations " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6RJ" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYgH" resolve="unnecessary warnings" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6RK" role="19SJt6" />
           </node>
         </node>
         <node concept="1E0uc6" id="1J1VyY6JMrF" role="1E0ucd">
           <node concept="19SGf9" id="1J1VyY6JMrO" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JMrP" role="19SJt6">
-              <property role="19SUeA" value="A few (not all) alarm signals not working (H23)  " />
+              <property role="19SUeA" value="A few (not all) alarm signals not working " />
+            </node>
+            <node concept="oY6sn" id="4NqRXFNx6RE" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="redundant user interface devices not working properly" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6RF" role="19SJt6">
+              <property role="19SUeA" value="&#10;  " />
             </node>
           </node>
         </node>
         <node concept="1E0uc6" id="1J1VyY6JMtn" role="1E0tXe">
           <node concept="19SGf9" id="1J1VyY6JMtA" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JMtB" role="19SJt6">
-              <property role="19SUeA" value="Alarm signal issues too late (H23)" />
+              <property role="19SUeA" value="Alarm signal issues too late " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6RO" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="redundant user interface devices not working properly" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6RP" role="19SJt6" />
           </node>
         </node>
         <node concept="1E0uc6" id="1J1VyY6JMtE" role="1E0tXb">
           <node concept="19SGf9" id="1J1VyY6JMtG" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JMtH" role="19SJt6">
-              <property role="19SUeA" value="Alarm signal stoppes too soon, so driver might not interprete signal. (H23)&#10;Alarm signal stoppes too late, so driver might be confused and/or &#10;disturbed. (H12)" />
+              <property role="19SUeA" value="Alarm signal stoppes too soon, so driver might not interprete signal. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6RT" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="redundant user interface devices not working properly" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6RU" role="19SJt6">
+              <property role="19SUeA" value="&#10;Alarm signal stoppes too late, so driver might be confused and/or &#10;disturbed. " />
+            </node>
+            <node concept="oY6sn" id="4NqRXFNx6RY" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYgH" resolve="unnecessary warnings" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6RZ" role="19SJt6" />
           </node>
         </node>
       </node>
@@ -2359,22 +2383,34 @@
         <node concept="1E0uc6" id="1J1VyY6JMx8" role="1E0ucd">
           <node concept="19SGf9" id="1J1VyY6JMxa" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JMxb" role="19SJt6">
-              <property role="19SUeA" value="Driver cannot recognize that system is activated. (H22)" />
+              <property role="19SUeA" value="Driver cannot recognize that system is activated. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6S5" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWj5" resolve="bad system feedback to driver (e.g. error reporting)" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6S6" role="19SJt6" />
           </node>
         </node>
         <node concept="1E0uc6" id="1J1VyY6JMxe" role="1E0tWM">
           <node concept="19SGf9" id="1J1VyY6JMxg" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JMxh" role="19SJt6">
-              <property role="19SUeA" value="Signal of system activation without system being actually active -&gt; driver confused. (H22)" />
+              <property role="19SUeA" value="Signal of system activation without system being actually active -&gt; driver confused. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6Sa" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWj5" resolve="bad system feedback to driver (e.g. error reporting)" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6Sb" role="19SJt6" />
           </node>
         </node>
         <node concept="1E0uc6" id="1J1VyY6JMxk" role="1E0tXe">
           <node concept="19SGf9" id="1J1VyY6JMxm" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JMxn" role="19SJt6">
-              <property role="19SUeA" value="Activation signal delayed -&gt; Driver confused why system is not activated. (H22)" />
+              <property role="19SUeA" value="Activation signal delayed -&gt; Driver confused why system is not activated. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6Tm" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWj5" resolve="bad system feedback to driver (e.g. error reporting)" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6Tn" role="19SJt6" />
           </node>
         </node>
         <node concept="3XErhT" id="1J1VyY6JMxq" role="1E0tXb" />
@@ -2387,8 +2423,18 @@
         <node concept="1E0uc6" id="1J1VyY6JMuj" role="1E0ucd">
           <node concept="19SGf9" id="1J1VyY6JMul" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JMum" role="19SJt6">
-              <property role="19SUeA" value="Button does not switch. (H24)&#10;Button difficult to find or handle. (H13)" />
+              <property role="19SUeA" value="Button does not switch. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6Sf" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWkF" resolve="lane keeping system cannot be activated" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6Sg" role="19SJt6">
+              <property role="19SUeA" value="&#10;Button difficult to find or handle. " />
+            </node>
+            <node concept="oY6sn" id="4NqRXFNx6Sk" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYh9" resolve="complicated interface" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6Sl" role="19SJt6" />
           </node>
         </node>
         <node concept="3XErhT" id="1J1VyY6JMwe" role="1E0tWM" />
@@ -2403,8 +2449,12 @@
         <node concept="1E0uc6" id="1J1VyY6JM_i" role="1E0tWM">
           <node concept="19SGf9" id="1J1VyY6JM_k" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JM_l" role="19SJt6">
-              <property role="19SUeA" value="Signal of system deactivation without need. -&gt; driver confused. (H22)" />
+              <property role="19SUeA" value="Signal of system deactivation without need. -&gt; driver confused. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6Sr" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWj5" resolve="bad system feedback to driver (e.g. error reporting)" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6Ss" role="19SJt6" />
           </node>
         </node>
         <node concept="3XErhT" id="1J1VyY6JM_p" role="1E0ucd" />
@@ -2439,29 +2489,55 @@
         <node concept="1E0uc6" id="1J1VyY6JM$j" role="1E0ucd">
           <node concept="19SGf9" id="1J1VyY6JM$l" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JM$m" role="19SJt6">
-              <property role="19SUeA" value="Driver cannot recognize that he has to intervene. (H23)" />
+              <property role="19SUeA" value="Driver cannot recognize that he has to intervene. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6Tc" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="redundant user interface devices not working properly" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6Td" role="19SJt6" />
           </node>
         </node>
         <node concept="1E0uc6" id="1J1VyY6JM$q" role="1E0tWM">
           <node concept="19SGf9" id="1J1VyY6JM$s" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JM$t" role="19SJt6">
-              <property role="19SUeA" value="Signal of system activation without system being actually active -&gt; driver confused. (H22)" />
+              <property role="19SUeA" value="Signal of system activation without system being actually active -&gt; driver confused. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6Sw" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWj5" resolve="bad system feedback to driver (e.g. error reporting)" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6Sx" role="19SJt6" />
           </node>
         </node>
         <node concept="1E0uc6" id="1J1VyY6JM$y" role="1E0tXe">
           <node concept="19SGf9" id="1J1VyY6JM$$" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JM$_" role="19SJt6">
-              <property role="19SUeA" value="Activation signal delayed -&gt; Driver confused why system is not activated. (H22)" />
+              <property role="19SUeA" value="Activation signal delayed -&gt; Driver confused why system is not activated. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6SE" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWj5" resolve="bad system feedback to driver (e.g. error reporting)" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6SF" role="19SJt6" />
           </node>
         </node>
         <node concept="1E0uc6" id="1J1VyY6JM$D" role="1E0tXb">
           <node concept="19SGf9" id="1J1VyY6JM$F" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JM$G" role="19SJt6">
-              <property role="19SUeA" value="Vibration stoppes too soon, so driver might not interprete signal. (H23)&#10;Vibration stoppes too late -&gt; uncomfortable. (H12)" />
+              <property role="19SUeA" value="Vibration stoppes too soon, so driver might not interprete signal. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6SO" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="redundant user interface devices not working properly" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6SP" role="19SJt6">
+              <property role="19SUeA" value="&#10;Vibration stoppes too late -&gt; uncomfortable. " />
+            </node>
+            <node concept="oY6sn" id="4NqRXFNx6SY" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYgH" resolve="unnecessary warnings" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6Ts" role="19SJt6" />
+            <node concept="oY6sn" id="4NqRXFNx6Tr" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYeZ" resolve="uncomfortable steering" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6Tt" role="19SJt6" />
           </node>
         </node>
       </node>
@@ -2473,29 +2549,55 @@
         <node concept="1E0uc6" id="1J1VyY6JM$d" role="1E0ucd">
           <node concept="19SGf9" id="1J1VyY6JM$f" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JM$g" role="19SJt6">
-              <property role="19SUeA" value="Driver cannot recognize that he has to intervene. (H23)" />
+              <property role="19SUeA" value="Driver cannot recognize that he has to intervene. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6Th" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="redundant user interface devices not working properly" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6Ti" role="19SJt6" />
           </node>
         </node>
         <node concept="1E0uc6" id="1J1VyY6JM$K" role="1E0tWM">
           <node concept="19SGf9" id="1J1VyY6JM$M" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JM$N" role="19SJt6">
-              <property role="19SUeA" value="Signal of system activation without system being actually active -&gt; driver confused. (H22)" />
+              <property role="19SUeA" value="Signal of system activation without system being actually active -&gt; driver confused. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6S_" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWj5" resolve="bad system feedback to driver (e.g. error reporting)" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6SA" role="19SJt6" />
           </node>
         </node>
         <node concept="1E0uc6" id="1J1VyY6JM$S" role="1E0tXe">
           <node concept="19SGf9" id="1J1VyY6JM$U" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JM$V" role="19SJt6">
-              <property role="19SUeA" value="Activation signal delayed -&gt; Driver confused why system is not activated. (H22)" />
+              <property role="19SUeA" value="Activation signal delayed -&gt; Driver confused why system is not activated. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6SJ" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWj5" resolve="bad system feedback to driver (e.g. error reporting)" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6SK" role="19SJt6" />
           </node>
         </node>
         <node concept="1E0uc6" id="1J1VyY6JM$Z" role="1E0tXb">
           <node concept="19SGf9" id="1J1VyY6JM_1" role="1E0uc7">
             <node concept="19SUe$" id="1J1VyY6JM_2" role="19SJt6">
-              <property role="19SUeA" value="Vibration stoppes too soon, so driver might not interprete signal. (H23)&#10;Vibration stoppes too late -&gt; uncomfortable. (H12)" />
+              <property role="19SUeA" value="Vibration stoppes too soon, so driver might not interprete signal. " />
             </node>
+            <node concept="oY6sn" id="4NqRXFNx6ST" role="19SJt6">
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="redundant user interface devices not working properly" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6SU" role="19SJt6">
+              <property role="19SUeA" value="&#10;Vibration stoppes too late -&gt; uncomfortable. " />
+            </node>
+            <node concept="oY6sn" id="4NqRXFNx6T5" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYgH" resolve="unnecessary warnings" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6TA" role="19SJt6" />
+            <node concept="oY6sn" id="4NqRXFNx6T_" role="19SJt6">
+              <ref role="oTUVg" node="G$XGFsgYeZ" resolve="uncomfortable steering" />
+            </node>
+            <node concept="19SUe$" id="4NqRXFNx6TB" role="19SJt6" />
           </node>
         </node>
       </node>
