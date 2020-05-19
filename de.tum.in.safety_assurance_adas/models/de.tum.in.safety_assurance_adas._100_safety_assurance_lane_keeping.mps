@@ -105,7 +105,7 @@
         <node concept="0nzK2" id="5et_HVSMSHc" role="1QQeAV">
           <node concept="19SGf9" id="5et_HVSMSHe" role="0nzdz">
             <node concept="19SUe$" id="5et_HVSMSHf" role="19SJt6">
-              <property role="19SUeA" value="LK is active when the car starts deviating from the lane without to signal a left or right turn. It alerts the driver by vibrating the steering wheel. &#10;" />
+              <property role="19SUeA" value="LK is active when the car starts deviating from the lane without to signal a left or right turn. It alerts the driver by vibrating the steering wheel/display. &#10;" />
             </node>
           </node>
         </node>
@@ -162,6 +162,71 @@
       <node concept="19SGf9" id="5et_HVSMSFA" role="1QQeG9">
         <node concept="19SUe$" id="5et_HVSMSFB" role="19SJt6">
           <property role="19SUeA" value="Operational Design Domain (ODD)" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="5et_HVSMYoQ" role="1QQeBF">
+      <property role="0lsPA" value="FR04" />
+      <property role="0ke_I" value="Carmen" />
+      <node concept="1QQeAY" id="5et_HVSMYt0" role="1QQeAC">
+        <node concept="0nzK2" id="5et_HVSMYt2" role="1QQeAV">
+          <node concept="19SGf9" id="5et_HVSMYt4" role="0nzdz">
+            <node concept="19SUe$" id="5et_HVSMYt5" role="19SJt6">
+              <property role="19SUeA" value="LKA must detect both lane markers&#10;" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="5et_HVSMYoR" role="0nOlf" />
+      <node concept="19SGf9" id="5et_HVSMYoS" role="1QQeG9">
+        <node concept="19SUe$" id="5et_HVSMYoT" role="19SJt6">
+          <property role="19SUeA" value="Lane Detection" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="5et_HVSMYpu" role="1QQeBF" />
+    <node concept="0lhDl" id="5et_HVSMYqD" role="1QQeBF">
+      <property role="0lsPA" value="FR05" />
+      <property role="0ke_I" value="Carmen" />
+      <node concept="1QQeAY" id="5et_HVSMYtd" role="1QQeAC">
+        <node concept="0nzK2" id="5et_HVSMYtf" role="1QQeAV">
+          <node concept="19SGf9" id="5et_HVSMYth" role="0nzdz">
+            <node concept="19SUe$" id="5et_HVSMYti" role="19SJt6">
+              <property role="19SUeA" value="The LKA shall be able to identify the lane keeping zones&#10;" />
+            </node>
+            <node concept="3OoTgI" id="5et_HVSMYto" role="19SJt6">
+              <property role="3OpxtG" value="60" />
+              <node concept="3NXOOs" id="5et_HVSMYtt" role="3OoW2A">
+                <property role="3N1Lgt" value="figures/lane_keeping_zones.png" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="5et_HVSMYtp" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="5et_HVSMYqE" role="0nOlf" />
+      <node concept="19SGf9" id="5et_HVSMYqF" role="1QQeG9">
+        <node concept="19SUe$" id="5et_HVSMYqG" role="19SJt6">
+          <property role="19SUeA" value="Lane Zones" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="5et_HVSMYs0" role="1QQeBF">
+      <property role="0lsPA" value="FR06" />
+      <property role="0ke_I" value="Carmen" />
+      <node concept="1QQeAY" id="5et_HVSMYsN" role="1QQeAC">
+        <node concept="0nzK2" id="5et_HVSMYsP" role="1QQeAV">
+          <node concept="19SGf9" id="5et_HVSMYsR" role="0nzdz">
+            <node concept="19SUe$" id="5et_HVSMYsS" role="19SJt6">
+              <property role="19SUeA" value="LKA must be engaged if Vehicle Speed &lt; Vmax, Vehicle Speed &gt; Vmin, &#10;Turn Indicators = OFF, Reverse Gear = Not engaged" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="5et_HVSMYs1" role="0nOlf" />
+      <node concept="19SGf9" id="5et_HVSMYs2" role="1QQeG9">
+        <node concept="19SUe$" id="5et_HVSMYs3" role="19SJt6">
+          <property role="19SUeA" value="Engagement Conditions" />
         </node>
       </node>
     </node>
