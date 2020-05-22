@@ -87,6 +87,11 @@
         <child id="7842584090743643493" name="content" index="2HcuB8" />
       </concept>
     </language>
+    <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
+      <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.FunctionalSafetyReqKind" flags="ng" index="2iDXIW">
+        <child id="7998766141987827641" name="hazards" index="DABNk" />
+      </concept>
+    </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
       <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
         <property id="3226630706269685486" name="id" index="0lsPB" />
@@ -100,6 +105,9 @@
       <concept id="9102875167978180681" name="com.mbeddr.formal.safety.hara.structure.HazardsList" flags="ng" index="8gVzP" />
       <concept id="3302592670537174430" name="com.mbeddr.formal.safety.hara.structure.HazardRefWord" flags="ng" index="oY6sn">
         <reference id="3302592670537516121" name="hazard" index="oTUVg" />
+      </concept>
+      <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
+        <reference id="7998766141987827622" name="hazard" index="DABNb" />
       </concept>
       <concept id="2626862697025835302" name="com.mbeddr.formal.safety.hara.structure.Losses" flags="ng" index="2HxQMi">
         <child id="2626862697025835303" name="losses" index="2HxQMj" />
@@ -2682,6 +2690,360 @@
               <ref role="oTUVg" node="G$XGFsgYeZ" resolve="uncomfortable steering" />
             </node>
             <node concept="19SUe$" id="4NqRXFNx6TB" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1QQeGf" id="4WLVkAsg3oQ">
+    <property role="TrG5h" value="_201_safety_goals_Camera-and-Image-Processing" />
+    <node concept="0lhDl" id="4WLVkAsg3oT" role="1QQeBF">
+      <property role="0lsPA" value="SG01" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg3p2" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6w2" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYdV" resolve="Missing of lane markers" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg3oV" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg3oW" role="19SJt6" />
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg3p9" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg3pa" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg3pb" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg3pc" role="19SJt6">
+              <property role="19SUeA" value="Lane markers must be visible" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4WLVkAsg6wf" role="1QQeBF">
+      <property role="0lsPA" value="SG02" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg6wx" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6wG" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYeb" resolve="System does not recognize lane" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6xz" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYel" resolve="system recognizes wrong lane" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6EX" role="DABNk">
+          <ref role="DABNb" node="4GKPLBASxXu" resolve="leaving of lane" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg6wh" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6wi" role="19SJt6" />
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6w$" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6w_" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6wA" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6wB" role="19SJt6">
+              <property role="19SUeA" value="Image processing unit must recognize correct lane at all time" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4WLVkAsg6x2" role="1QQeBF">
+      <property role="0lsPA" value="SG03" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg6xt" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6xB" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYex" resolve="delayed steering" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg6x4" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6x5" role="19SJt6" />
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6xD" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6xE" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6xF" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6xG" role="19SJt6">
+              <property role="19SUeA" value="Image Processing unit must provide real-time capabilities / react within FTTI" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4WLVkAsg6yf" role="1QQeBF">
+      <property role="0lsPA" value="SG04" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg6yO" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6yZ" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYf_" resolve="steering into potholes" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg6yh" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6yi" role="19SJt6" />
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6yR" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6yS" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6yT" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6yU" role="19SJt6">
+              <property role="19SUeA" value="Image Processing unit must detect hazard areas" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4WLVkAsg6zC" role="1QQeBF">
+      <property role="0lsPA" value="SG05" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg6$m" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6$p" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg6zE" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6zF" role="19SJt6" />
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6$r" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6$s" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6$t" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6$u" role="19SJt6">
+              <property role="19SUeA" value="Software quality / robustness must be ensured" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4WLVkAsg6_j" role="1QQeBF">
+      <property role="0lsPA" value="SG06" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="19SGf9" id="4WLVkAsg6_l" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6_m" role="19SJt6" />
+      </node>
+      <node concept="2iDXIW" id="4WLVkAsg6Af" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6Ai" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYkr" resolve="failure of hardware" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6Ak" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6Al" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6Am" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6An" role="19SJt6">
+              <property role="19SUeA" value="Hardware components must be reliable" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4WLVkAsg6Bl" role="1QQeBF">
+      <property role="0lsPA" value="SG07" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg6Cl" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6Co" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYl5" resolve="camera is dirty" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6C_" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYmv" resolve="overexposed camera" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg6Bn" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6Bo" role="19SJt6" />
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6Cq" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6Cr" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6Cs" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6Ct" role="19SJt6">
+              <property role="19SUeA" value="Camera must provide suitable images" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="4WLVkAsg6LB" role="1QQeBF" />
+  </node>
+  <node concept="1QQeGf" id="4WLVkAsg6Gu">
+    <property role="TrG5h" value="_202_FunctionalSafetyRequirements_Camera-and-Image-Processing" />
+    <node concept="0lhDl" id="4WLVkAsg6Gx" role="1QQeBF">
+      <property role="0lsPA" value="FSR01" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg6GE" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6GH" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYdV" resolve="Missing of lane markers" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6HZ" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYeb" resolve="System does not recognize lane" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6I7" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYel" resolve="system recognizes wrong lane" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6Ih" role="DABNk">
+          <ref role="DABNb" node="4GKPLBASxXu" resolve="leaving of lane" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6Lh" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg6Gz" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6G$" role="19SJt6">
+          <property role="19SUeA" value="Switch to degraded mode" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6GJ" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6GK" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6GL" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6GM" role="19SJt6">
+              <property role="19SUeA" value="If no lane markers are visible or are not detected properly, the system must switch to a degraded mode and reduce velocity.&#10;If the system is restarting, it must switch to degraded mode.&#10;If hardware failure is detected, the system must switch to degraded mode." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4WLVkAsg6H2" role="1QQeBF">
+      <property role="0lsPA" value="FSR02" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg6Hk" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6Hn" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYdV" resolve="Missing of lane markers" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6H$" role="DABNk">
+          <ref role="DABNb" node="4GKPLBASxXu" resolve="leaving of lane" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6HG" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYeb" resolve="System does not recognize lane" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6HQ" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYel" resolve="system recognizes wrong lane" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6It" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYex" resolve="delayed steering" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6Lv" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg6H4" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6H5" role="19SJt6">
+          <property role="19SUeA" value="Warn driver" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6Hp" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6Hq" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6Hr" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6Hs" role="19SJt6">
+              <property role="19SUeA" value="If no lane markers are visible or are not detected properly , the driver must be warned.&#10;If the image can't be processed within a certain threshold (within FTTI), the driver must be warned.&#10;If inconsistent computation is detected, the driver must be warned.&#10;If hardware failure is detected, the driver must be warned." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4WLVkAsg6IZ" role="1QQeBF">
+      <property role="0lsPA" value="FSR03" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg6Jx" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6J$" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYex" resolve="delayed steering" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg6J1" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6J2" role="19SJt6">
+          <property role="19SUeA" value="Request additional compute ressources" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6JB" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6JC" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6JD" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6JE" role="19SJt6">
+              <property role="19SUeA" value="If the image can't be processed within a certain threshold (within FTTI), additional compute power must be requested." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4WLVkAsg6Kj" role="1QQeBF">
+      <property role="0lsPA" value="FSR04" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg6KY" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6L1" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg6Kl" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6Km" role="19SJt6">
+          <property role="19SUeA" value="Restart system in case of inconsistent computation " />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6L3" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6L4" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6L5" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6L6" role="19SJt6">
+              <property role="19SUeA" value="The detected lane markers must be validated in order to detect possibly wrong calculations and software bugs.&#10;The system should be restarted (during the restart, the system works in degraded mode)." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4WLVkAsg6Nq" role="1QQeBF">
+      <property role="0lsPA" value="FSR05" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg6Og" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6Oj" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYkr" resolve="failure of hardware" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg6Ns" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6Nt" role="19SJt6">
+          <property role="19SUeA" value="Hardware failure detection" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6Ol" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6Om" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6On" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6Oo" role="19SJt6">
+              <property role="19SUeA" value="The integrity of the hardware components must be monitored.&#10;The driver must be warned (FRS02) and the system switches to degraded mode (FSR01) in care of detected failure." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4WLVkAsg6Pl" role="1QQeBF">
+      <property role="0lsPA" value="FSR06" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg6Qk" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6Qn" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYl5" resolve="camera is dirty" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg6Pn" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6Po" role="19SJt6">
+          <property role="19SUeA" value="Cleaning the camera" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6Qp" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6Qq" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6Qr" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6Qs" role="19SJt6">
+              <property role="19SUeA" value="If the camera is dirty, the system must initiate cleaning. (e.g. activate wipers)" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4WLVkAsg6Ry" role="1QQeBF">
+      <property role="0lsPA" value="FSR07" />
+      <property role="0ke_I" value="Subteam1" />
+      <node concept="2iDXIW" id="4WLVkAsg6SE" role="0nOlf">
+        <node concept="DABN8" id="4WLVkAsg6SH" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYmv" resolve="overexposed camera" />
+        </node>
+        <node concept="DABN8" id="4WLVkAsg6SU" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYeb" resolve="System does not recognize lane" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="4WLVkAsg6R$" role="1QQeG9">
+        <node concept="19SUe$" id="4WLVkAsg6R_" role="19SJt6">
+          <property role="19SUeA" value="Auto adjustment of aperture" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="4WLVkAsg6SJ" role="1QQeAC">
+        <node concept="0nzK2" id="4WLVkAsg6SK" role="1QQeAV">
+          <node concept="19SGf9" id="4WLVkAsg6SL" role="0nzdz">
+            <node concept="19SUe$" id="4WLVkAsg6SM" role="19SJt6">
+              <property role="19SUeA" value="The aperture of the camera must be constantly adjusted to ensure image quality." />
+            </node>
           </node>
         </node>
       </node>
