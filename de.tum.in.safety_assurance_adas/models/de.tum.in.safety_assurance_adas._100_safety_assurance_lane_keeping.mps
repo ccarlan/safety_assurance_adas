@@ -54,7 +54,9 @@
       </concept>
     </language>
     <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
-      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl">
+        <child id="7127433683365164021" name="subRequirements" index="1VMWzp" />
+      </concept>
       <concept id="3226630706269625197" name="com.mbeddr.formal.req.base.structure.EmptyRequirement" flags="ng" index="0lH3_" />
       <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
         <child id="3226630706270140651" name="text" index="0nzdz" />
@@ -3047,6 +3049,543 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1QQeGf" id="7NWnpv9rKoD">
+    <property role="TrG5h" value="_203_safety_goals_LKA_controller" />
+    <node concept="0lhDl" id="7NWnpv9rKoG" role="1QQeBF">
+      <property role="0lsPA" value="SG01" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rNvP" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rNvR" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rNvT" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rNvU" role="19SJt6">
+              <property role="19SUeA" value="Operational domain must meet system design." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rNvA" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rNvD" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYe3" resolve="Road is too tiny" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rKoI" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rKoJ" role="19SJt6">
+          <property role="19SUeA" value="Operational domain" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rNwb" role="1QQeBF">
+      <property role="0lsPA" value="SG02" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rNw$" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rNwA" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rNwC" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rNwD" role="19SJt6">
+              <property role="19SUeA" value="All components (system, driver, ..) must react within time constraints." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rNwt" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rNww" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYex" resolve="delayed steering" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rNA$" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rO8A" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYgj" resolve="compensation of hardware faults" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rNwd" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rNwe" role="19SJt6">
+          <property role="19SUeA" value="Responsiveness of components" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rNx3" role="1QQeBF">
+      <property role="0lsPA" value="SG03" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="2iDXIW" id="7NWnpv9rNxu" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rNxx" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rNAI" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYeZ" resolve="uncomfortable steering" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rNx5" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rNx6" role="19SJt6">
+          <property role="19SUeA" value="Driving comfort" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="7NWnpv9rNxz" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rNx$" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rNx_" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rNxA" role="19SJt6">
+              <property role="19SUeA" value="Driving behaviour must be comfortable." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rNy8" role="1QQeBF">
+      <property role="0lsPA" value="SG04" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rNyN" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rNyP" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rNyR" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rNSJ" role="19SJt6">
+              <property role="19SUeA" value="The system should prevent unintended driver input." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rNyG" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rNAM" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rNya" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rNyb" role="19SJt6">
+          <property role="19SUeA" value="Unintended driver input" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rNz$" role="1QQeBF">
+      <property role="0lsPA" value="SG05" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rN$o" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rN$q" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rN$s" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rN$t" role="19SJt6">
+              <property role="19SUeA" value="HW and SW should function correctly." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rN$h" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rNB3" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYgj" resolve="compensation of hardware faults" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rNBc" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYgH" resolve="unnecessary warnings" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rNBt" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYhB" resolve="driver not informed about takeover" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rNBR" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rND6" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYkr" resolve="failure of hardware" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rNDk" role="DABNk">
+          <ref role="DABNb" node="4GKPLBASxXu" resolve="leaving of lane" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rNG3" role="DABNk">
+          <ref role="DABNb" node="lV44fsLWjR" resolve="redundant user interface devices not working properly" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rNGl" role="DABNk">
+          <ref role="DABNb" node="lV44fsLWkF" resolve="lane keeping system cannot be activated" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rNzA" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rNzB" role="19SJt6">
+          <property role="19SUeA" value="HW/SW robustness" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rN_i" role="1QQeBF">
+      <property role="0lsPA" value="SG06" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rNAf" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rNAh" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rNAj" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rNAk" role="19SJt6">
+              <property role="19SUeA" value="Avoid close distance to other objects." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rNA8" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rNBX" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYjN" resolve="close pass of obstacles" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rN_k" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rN_l" role="19SJt6">
+          <property role="19SUeA" value="Distance to other objects" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rNEv" role="1QQeBF">
+      <property role="0lsPA" value="SG07" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rNFK" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rNFM" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rNFO" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rNFP" role="19SJt6">
+              <property role="19SUeA" value="Driver should be informed about system state." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rNFD" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rNFG" role="DABNk">
+          <ref role="DABNb" node="lV44fsLWj5" resolve="bad system feedback to driver (e.g. error reporting)" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rNEx" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rNEy" role="19SJt6">
+          <property role="19SUeA" value="Driver alerting" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="7NWnpv9rNC0" role="1QQeBF" />
+  </node>
+  <node concept="1QQeGf" id="7NWnpv9rNP9">
+    <property role="TrG5h" value="_204_FunctionalSafetyRequirements_LKA_controller" />
+    <node concept="0lhDl" id="7NWnpv9rNPc" role="1QQeBF">
+      <property role="0lsPA" value="SG01/FSR01" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rNPr" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rNPt" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rNPv" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rNPw" role="19SJt6">
+              <property role="19SUeA" value="If a situation/condition does not meet the operational design domain of the system, the driver should be triggered to take over control of the car." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rNPm" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rNPB" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYe3" resolve="Road is too tiny" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rNPe" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rNPf" role="19SJt6">
+          <property role="19SUeA" value="Operational domain" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rNPO" role="1QQeBF">
+      <property role="0lsPA" value="SG02/FSR01" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="0lhDl" id="7NWnpv9rNQn" role="1VMWzp">
+        <property role="0lsPA" value="SG02/FSR01_1" />
+        <property role="0ke_I" value="subteam2" />
+        <node concept="1QQeAY" id="7NWnpv9rNQ$" role="1QQeAC">
+          <node concept="0nzK2" id="7NWnpv9rNQA" role="1QQeAV">
+            <node concept="19SGf9" id="7NWnpv9rNQC" role="0nzdz">
+              <node concept="19SUe$" id="7NWnpv9rNQD" role="19SJt6">
+                <property role="19SUeA" value="If the driver doesn't take over the control of the car within a given timeframe after he was alerted by the system, the system will try to stop the car at a safe position (e.g. not on the highway or on a crossing). If this is not possible, the system switches to degraded mode (car drives with low speed)." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2iDXIW" id="7NWnpv9rNQv" role="0nOlf">
+          <node concept="DABN8" id="7NWnpv9rO8u" role="DABNk">
+            <ref role="DABNb" node="G$XGFsgYfh" resolve="delayed overtaking of driver" />
+          </node>
+        </node>
+        <node concept="19SGf9" id="7NWnpv9rNQp" role="1QQeG9">
+          <node concept="19SUe$" id="7NWnpv9rNQq" role="19SJt6">
+            <property role="19SUeA" value="Responsiveness of driver" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="7NWnpv9rNQK" role="1VMWzp">
+        <property role="0lsPA" value="SG02/FSR01_2" />
+        <property role="0ke_I" value="subteam2" />
+        <node concept="1QQeAY" id="7NWnpv9rNR5" role="1QQeAC">
+          <node concept="0nzK2" id="7NWnpv9rNR7" role="1QQeAV">
+            <node concept="19SGf9" id="7NWnpv9rNR9" role="0nzdz">
+              <node concept="19SUe$" id="7NWnpv9rNRa" role="19SJt6">
+                <property role="19SUeA" value="If a hardware or software component does not respond within a given timeframe, one or multiple redundant components should take-over its task. In that case, the FTTI should include the time that would be necessary for two or more systems doing the job sequentially. A sanity check should be processed on the system that has failed initially (e.g. failure diagnoses, restart)." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2iDXIW" id="7NWnpv9rNR0" role="0nOlf">
+          <node concept="DABN8" id="7NWnpv9rO8F" role="DABNk">
+            <ref role="DABNb" node="G$XGFsgYgj" resolve="compensation of hardware faults" />
+          </node>
+          <node concept="DABN8" id="7NWnpv9rO9z" role="DABNk">
+            <ref role="DABNb" node="G$XGFsgYhB" resolve="driver not informed about takeover" />
+          </node>
+          <node concept="DABN8" id="7NWnpv9rO9F" role="DABNk">
+            <ref role="DABNb" node="G$XGFsgYkr" resolve="failure of hardware" />
+          </node>
+        </node>
+        <node concept="19SGf9" id="7NWnpv9rNQM" role="1QQeG9">
+          <node concept="19SUe$" id="7NWnpv9rNQN" role="19SJt6">
+            <property role="19SUeA" value="Responsiveness of software and hardware" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeAY" id="7NWnpv9rNQb" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rNQd" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rNQf" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rNQg" role="19SJt6">
+              <property role="19SUeA" value="Components need to respond within a given timeframe." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rNQ6" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rO8s" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYex" resolve="delayed steering" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rNPQ" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rNPR" role="19SJt6">
+          <property role="19SUeA" value="Responsiveness of components" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rNRN" role="1QQeBF">
+      <property role="0lsPA" value="SG03/FSR01" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rNSz" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rNS_" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rNSB" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rNSC" role="19SJt6">
+              <property role="19SUeA" value="Lane assistance torque is propositional to the position of the car on the lane. The closer the car is to the lane, the more the steering torque corrects the position of the car. This should make the driving behaviour more smooth." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rNSu" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rO8H" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYeJ" resolve="overshooting/oszillation of system" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rO8M" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYeZ" resolve="uncomfortable steering" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rNRP" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rNRQ" role="19SJt6">
+          <property role="19SUeA" value="Driving comfort" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rNTs" role="1QQeBF">
+      <property role="0lsPA" value="SG04/FSR01" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rNUj" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rNUl" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rNUn" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rNUo" role="19SJt6">
+              <property role="19SUeA" value="The driver can change the state of the system when&#10;- he pushes the brake&#10;- activates/disactivates the system via the activation button&#10;- controls the wheel by exceeding a specific torque threshold on the wheel&#10;- powers off the engine&#10;In all other situations the system should permit the driver to change or control the system state." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rNUe" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rO8Q" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYfV" resolve="overwrite/prevent driver input" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rNTu" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rNTv" role="19SJt6">
+          <property role="19SUeA" value="Unintended driver input" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rNVh" role="1QQeBF">
+      <property role="0lsPA" value="SG05/FSR01" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rNWg" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rNWi" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rNWk" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rNWl" role="19SJt6">
+              <property role="19SUeA" value="If a component fails and the failure can be recognized (e.g. error message), redundant components should take over the task. If the system doesn't behave correct although a failure could not be recognized, the driver should be triggered to take over control of the car." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rNWb" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rO9j" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYgj" resolve="compensation of hardware faults" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rO9s" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYhB" resolve="driver not informed about takeover" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rO9Y" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYjd" resolve="wrong data processing (bug)" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rO9O" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYkr" resolve="failure of hardware" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rOaa" role="DABNk">
+          <ref role="DABNb" node="4GKPLBASxXu" resolve="leaving of lane" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rOao" role="DABNk">
+          <ref role="DABNb" node="lV44fsLWjR" resolve="redundant user interface devices not working properly" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rOaC" role="DABNk">
+          <ref role="DABNb" node="lV44fsLWkF" resolve="lane keeping system cannot be activated" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rNVj" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rNVk" role="19SJt6">
+          <property role="19SUeA" value="Hardware/Software robustness" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rNXm" role="1QQeBF">
+      <property role="0lsPA" value="SG06/FSR01" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rNYx" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rNYz" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rNY_" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rNYA" role="19SJt6">
+              <property role="19SUeA" value="If it is likely that the position of the car will exceed a distance threshold to another object, the driver should be triggered to take over control. If the time till that situation happens is to short for the FTTI of the driver take-over, the system should switch to degraded mode." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rNYo" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rOaL" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYjN" resolve="close pass of obstacles" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rNXo" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rNXp" role="19SJt6">
+          <property role="19SUeA" value="Distance to other objects" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rNZJ" role="1QQeBF">
+      <property role="0lsPA" value="SG07/FSR01" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rO0Y" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rO10" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rO12" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rO13" role="19SJt6">
+              <property role="19SUeA" value="The system should continouesly inform the driver about its state via external UI systems like speaker, steering vibration, display, etc..&#10;The driver should know if and why the system is not working and whether he can do any action to fix the problem." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rO0T" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rO9q" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYhB" resolve="driver not informed about takeover" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rObk" role="DABNk">
+          <ref role="DABNb" node="lV44fsLWj5" resolve="bad system feedback to driver (e.g. error reporting)" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rNZL" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rNZM" role="19SJt6">
+          <property role="19SUeA" value="Driver alerting" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rO2s" role="1QQeBF">
+      <property role="0lsPA" value="SG07/FSR02" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="1QQeAY" id="7NWnpv9rO3N" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rO3P" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rO3R" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rO3S" role="19SJt6">
+              <property role="19SUeA" value="The driver can power off the LKA system completely, e.g. in order to mitigate unnecessary/disturbing driver alerts." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7NWnpv9rO3I" role="0nOlf">
+        <node concept="DABN8" id="7NWnpv9rO9o" role="DABNk">
+          <ref role="DABNb" node="G$XGFsgYgH" resolve="unnecessary warnings" />
+        </node>
+        <node concept="DABN8" id="7NWnpv9rOaQ" role="DABNk">
+          <ref role="DABNb" node="lV44fsLWkF" resolve="lane keeping system cannot be activated" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rO2u" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rO2v" role="19SJt6">
+          <property role="19SUeA" value="LKA can be powered on/off" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="7NWnpv9rO5h" role="1QQeBF">
+      <property role="0lsPA" value="FSR00" />
+      <property role="0ke_I" value="subteam2" />
+      <node concept="0lhDl" id="7NWnpv9rO6V" role="1VMWzp">
+        <property role="0lsPA" value="FSR00_1" />
+        <property role="0ke_I" value="subteam2" />
+        <node concept="1QQeAY" id="7NWnpv9rO78" role="1QQeAC">
+          <node concept="0nzK2" id="7NWnpv9rO7a" role="1QQeAV">
+            <node concept="19SGf9" id="7NWnpv9rO7c" role="0nzdz">
+              <node concept="19SUe$" id="7NWnpv9rO7d" role="19SJt6">
+                <property role="19SUeA" value="System should be able to stop the car at a safe position (e.g. not on the highway or on a crossing) " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="19SGf9" id="7NWnpv9rO6X" role="1QQeG9">
+          <node concept="19SUe$" id="7NWnpv9rO6Y" role="19SJt6">
+            <property role="19SUeA" value="Safe position" />
+          </node>
+        </node>
+        <node concept="1QQeFk" id="7NWnpv9rOb4" role="0nOlf" />
+      </node>
+      <node concept="0lhDl" id="7NWnpv9rO7k" role="1VMWzp">
+        <property role="0lsPA" value="FSR00_2" />
+        <property role="0ke_I" value="subteam2" />
+        <node concept="1QQeAY" id="7NWnpv9rO7D" role="1QQeAC">
+          <node concept="0nzK2" id="7NWnpv9rO7F" role="1QQeAV">
+            <node concept="19SGf9" id="7NWnpv9rO7H" role="0nzdz">
+              <node concept="19SUe$" id="7NWnpv9rO7I" role="19SJt6">
+                <property role="19SUeA" value="System should be able to switch to a degraded mode (e.g. reduce speed of the car)" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="19SGf9" id="7NWnpv9rO7m" role="1QQeG9">
+          <node concept="19SUe$" id="7NWnpv9rO7n" role="19SJt6">
+            <property role="19SUeA" value="Degraded mode" />
+          </node>
+        </node>
+        <node concept="1QQeFk" id="7NWnpv9rOb9" role="0nOlf" />
+      </node>
+      <node concept="0lhDl" id="7NWnpv9rO7O" role="1VMWzp">
+        <property role="0lsPA" value="FSR00_3" />
+        <property role="0ke_I" value="subteam2" />
+        <node concept="1QQeAY" id="7NWnpv9rO8h" role="1QQeAC">
+          <node concept="0nzK2" id="7NWnpv9rO8j" role="1QQeAV">
+            <node concept="19SGf9" id="7NWnpv9rO8l" role="0nzdz">
+              <node concept="19SUe$" id="7NWnpv9rO8m" role="19SJt6">
+                <property role="19SUeA" value="The driver should be able to take over control of the car." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="19SGf9" id="7NWnpv9rO7Q" role="1QQeG9">
+          <node concept="19SUe$" id="7NWnpv9rO7R" role="19SJt6">
+            <property role="19SUeA" value="Driver take-over" />
+          </node>
+        </node>
+        <node concept="1QQeFk" id="7NWnpv9rObe" role="0nOlf" />
+      </node>
+      <node concept="1QQeAY" id="7NWnpv9rO6K" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rO6M" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rO6O" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rO6P" role="19SJt6">
+              <property role="19SUeA" value="System should be able to switch to a safe state" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="7NWnpv9rO5j" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rO5k" role="19SJt6">
+          <property role="19SUeA" value="Reach safe state" />
+        </node>
+      </node>
+      <node concept="1QQeFk" id="7NWnpv9rOaZ" role="0nOlf" />
     </node>
   </node>
 </model>
