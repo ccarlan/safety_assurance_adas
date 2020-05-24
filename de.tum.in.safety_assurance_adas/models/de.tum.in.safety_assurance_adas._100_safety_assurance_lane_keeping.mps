@@ -4485,7 +4485,7 @@
         <node concept="0nzK2" id="7NWnpv9rNS_" role="1QQeAV">
           <node concept="19SGf9" id="7NWnpv9rNSB" role="0nzdz">
             <node concept="19SUe$" id="7NWnpv9rNSC" role="19SJt6">
-              <property role="19SUeA" value="Lane assistance torque is propositional to the position of the car on the lane. The closer the car is to the lane, the more the steering torque corrects the position of the car. This should make the driving behaviour more smooth." />
+              <property role="19SUeA" value="Lane assistance torque is proportional to the position of the car on the lane. The closer the car is to the lane, the more the steering torque corrects the position of the car. This should make the driving behaviour more smooth." />
             </node>
           </node>
         </node>
