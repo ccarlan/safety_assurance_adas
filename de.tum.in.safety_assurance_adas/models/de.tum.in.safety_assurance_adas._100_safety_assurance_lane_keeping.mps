@@ -107,6 +107,7 @@
       <concept id="871543416565863071" name="com.mbeddr.formal.nusmv.structure.AbsExpression" flags="ng" index="2EDkE1" />
       <concept id="7842584090744811092" name="com.mbeddr.formal.nusmv.structure.EqualsExpression" flags="ng" index="2HbLFT" />
       <concept id="7842584090744804989" name="com.mbeddr.formal.nusmv.structure.AndExpression" flags="ng" index="2HbMbg" />
+      <concept id="7842584090744807152" name="com.mbeddr.formal.nusmv.structure.OrExpression" flags="ng" index="2HbMDt" />
       <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
       <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
       <concept id="7842584090743385197" name="com.mbeddr.formal.nusmv.structure.ModuleDeclaration" flags="ng" index="2Hdtz0">
@@ -287,7 +288,6 @@
         <child id="9066112305507315483" name="type" index="3UnI80" />
       </concept>
       <concept id="9066112305507315532" name="com.mbeddr.formal.base.arch.structure.OutputPort" flags="ng" index="3UnI9n" />
-      <concept id="9066112305501242558" name="com.mbeddr.formal.base.arch.structure.CommentContract" flags="ng" index="3US$A_" />
     </language>
   </registry>
   <node concept="1QQeGf" id="5et_HVSMSFz">
@@ -4328,9 +4328,75 @@
       </node>
     </node>
     <node concept="2SQmWS" id="16Ng_xNT8jH" role="2HcuB8" />
+    <node concept="2SQmWS" id="7_EPz_EQ12r" role="2HcuB8" />
+    <node concept="2SQmWS" id="7_EPz_EQ196" role="2HcuB8" />
+    <node concept="2SQmWS" id="7_EPz_EQ1fM" role="2HcuB8" />
     <node concept="2dDAVa" id="16Ng_xNT87r" role="2HcuB8">
       <property role="TrG5h" value="ImageProcessingUnit" />
-      <node concept="3US$A_" id="16Ng_xNT8he" role="3UnIb_" />
+      <node concept="3UTh7Y" id="7_EPz_EQ1mN" role="3UnIb_">
+        <property role="TrG5h" value="camera_failure" />
+        <node concept="1yyYsf" id="7_EPz_EQ1C8" role="1yBDGv">
+          <node concept="2SafMM" id="7_EPz_EQ1C9" role="2H9Iav">
+            <node concept="32OYss" id="7_EPz_EQ1Ca" role="1yBIc4">
+              <node concept="2HbMDt" id="7_EPz_EQ1Cb" role="32OYtT">
+                <node concept="2HbLFT" id="7_EPz_EQ1Cc" role="2H9Iav">
+                  <node concept="3Ug1Ap" id="7_EPz_EQ1n8" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="16Ng_xNT88k" resolve="connectivity" />
+                  </node>
+                  <node concept="1yCjT0" id="7_EPz_EQ1n$" role="2H9Ial" />
+                </node>
+                <node concept="2HbLFT" id="7_EPz_EQ1Cd" role="2H9Ial">
+                  <node concept="3Ug1Ap" id="7_EPz_EQ1oc" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="16Ng_xNT88_" resolve="operation" />
+                  </node>
+                  <node concept="1yCjT0" id="7_EPz_EQ1oQ" role="2H9Ial" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2HbLFT" id="7_EPz_EQ1Ce" role="2H9Ial">
+            <node concept="3Ug1Ap" id="7_EPz_EQ1pV" role="2H9Iav">
+              <ref role="3Ug1Ao" node="16Ng_xNT8cY" resolve="state_image_processing" />
+            </node>
+            <node concept="2HeeqP" id="7_EPz_EQ1qi" role="2H9Ial">
+              <ref role="2HeeqO" node="2Q6_IeFkb1A" resolve="camera_fail" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="7_EPz_EQ1qG" role="3UnIb_">
+        <property role="TrG5h" value="lane_detect_failure" />
+        <node concept="1yyYsf" id="7_EPz_EQ1z0" role="1yBDGv">
+          <node concept="2SafMM" id="7_EPz_EQ1z1" role="2H9Iav">
+            <node concept="32OYss" id="7_EPz_EQ1z2" role="1yBIc4">
+              <node concept="2HbMDt" id="7_EPz_EQ1z3" role="32OYtT">
+                <node concept="2HbLFT" id="7_EPz_EQ1z4" role="2H9Iav">
+                  <node concept="3Ug1Ap" id="7_EPz_EQ1rd" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="16Ng_xNT8cY" resolve="state_image_processing" />
+                  </node>
+                  <node concept="2HeeqP" id="7_EPz_EQ1ry" role="2H9Ial">
+                    <ref role="2HeeqO" node="2Q6_IeFkb1A" resolve="camera_fail" />
+                  </node>
+                </node>
+                <node concept="2HbLFT" id="7_EPz_EQ1z5" role="2H9Ial">
+                  <node concept="3Ug1Ap" id="7_EPz_EQ1uS" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="16Ng_xNT8cY" resolve="state_image_processing" />
+                  </node>
+                  <node concept="2HeeqP" id="7_EPz_EQ1vc" role="2H9Ial">
+                    <ref role="2HeeqO" node="2Q6_IeFkb1C" resolve="image_process_fail" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2HbLFT" id="7_EPz_EQ1z6" role="2H9Ial">
+            <node concept="3Ug1Ap" id="7_EPz_EQ1s$" role="2H9Iav">
+              <ref role="3Ug1Ao" node="16Ng_xNT8eP" resolve="lane_detect" />
+            </node>
+            <node concept="1yCjT0" id="7_EPz_EQ1t1" role="2H9Ial" />
+          </node>
+        </node>
+      </node>
       <node concept="3UnI81" id="16Ng_xNT88k" role="3UnI9m">
         <property role="TrG5h" value="connectivity" />
         <node concept="2Hds6S" id="2Q6_IeFkcg1" role="3UnI80" />
