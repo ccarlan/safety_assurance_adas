@@ -5339,10 +5339,16 @@
             <ref role="2He$iI" node="4SubkoiB3pt" resolve="var_alert_signal" />
           </node>
         </node>
+        <node concept="sUyCV" id="4SubkoiBeov" role="32O2ov">
+          <property role="sUxOX" value="ERROR" />
+        </node>
+        <node concept="sUyCV" id="4SubkoiBeoM" role="32O2ov">
+          <property role="sUxOX" value="CORRECT WOULD BE: output state := state_LKA_control;" />
+        </node>
         <node concept="JlCpM" id="4SubkoiB3nQ" role="32O2ov">
           <property role="TrG5h" value="state" />
-          <node concept="32Ogvo" id="4SubkoiB85b" role="1zoetD">
-            <ref role="32Ogvr" node="4SubkoiB3ra" resolve="state_LKA_control" />
+          <node concept="2HeeqP" id="4SubkoiBdHp" role="1zoetD">
+            <ref role="2HeeqO" node="2cE4ICdOt5W" resolve="ok" />
           </node>
         </node>
       </node>
