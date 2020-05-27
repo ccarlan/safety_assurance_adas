@@ -23,6 +23,23 @@
       </concept>
       <concept id="9066112305501330661" name="com.mbeddr.formal.nusmv.cbd.structure.Postcondition" flags="ng" index="3UTh7Y" />
     </language>
+    <language id="7f9f6ff3-a7e5-4005-bb24-0a686daae0a1" name="com.mbeddr.formal.nusmv.spec.patterns">
+      <concept id="8004696212664092499" name="com.mbeddr.formal.nusmv.spec.patterns.structure.GloballyScope" flags="ng" index="tP6eo" />
+      <concept id="8004696212664074899" name="com.mbeddr.formal.nusmv.spec.patterns.structure.AbstractProperty" flags="ng" index="tPUpo">
+        <child id="8004696212664074900" name="scope" index="tPUpv" />
+      </concept>
+      <concept id="7240923401201004962" name="com.mbeddr.formal.nusmv.spec.patterns.structure.Response" flags="ng" index="126HNq">
+        <child id="7240923401201004963" name="s" index="126HNr" />
+        <child id="7240923401201004964" name="p" index="126HNs" />
+      </concept>
+      <concept id="7240923401199891288" name="com.mbeddr.formal.nusmv.spec.patterns.structure.Universality" flags="ng" index="12atSw">
+        <child id="7240923401199891289" name="p" index="12atSx" />
+      </concept>
+      <concept id="7240923401199700045" name="com.mbeddr.formal.nusmv.spec.patterns.structure.AfterUntilScope" flags="ng" index="12bEkP">
+        <child id="7240923401199701630" name="q" index="12bEc6" />
+        <child id="7240923401199701631" name="r" index="12bEc7" />
+      </concept>
+    </language>
     <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
       <concept id="4185693763139315091" name="com.mbeddr.formal.safety.stamp.structure.Action" flags="ng" index="Sqzvu" />
       <concept id="4185693763139328936" name="com.mbeddr.formal.safety.stamp.structure.Feedback" flags="ng" index="Sq$B_" />
@@ -121,6 +138,9 @@
       <concept id="7842584090744807152" name="com.mbeddr.formal.nusmv.structure.OrExpression" flags="ng" index="2HbMDt" />
       <concept id="7842584090743391223" name="com.mbeddr.formal.nusmv.structure.EnumerationMember" flags="ng" index="2Hdrtq" />
       <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
+      <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
+        <child id="7842584090743387019" name="type" index="2HdssA" />
+      </concept>
       <concept id="7842584090743385197" name="com.mbeddr.formal.nusmv.structure.ModuleDeclaration" flags="ng" index="2Hdtz0">
         <child id="7842584090743586905" name="content" index="2HcbjO" />
         <child id="7842584090743385207" name="params" index="2Hdtzq" />
@@ -132,6 +152,19 @@
       <concept id="7842584090744099352" name="com.mbeddr.formal.nusmv.structure.EnumerationMemberRef" flags="ng" index="2HeeqP">
         <reference id="7842584090744099353" name="enumMember" index="2HeeqO" />
       </concept>
+      <concept id="7842584090743943170" name="com.mbeddr.formal.nusmv.structure.VariableRef" flags="ng" index="2He$iJ">
+        <reference id="7842584090743943171" name="var" index="2He$iI" />
+      </concept>
+      <concept id="7842584090743880820" name="com.mbeddr.formal.nusmv.structure.AssignmentsSection" flags="ng" index="2Hfkzp">
+        <child id="7842584090743880984" name="assignments" index="2HfkAP" />
+      </concept>
+      <concept id="7842584090743880823" name="com.mbeddr.formal.nusmv.structure.VariablesSection" flags="ng" index="2Hfkzq">
+        <child id="7842584090743880932" name="vars" index="2Hfkx9" />
+      </concept>
+      <concept id="7842584090743880983" name="com.mbeddr.formal.nusmv.structure.AbstractAssignment" flags="ng" index="2HfkAU">
+        <child id="7842584090743943213" name="rhs" index="2He$i0" />
+        <child id="7842584090743943207" name="lhs" index="2He$ia" />
+      </concept>
       <concept id="9133754867501343024" name="com.mbeddr.formal.nusmv.structure.Finally" flags="ng" index="2Sa3Mo" />
       <concept id="9133754867501306909" name="com.mbeddr.formal.nusmv.structure.Next" flags="ng" index="2Sa8AP" />
       <concept id="9133754867501326618" name="com.mbeddr.formal.nusmv.structure.Globally" flags="ng" index="2SafMM" />
@@ -142,6 +175,7 @@
       <concept id="1989356068341979925" name="com.mbeddr.formal.nusmv.structure.ParameterRef" flags="ng" index="32Ogvo">
         <reference id="1989356068341979926" name="param" index="32Ogvr" />
       </concept>
+      <concept id="4643937035595555211" name="com.mbeddr.formal.nusmv.structure.SimpleAssignment" flags="ng" index="1lxFmE" />
       <concept id="8482728081217508144" name="com.mbeddr.formal.nusmv.structure.ImpliesExpression" flags="ng" index="1yyYsf" />
       <concept id="8482728081216657210" name="com.mbeddr.formal.nusmv.structure.UnaryTemporalExpression" flags="ng" index="1yBIc5">
         <child id="8482728081216657211" name="exp" index="1yBIc4" />
@@ -3546,6 +3580,118 @@
           </node>
         </node>
       </node>
+      <node concept="3UTh7Y" id="4SubkoiB2PZ" role="3UnIb_">
+        <property role="TrG5h" value="no_lane_detected_1.1" />
+        <node concept="1yyYsf" id="4SubkoiB2Us" role="1yBDGv">
+          <node concept="2SafMM" id="4SubkoiB2Ut" role="2H9Iav">
+            <node concept="2HbLFT" id="4SubkoiB2Uu" role="1yBIc4">
+              <node concept="3Ug1Ap" id="4SubkoiB2TO" role="2H9Iav">
+                <ref role="3Ug1Ao" node="16Ng_xNT8p3" resolve="lane_detect" />
+              </node>
+              <node concept="2HeeqP" id="4SubkoiB2Ue" role="2H9Ial">
+                <ref role="2HeeqO" node="2Q6_IeFkb1A" resolve="camera_fail" />
+              </node>
+            </node>
+          </node>
+          <node concept="2Sa8AP" id="4SubkoiB2UF" role="2H9Ial">
+            <node concept="2HbLFT" id="4SubkoiB2UZ" role="1yBIc4">
+              <node concept="1yCjRe" id="4SubkoiB2Vl" role="2H9Ial" />
+              <node concept="3Ug1Ap" id="4SubkoiB2UV" role="2H9Iav">
+                <ref role="3Ug1Ao" node="16Ng_xNT8ss" resolve="driver_takeover_request" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4SubkoiB37X" role="3UnIb_">
+        <property role="TrG5h" value="no_lane_detected_1.2" />
+        <node concept="1yyYsf" id="4SubkoiB3b3" role="1yBDGv">
+          <node concept="2SafMM" id="4SubkoiB3b4" role="2H9Iav">
+            <node concept="2HbLFT" id="4SubkoiB3b5" role="1yBIc4">
+              <node concept="3Ug1Ap" id="4SubkoiB3a$" role="2H9Iav">
+                <ref role="3Ug1Ao" node="16Ng_xNT8p3" resolve="lane_detect" />
+              </node>
+              <node concept="2HeeqP" id="4SubkoiB3aO" role="2H9Ial">
+                <ref role="2HeeqO" node="2Q6_IeFkb1L" resolve="ok" />
+              </node>
+            </node>
+          </node>
+          <node concept="2Sa8AP" id="4SubkoiB3bi" role="2H9Ial">
+            <node concept="2HbLFT" id="4SubkoiB3by" role="1yBIc4">
+              <node concept="1yCjT0" id="4SubkoiB3bQ" role="2H9Ial" />
+              <node concept="3Ug1Ap" id="4SubkoiB3bu" role="2H9Iav">
+                <ref role="3Ug1Ao" node="16Ng_xNT8ss" resolve="driver_takeover_request" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4SubkoiB2AB" role="3UnIb_">
+        <property role="TrG5h" value="no_lane_detected_2.1" />
+        <node concept="126HNq" id="4SubkoiB2GD" role="1yBDGv">
+          <node concept="tP6eo" id="4SubkoiB2JT" role="tPUpv" />
+          <node concept="2HbLFT" id="4SubkoiB2IJ" role="126HNr">
+            <node concept="1yCjRe" id="4SubkoiB2J4" role="2H9Ial" />
+            <node concept="3Ug1Ap" id="4SubkoiB2IF" role="2H9Iav">
+              <ref role="3Ug1Ao" node="16Ng_xNT8ss" resolve="driver_takeover_request" />
+            </node>
+          </node>
+          <node concept="2HbLFT" id="4SubkoiB2Jv" role="126HNs">
+            <node concept="2HeeqP" id="4SubkoiB2JM" role="2H9Ial">
+              <ref role="2HeeqO" node="2Q6_IeFkb1A" resolve="camera_fail" />
+            </node>
+            <node concept="3Ug1Ap" id="4SubkoiB2Jr" role="2H9Iav">
+              <ref role="3Ug1Ao" node="16Ng_xNT8p3" resolve="lane_detect" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4SubkoiB3er" role="3UnIb_">
+        <property role="TrG5h" value="no_lane_detected_2.2" />
+        <node concept="126HNq" id="4SubkoiB3hd" role="1yBDGv">
+          <node concept="tP6eo" id="4SubkoiB3iE" role="tPUpv" />
+          <node concept="2HbLFT" id="4SubkoiB3hC" role="126HNr">
+            <node concept="1yCjT0" id="4SubkoiB3hZ" role="2H9Ial" />
+            <node concept="3Ug1Ap" id="4SubkoiB3h$" role="2H9Iav">
+              <ref role="3Ug1Ao" node="16Ng_xNT8ss" resolve="driver_takeover_request" />
+            </node>
+          </node>
+          <node concept="2HbLFT" id="4SubkoiB3ik" role="126HNs">
+            <node concept="2HeeqP" id="4SubkoiB3iz" role="2H9Ial">
+              <ref role="2HeeqO" node="2Q6_IeFkb1L" resolve="ok" />
+            </node>
+            <node concept="3Ug1Ap" id="4SubkoiB3ig" role="2H9Iav">
+              <ref role="3Ug1Ao" node="16Ng_xNT8p3" resolve="lane_detect" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4SubkoiB2XC" role="3UnIb_">
+        <property role="TrG5h" value="no_lane_detected_3" />
+        <node concept="12atSw" id="4SubkoiB30W" role="1yBDGv">
+          <node concept="12bEkP" id="4SubkoiB322" role="tPUpv">
+            <node concept="2HbLFT" id="4SubkoiB32o" role="12bEc6">
+              <node concept="2HeeqP" id="4SubkoiB32F" role="2H9Ial">
+                <ref role="2HeeqO" node="2Q6_IeFkb1A" resolve="camera_fail" />
+              </node>
+              <node concept="3Ug1Ap" id="4SubkoiB32k" role="2H9Iav">
+                <ref role="3Ug1Ao" node="16Ng_xNT8p3" resolve="lane_detect" />
+              </node>
+            </node>
+            <node concept="2HbLFT" id="4SubkoiB333" role="12bEc7">
+              <node concept="2HeeqP" id="4SubkoiB33i" role="2H9Ial">
+                <ref role="2HeeqO" node="2Q6_IeFkb1L" resolve="ok" />
+              </node>
+              <node concept="3Ug1Ap" id="4SubkoiB32Z" role="2H9Iav">
+                <ref role="3Ug1Ao" node="16Ng_xNT8p3" resolve="lane_detect" />
+              </node>
+            </node>
+          </node>
+          <node concept="3Ug1Ap" id="4SubkoiB31x" role="12atSx">
+            <ref role="3Ug1Ao" node="16Ng_xNT8ss" resolve="driver_takeover_request" />
+          </node>
+        </node>
+      </node>
       <node concept="3UnI81" id="16Ng_xNT8mi" role="3UnI9m">
         <property role="TrG5h" value="lane_distance_left" />
         <node concept="2XEmfi" id="2Q6_IeFkbp6" role="3UnI80">
@@ -3605,6 +3751,7 @@
         </node>
       </node>
     </node>
+    <node concept="2SQmWS" id="4SubkoiBaVV" role="2HcuB8" />
     <node concept="2dDAVa" id="16Ng_xNT8Hh" role="2HcuB8">
       <property role="TrG5h" value="SteeringWheel_Control_Unit" />
       <node concept="3UnI81" id="16Ng_xNT8IM" role="3UnI9m">
@@ -3696,19 +3843,6 @@
           <ref role="2XJXdw" node="2Q6_IeFkaVR" resolve="enum_state" />
         </node>
       </node>
-      <node concept="3UTh7Y" id="2cE4ICdOu7p" role="3UnIb_">
-        <property role="TrG5h" value="state_forward" />
-        <node concept="2SafMM" id="2cE4ICdOu8c" role="1yBDGv">
-          <node concept="2HbLFT" id="2cE4ICdOu8n" role="1yBIc4">
-            <node concept="3Ug1Ap" id="2cE4ICdOu8A" role="2H9Ial">
-              <ref role="3Ug1Ao" node="16Ng_xNT8ME" resolve="state_LKA_control" />
-            </node>
-            <node concept="3Ug1Ap" id="2cE4ICdOu8j" role="2H9Iav">
-              <ref role="3Ug1Ao" node="16Ng_xNT8RX" resolve="state" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3UTh7Y" id="2cE4ICdOu8O" role="3UnIb_">
         <property role="TrG5h" value="takeover_alert" />
         <node concept="1yyYsf" id="2cE4ICdOu9M" role="1yBDGv">
@@ -3751,6 +3885,19 @@
           </node>
         </node>
       </node>
+      <node concept="3UTh7Y" id="4SubkoiB3jn" role="3UnIb_">
+        <property role="TrG5h" value="state_forward" />
+        <node concept="2SafMM" id="4SubkoiB3jN" role="1yBDGv">
+          <node concept="2HbLFT" id="4SubkoiB3k3" role="1yBIc4">
+            <node concept="3Ug1Ap" id="4SubkoiB3km" role="2H9Ial">
+              <ref role="3Ug1Ao" node="16Ng_xNT8RX" resolve="state" />
+            </node>
+            <node concept="3Ug1Ap" id="4SubkoiB3jZ" role="2H9Iav">
+              <ref role="3Ug1Ao" node="16Ng_xNT8ME" resolve="state_LKA_control" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2SQmWS" id="16Ng_xNT8FL" role="2HcuB8" />
     <node concept="2dDAVa" id="16Ng_xNT8tc" role="2HcuB8">
@@ -3776,7 +3923,7 @@
           <node concept="gqqVs" id="16Ng_xNT9ee" role="37mO4d">
             <property role="gqqTZ" value="12.0" />
             <property role="gqqTW" value="21.475499916076657" />
-            <property role="gqqTX" value="54.0" />
+            <property role="gqqTX" value="60.0" />
             <property role="gqqTy" value="70.16257785864595" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9Kt" role="1pap1a">
@@ -3798,7 +3945,7 @@
           <node concept="gqqVs" id="16Ng_xNT9et" role="37mO4d">
             <property role="gqqTZ" value="179.71428571428572" />
             <property role="gqqTW" value="12.0" />
-            <property role="gqqTX" value="149.0" />
+            <property role="gqqTX" value="164.0" />
             <property role="gqqTy" value="89.1321207434726" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9Ky" role="1pap1a">
@@ -3836,7 +3983,7 @@
           <node concept="gqqVs" id="16Ng_xNT9gX" role="37mO4d">
             <property role="gqqTZ" value="455.0" />
             <property role="gqqTW" value="12.032363032743206" />
-            <property role="gqqTX" value="105.0" />
+            <property role="gqqTX" value="116.0" />
             <property role="gqqTy" value="146.2558973248862" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9KD" role="1pap1a">
@@ -3890,7 +4037,7 @@
           <node concept="gqqVs" id="16Ng_xNT9kZ" role="37mO4d">
             <property role="gqqTZ" value="187.0" />
             <property role="gqqTW" value="121.1321207434726" />
-            <property role="gqqTX" value="164.0" />
+            <property role="gqqTX" value="180.0" />
             <property role="gqqTy" value="31.999999999941792" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9KO" role="1pap1a">
@@ -3904,7 +4051,7 @@
           <node concept="gqqVs" id="16Ng_xNT9n7" role="37mO4d">
             <property role="gqqTZ" value="150.0" />
             <property role="gqqTW" value="173.1321207434144" />
-            <property role="gqqTX" value="201.0" />
+            <property role="gqqTX" value="220.0" />
             <property role="gqqTy" value="51.09999999940628" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9KP" role="1pap1a">
@@ -3970,9 +4117,9 @@
         <node concept="37mRIm" id="16Ng_xNT9uo" role="37mRID">
           <property role="37mO49" value="1275436067144898371" />
           <node concept="gqqVs" id="16Ng_xNT9un" role="37mO4d">
-            <property role="gqqTZ" value="644.0" />
-            <property role="gqqTW" value="40.5103116954741" />
-            <property role="gqqTX" value="230.0" />
+            <property role="gqqTZ" value="729.0" />
+            <property role="gqqTW" value="40.510311695206354" />
+            <property role="gqqTX" value="252.0" />
             <property role="gqqTy" value="51.09999999940628" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9KT" role="1pap1a">
@@ -4020,9 +4167,9 @@
         <node concept="37mRIm" id="16Ng_xNT9Dd" role="37mRID">
           <property role="37mO49" value="box_1275436067144899128" />
           <node concept="gqqVs" id="16Ng_xNT9Dc" role="37mO4d">
-            <property role="gqqTZ" value="938.0" />
-            <property role="gqqTW" value="40.51031169493859" />
-            <property role="gqqTX" value="101.0" />
+            <property role="gqqTZ" value="1043.0" />
+            <property role="gqqTW" value="12.032363032743206" />
+            <property role="gqqTX" value="111.0" />
             <property role="gqqTy" value="31.999999999941792" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9KX" role="1pap1a">
@@ -4034,9 +4181,9 @@
         <node concept="37mRIm" id="16Ng_xNT9Df" role="37mRID">
           <property role="37mO49" value="box_1275436067144898780" />
           <node concept="gqqVs" id="16Ng_xNT9De" role="37mO4d">
-            <property role="gqqTZ" value="938.0" />
-            <property role="gqqTW" value="92.51031169488039" />
-            <property role="gqqTX" value="50.0" />
+            <property role="gqqTZ" value="1043.0" />
+            <property role="gqqTW" value="86.6103116949386" />
+            <property role="gqqTX" value="55.0" />
             <property role="gqqTy" value="31.999999999941792" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9KY" role="1pap1a">
@@ -4154,16 +4301,7 @@
         </node>
         <node concept="37mRIm" id="1RZJT$oWwh9" role="37mRID">
           <property role="37mO49" value="edge_2161657010430542800" />
-          <node concept="2VclpC" id="1RZJT$oWwh8" role="37mO4d">
-            <node concept="2VclrF" id="2Q6_IeFkg28" role="2Vcluh">
-              <property role="2Vclpx" value="906.0" />
-              <property role="2Vclpz" value="75.61031169488038" />
-            </node>
-            <node concept="2VclrF" id="2Q6_IeFkg29" role="2Vcluh">
-              <property role="2Vclpx" value="906.0" />
-              <property role="2Vclpz" value="108.51031169482218" />
-            </node>
-          </node>
+          <node concept="2VclpC" id="1RZJT$oWwh8" role="37mO4d" />
         </node>
         <node concept="37mRIm" id="2Q6_IeFkg4d" role="37mRID">
           <property role="37mO49" value="edge_2161657010430542689" />
@@ -4438,9 +4576,6 @@
         </node>
       </node>
     </node>
-    <node concept="2SQmWS" id="16Ng_xNT8jH" role="2HcuB8" />
-    <node concept="2SQmWS" id="7_EPz_EQ12r" role="2HcuB8" />
-    <node concept="2SQmWS" id="7_EPz_EQ196" role="2HcuB8" />
     <node concept="2SQmWS" id="7_EPz_EQ1fM" role="2HcuB8" />
     <node concept="2dDAVa" id="16Ng_xNT87r" role="2HcuB8">
       <property role="TrG5h" value="ImageProcessingUnit" />
@@ -5119,6 +5254,9 @@
       <node concept="2Hdrtq" id="2cE4ICdOt61" role="2XJXdW">
         <property role="TrG5h" value="driver_engages" />
       </node>
+      <node concept="2Hdrtq" id="4SubkoiB3oZ" role="2XJXdW">
+        <property role="TrG5h" value="undefined" />
+      </node>
     </node>
     <node concept="2SQmWS" id="2Q6_IeFkfKS" role="2HcuB8" />
     <node concept="2Hdtz0" id="2Q6_IeFkfKZ" role="2HcuB8">
@@ -5131,7 +5269,7 @@
         <node concept="JlCpM" id="2cE4ICdOsz9" role="32O2ov">
           <property role="TrG5h" value="desired_steeringWheel_angle" />
           <node concept="2IPVmt" id="2cE4ICdOt41" role="1zoetD">
-            <property role="2IPVms" value="2" />
+            <property role="2IPVms" value="0" />
           </node>
         </node>
         <node concept="JlCpM" id="2cE4ICdOs$n" role="32O2ov">
@@ -5172,7 +5310,7 @@
         <property role="TrG5h" value="activate_deactivate" />
       </node>
       <node concept="2Hdtzr" id="2Q6_IeFkfLw" role="2Hdtzq">
-        <property role="TrG5h" value="steeringWheel_angel" />
+        <property role="TrG5h" value="steeringWheel_angle" />
       </node>
       <node concept="2Hdtzr" id="2Q6_IeFkfLB" role="2Hdtzq">
         <property role="TrG5h" value="steeringWheel_torque" />
@@ -5185,6 +5323,63 @@
       </node>
       <node concept="eml1q" id="2cE4ICdOswG" role="eml13">
         <ref role="eml1l" node="2Q6_IeFkfKZ" resolve="LKAControlBox_Implementation" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4SubkoiB3kt" role="2HcuB8" />
+    <node concept="2SQmWS" id="4SubkoiB3Ef" role="2HcuB8" />
+    <node concept="sUyCV" id="4SubkoiB3$u" role="2HcuB8">
+      <property role="sUxOX" value="Module that implements the specific logic of the communication control unit." />
+    </node>
+    <node concept="2Hdtz0" id="4SubkoiB3lE" role="2HcuB8">
+      <property role="TrG5h" value="LKA_Communication_Control_Unit_Impl" />
+      <node concept="32O2o0" id="4SubkoiB3m$" role="2HcbjO">
+        <node concept="JlCpM" id="4SubkoiB3mW" role="32O2ov">
+          <property role="TrG5h" value="alert_signal" />
+          <node concept="2He$iJ" id="4SubkoiB3s0" role="1zoetD">
+            <ref role="2He$iI" node="4SubkoiB3pt" resolve="var_alert_signal" />
+          </node>
+        </node>
+        <node concept="JlCpM" id="4SubkoiB3nQ" role="32O2ov">
+          <property role="TrG5h" value="state" />
+          <node concept="32Ogvo" id="4SubkoiB85b" role="1zoetD">
+            <ref role="32Ogvr" node="4SubkoiB3ra" resolve="state_LKA_control" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzq" id="4SubkoiB3ow" role="2HcbjO">
+        <node concept="2Hdskp" id="4SubkoiB3pt" role="2Hfkx9">
+          <property role="TrG5h" value="var_alert_signal" />
+          <node concept="2Hds6S" id="4SubkoiB3qg" role="2HdssA" />
+        </node>
+      </node>
+      <node concept="2Hfkzp" id="4SubkoiB3oN" role="2HcbjO">
+        <node concept="1lxFmE" id="4SubkoiB3sa" role="2HfkAP">
+          <node concept="2He$iJ" id="4SubkoiB3s8" role="2He$ia">
+            <ref role="2He$iI" node="4SubkoiB3pt" resolve="var_alert_signal" />
+          </node>
+          <node concept="d4bQV" id="4SubkoiB5Zn" role="2He$i0">
+            <node concept="1yCjRe" id="4SubkoiBbSv" role="d498F" />
+            <node concept="1yCjT0" id="4SubkoiB9to" role="d498I" />
+            <node concept="32Ogvo" id="4SubkoiB3sj" role="d498Q">
+              <ref role="32Ogvr" node="4SubkoiB3r0" resolve="driver_takeover_request" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="4SubkoiB3r0" role="2Hdtzq">
+        <property role="TrG5h" value="driver_takeover_request" />
+      </node>
+      <node concept="2Hdtzr" id="4SubkoiB3ra" role="2Hdtzq">
+        <property role="TrG5h" value="state_LKA_control" />
+      </node>
+    </node>
+    <node concept="eml0t" id="4SubkoiB3wB" role="2HcuB8">
+      <property role="TrG5h" value="comm_unit" />
+      <node concept="3Ug1AZ" id="4SubkoiB3xC" role="eml14">
+        <ref role="3Ug1AY" node="16Ng_xNT8KQ" resolve="LKA_Communication_Control_Unit" />
+      </node>
+      <node concept="eml1q" id="4SubkoiB3xF" role="eml13">
+        <ref role="eml1l" node="4SubkoiB3lE" resolve="LKA_Communication_Control_Unit_Impl" />
       </node>
     </node>
     <node concept="2SQmWS" id="2Q6_IeFkfKR" role="2HcuB8" />
