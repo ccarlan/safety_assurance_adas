@@ -5144,6 +5144,72 @@
       </node>
       <node concept="DA$zP" id="4j8iycQYkZb" role="0nOlf" />
     </node>
+    <node concept="0lhDl" id="4j8iycQYljW" role="1QQeBF">
+      <property role="0lsPA" value="TSR 06" />
+      <property role="0ke_I" value="Jonas&amp;Moritz" />
+      <node concept="1QQeAY" id="4j8iycQYlkT" role="1QQeAC">
+        <node concept="0nzK2" id="4j8iycQYlkV" role="1QQeAV">
+          <node concept="19SGf9" id="4j8iycQYlkX" role="0nzdz">
+            <node concept="19SUe$" id="4j8iycQYlkY" role="19SJt6">
+              <property role="19SUeA" value="The watchdog surveillaces the performance of the camera and the processing unit. Both components shall ping the watchdog in a ppredefined frequency. If one of the components does not send a ping, the watchdog switchtes the system into a degraded mode and warns the driver." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="4j8iycQYljY" role="1QQeG9">
+        <node concept="19SUe$" id="4j8iycQYljZ" role="19SJt6">
+          <property role="19SUeA" value="Watchdog" />
+          <node concept="0Sh09" id="4j8iycQYll4" role="lGtFl">
+            <ref role="0Sh0a" node="4WLVkAsg6Gx" />
+          </node>
+        </node>
+      </node>
+      <node concept="DA$zP" id="4j8iycQYlkO" role="0nOlf" />
+    </node>
+    <node concept="0lhDl" id="4j8iycQYllY" role="1QQeBF">
+      <property role="0lsPA" value="TSR 07" />
+      <property role="0ke_I" value="Jonas&amp;Moritz" />
+      <node concept="1QQeAY" id="4j8iycQYlna" role="1QQeAC">
+        <node concept="0nzK2" id="4j8iycQYlnc" role="1QQeAV">
+          <node concept="19SGf9" id="4j8iycQYlne" role="0nzdz">
+            <node concept="19SUe$" id="4j8iycQYlnf" role="19SJt6">
+              <property role="19SUeA" value="As a safety critical system, the image processing should take place on N-seperately developed hardware. This ensures a high reliabiliy of the lane detection." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="4j8iycQYlm0" role="1QQeG9">
+        <node concept="19SUe$" id="4j8iycQYlm1" role="19SJt6">
+          <property role="19SUeA" value="N-Version Image processing " />
+          <node concept="0Sh09" id="4j8iycQYlmX" role="lGtFl">
+            <ref role="0Sh0a" node="4WLVkAsg6IZ" />
+          </node>
+        </node>
+      </node>
+      <node concept="DA$zP" id="4j8iycQYln1" role="0nOlf" />
+    </node>
+    <node concept="0lhDl" id="4j8iycQYlom" role="1QQeBF">
+      <property role="0lsPA" value="TSR 08" />
+      <property role="0ke_I" value="Jonas&amp;Moritz" />
+      <node concept="1QQeAY" id="4j8iycQYlpB" role="1QQeAC">
+        <node concept="0nzK2" id="4j8iycQYlpD" role="1QQeAV">
+          <node concept="19SGf9" id="4j8iycQYlpF" role="0nzdz">
+            <node concept="19SUe$" id="4j8iycQYlpG" role="19SJt6">
+              <property role="19SUeA" value="A monitor channel observes the output of the camera. In the case, that the camera does not send appropiate pictures, the camera will be restarted and a cleaning of the camera will be initated." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="4j8iycQYloo" role="1QQeG9">
+        <node concept="19SUe$" id="4j8iycQYlop" role="19SJt6">
+          <property role="19SUeA" value="Monitor Channel of the  camera " />
+          <node concept="0Sh09" id="4j8iycQYlpu" role="lGtFl">
+            <ref role="0Sh0a" node="4WLVkAsg6Pl" />
+          </node>
+        </node>
+      </node>
+      <node concept="DA$zP" id="4j8iycQYlpy" role="0nOlf" />
+    </node>
   </node>
 </model>
 
