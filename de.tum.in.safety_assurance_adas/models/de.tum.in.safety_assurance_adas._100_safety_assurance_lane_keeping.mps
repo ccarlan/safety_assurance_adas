@@ -3163,6 +3163,15 @@
         <property role="2IPVms" value="5" />
       </node>
     </node>
+    <node concept="2XEm0_" id="4j8iycQYvHc" role="2HcuB8">
+      <property role="TrG5h" value="steeringWheel_motor_range" />
+      <node concept="2IPVmt" id="4j8iycQYvQe" role="2XEmf_">
+        <property role="2IPVms" value="-10" />
+      </node>
+      <node concept="2IPVmt" id="4j8iycQYvQM" role="2XEmfA">
+        <property role="2IPVms" value="10" />
+      </node>
+    </node>
     <node concept="2SQmWS" id="2Q6_IeFka6F" role="2HcuB8" />
     <node concept="2dDAVa" id="16Ng_xNT7ZF" role="2HcuB8">
       <property role="TrG5h" value="Camera" />
@@ -3502,6 +3511,14 @@
           <ref role="2XEmfl" node="2Q6_IeFkbP6" resolve="steeringWheel_torque_range" />
         </node>
       </node>
+      <node concept="3UnI81" id="4j8iycQYvqD" role="3UnI9m">
+        <property role="TrG5h" value="watchdog_alert" />
+        <node concept="2Hds6S" id="4j8iycQYvr3" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4j8iycQYwv$" role="3UnI9m">
+        <property role="TrG5h" value="monitorchannel_alert" />
+        <node concept="2Hds6S" id="4j8iycQYww9" role="3UnI80" />
+      </node>
       <node concept="3UnI9n" id="16Ng_xNT8ss" role="3UnI90">
         <property role="TrG5h" value="driver_takeover_request" />
         <node concept="2Hds6S" id="16Ng_xNT8sz" role="3UnI80" />
@@ -3522,6 +3539,10 @@
           <ref role="2XJXdw" node="2Q6_IeFkaVR" resolve="enum_state" />
         </node>
       </node>
+      <node concept="3UnI9n" id="4j8iycQYviM" role="3UnI90">
+        <property role="TrG5h" value="stroke" />
+        <node concept="2Hds6S" id="4j8iycQYvj6" role="3UnI80" />
+      </node>
       <node concept="0Sh09" id="4j8iycQYmwv" role="lGtFl">
         <ref role="0Sh0a" node="7NWnpv9rNPc" />
       </node>
@@ -3539,63 +3560,14 @@
           <ref role="2XEmfl" node="2Q6_IeFkbDI" resolve="steeringWheel_range" />
         </node>
       </node>
-      <node concept="3UnI9n" id="16Ng_xNT8IZ" role="3UnI90">
-        <property role="TrG5h" value="steeringWheel_angle" />
-        <node concept="2XEmfi" id="2Q6_IeFkbXX" role="3UnI80">
-          <ref role="2XEmfl" node="2Q6_IeFkbDI" resolve="steeringWheel_range" />
-        </node>
-      </node>
-      <node concept="3UnI9n" id="16Ng_xNT8Rv" role="3UnI90">
-        <property role="TrG5h" value="steeringWheel_torque" />
-        <node concept="2XEmfi" id="2Q6_IeFkbYS" role="3UnI80">
-          <ref role="2XEmfl" node="2Q6_IeFkbP6" resolve="steeringWheel_torque_range" />
-        </node>
-      </node>
-      <node concept="3UTh7Y" id="2cE4ICdOu4i" role="3UnIb_">
-        <property role="TrG5h" value="applyTorque" />
-        <node concept="1yyYsf" id="2cE4ICdOu4Y" role="1yBDGv">
-          <node concept="2SafMM" id="2cE4ICdOu4Z" role="2H9Iav">
-            <node concept="dheZm" id="2cE4ICdOu50" role="1yBIc4">
-              <node concept="3Ug1Ap" id="2cE4ICdOu4w" role="2H9Iav">
-                <ref role="3Ug1Ao" node="16Ng_xNT8IZ" resolve="steeringWheel_angle" />
-              </node>
-              <node concept="3Ug1Ap" id="2cE4ICdOu4O" role="2H9Ial">
-                <ref role="3Ug1Ao" node="16Ng_xNT8PA" resolve="desired_steeringWheel_angle" />
-              </node>
-            </node>
-          </node>
-          <node concept="2Sa8AP" id="2cE4ICdOu59" role="2H9Ial">
-            <node concept="3Ug1Ap" id="2cE4ICdOu5j" role="1yBIc4">
-              <ref role="3Ug1Ao" node="16Ng_xNT8Rv" resolve="steeringWheel_torque" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3UTh7Y" id="2cE4ICdOu5v" role="3UnIb_">
-        <property role="TrG5h" value="noTorque" />
-        <node concept="1yyYsf" id="2cE4ICdOu6o" role="1yBDGv">
-          <node concept="2SafMM" id="2cE4ICdOu6p" role="2H9Iav">
-            <node concept="2HbLFT" id="2cE4ICdOu6q" role="1yBIc4">
-              <node concept="3Ug1Ap" id="2cE4ICdOu5R" role="2H9Iav">
-                <ref role="3Ug1Ao" node="16Ng_xNT8IZ" resolve="steeringWheel_angle" />
-              </node>
-              <node concept="3Ug1Ap" id="2cE4ICdOu6a" role="2H9Ial">
-                <ref role="3Ug1Ao" node="16Ng_xNT8PA" resolve="desired_steeringWheel_angle" />
-              </node>
-            </node>
-          </node>
-          <node concept="2HbLFT" id="2cE4ICdOu6U" role="2H9Ial">
-            <node concept="2IPVmt" id="2cE4ICdOu7a" role="2H9Ial">
-              <property role="2IPVms" value="0" />
-            </node>
-            <node concept="3Ug1Ap" id="2cE4ICdOu6C" role="2H9Iav">
-              <ref role="3Ug1Ao" node="16Ng_xNT8Rv" resolve="steeringWheel_torque" />
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="0Sh09" id="4j8iycQYmwx" role="lGtFl">
         <ref role="0Sh0a" node="7NWnpv9rNPc" />
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYv$6" role="3UnI90">
+        <property role="TrG5h" value="steeringWheel_motor" />
+        <node concept="2XEmfi" id="4j8iycQYvRA" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYvHc" resolve="steeringWheel_motor_range" />
+        </node>
       </node>
     </node>
     <node concept="2SQmWS" id="16Ng_xNT8CO" role="2HcuB8" />
@@ -3692,7 +3664,101 @@
       </node>
     </node>
     <node concept="2SQmWS" id="16Ng_xNT8kz" role="2HcuB8" />
+    <node concept="2dDAVa" id="4j8iycQYuMY" role="2HcuB8">
+      <property role="TrG5h" value="Watchdog" />
+      <node concept="3UnI81" id="4j8iycQYvig" role="3UnI9m">
+        <property role="TrG5h" value="stroke_control_unit" />
+        <node concept="2Hds6S" id="4j8iycQYviz" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4j8iycQYvxw" role="3UnI9m">
+        <property role="TrG5h" value="stroke_image_processing" />
+        <node concept="2Hds6S" id="4j8iycQYvxG" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYvin" role="3UnI90">
+        <property role="TrG5h" value="shutdownSignal" />
+        <node concept="2Hds6S" id="4j8iycQYviG" role="3UnI80" />
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYxbO" role="3UnIb_">
+        <property role="TrG5h" value="alert" />
+        <node concept="2SafMM" id="4j8iycQYxes" role="1yBDGv">
+          <node concept="2HbLFT" id="4j8iycQYxdH" role="1yBIc4">
+            <node concept="32OYss" id="4j8iycQYxdI" role="2H9Iav">
+              <node concept="2HbMDt" id="4j8iycQYxdJ" role="32OYtT">
+                <node concept="3Ug1Ap" id="4j8iycQYxca" role="2H9Iav">
+                  <ref role="3Ug1Ao" node="4j8iycQYvig" resolve="stroke_control_unit" />
+                </node>
+                <node concept="3Ug1Ap" id="4j8iycQYxcK" role="2H9Ial">
+                  <ref role="3Ug1Ao" node="4j8iycQYvxw" resolve="stroke_image_processing" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Ug1Ap" id="4j8iycQYxeR" role="2H9Ial">
+              <ref role="3Ug1Ao" node="4j8iycQYvin" resolve="shutdownSignal" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2SQmWS" id="16Ng_xNT9a3" role="2HcuB8" />
+    <node concept="2dDAVa" id="4j8iycQYv2A" role="2HcuB8">
+      <property role="TrG5h" value="Monitor_Channel" />
+      <node concept="3UnI9n" id="4j8iycQYwwf" role="3UnI90">
+        <property role="TrG5h" value="alert" />
+        <node concept="2Hds6S" id="4j8iycQYwwr" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4j8iycQYwzm" role="3UnI9m">
+        <property role="TrG5h" value="steeringWheelAngle" />
+        <node concept="2XEmfi" id="4j8iycQYw$R" role="3UnI80">
+          <ref role="2XEmfl" node="2Q6_IeFkbDI" resolve="steeringWheel_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="4j8iycQYwzL" role="3UnI9m">
+        <property role="TrG5h" value="desiredSteeringWheelAngle" />
+        <node concept="2XEmfi" id="4j8iycQYw$z" role="3UnI80">
+          <ref role="2XEmfl" node="2Q6_IeFkbDI" resolve="steeringWheel_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="4j8iycQYw$e" role="3UnI9m">
+        <property role="TrG5h" value="steeringMotor" />
+        <node concept="2XEmfi" id="4j8iycQYw_b" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYvHc" resolve="steeringWheel_motor_range" />
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYwTa" role="3UnIb_">
+        <property role="TrG5h" value="NoMotorAction" />
+        <node concept="1yyYsf" id="4j8iycQYx46" role="1yBDGv">
+          <node concept="2HbMbg" id="4j8iycQYx47" role="2H9Iav">
+            <node concept="2SafMM" id="4j8iycQYx48" role="2H9Iav">
+              <node concept="32OYss" id="4j8iycQYx49" role="1yBIc4">
+                <node concept="dheZm" id="4j8iycQYx4a" role="32OYtT">
+                  <node concept="3Ug1Ap" id="4j8iycQYwTU" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYwzm" resolve="steeringWheelAngle" />
+                  </node>
+                  <node concept="3Ug1Ap" id="4j8iycQYwUu" role="2H9Ial">
+                    <ref role="3Ug1Ao" node="4j8iycQYwzL" resolve="desiredSteeringWheelAngle" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2HbLFT" id="4j8iycQYx4b" role="2H9Ial">
+              <node concept="3Ug1Ap" id="4j8iycQYwW$" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYw$e" resolve="steeringMotor" />
+              </node>
+              <node concept="2IPVmt" id="4j8iycQYx4c" role="2H9Ial">
+                <property role="2IPVms" value="0" />
+              </node>
+            </node>
+          </node>
+          <node concept="2HbLFT" id="4j8iycQYx4d" role="2H9Ial">
+            <node concept="3Ug1Ap" id="4j8iycQYwYa" role="2H9Iav">
+              <ref role="3Ug1Ao" node="4j8iycQYwwf" resolve="alert" />
+            </node>
+            <node concept="1yCjRe" id="4j8iycQYwZi" role="2H9Ial" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYvar" role="2HcuB8" />
     <node concept="2dDAV0" id="16Ng_xNT9c6" role="2HcuB8">
       <property role="TrG5h" value="LaneKeeping" />
       <node concept="3Ug1AV" id="16Ng_xNT9ea" role="3UgYNK">
@@ -3706,9 +3772,9 @@
           <property role="37mO49" value="1275436067144897418" />
           <node concept="gqqVs" id="16Ng_xNT9ee" role="37mO4d">
             <property role="gqqTZ" value="12.0" />
-            <property role="gqqTW" value="21.475499916076657" />
-            <property role="gqqTX" value="60.0" />
-            <property role="gqqTy" value="70.16257785864595" />
+            <property role="gqqTW" value="204.11269156056255" />
+            <property role="gqqTX" value="54.0" />
+            <property role="gqqTy" value="70.12539062503463" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9Kt" role="1pap1a">
               <property role="1pa3iD" value="connectivity" />
@@ -3716,21 +3782,21 @@
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9Ku" role="1pap1a">
               <property role="1pa3iD" value="operation" />
-              <property role="2gRgW$" value="2098541579" />
+              <property role="2gRgW$" value="2099628474" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9Kv" role="1pap1a">
               <property role="1pa3iD" value="image" />
-              <property role="2gRgW$" value="1609084979" />
+              <property role="2gRgW$" value="1609652760" />
             </node>
           </node>
         </node>
         <node concept="37mRIm" id="16Ng_xNT9eu" role="37mRID">
           <property role="37mO49" value="1275436067144897425" />
           <node concept="gqqVs" id="16Ng_xNT9et" role="37mO4d">
-            <property role="gqqTZ" value="179.71428571428572" />
-            <property role="gqqTW" value="12.0" />
-            <property role="gqqTX" value="164.0" />
-            <property role="gqqTy" value="89.1321207434726" />
+            <property role="gqqTZ" value="111.875" />
+            <property role="gqqTW" value="185.07282764301215" />
+            <property role="gqqTX" value="149.0" />
+            <property role="gqqTy" value="108.20511847956061" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9Ky" role="1pap1a">
               <property role="1pa3iD" value="connectivity" />
@@ -3738,19 +3804,19 @@
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9Kz" role="1pap1a">
               <property role="1pa3iD" value="operation" />
-              <property role="2gRgW$" value="999661319" />
+              <property role="2gRgW$" value="982397524" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9K$" role="1pap1a">
               <property role="1pa3iD" value="image" />
-              <property role="2gRgW$" value="517896828" />
+              <property role="2gRgW$" value="506083573" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9K_" role="1pap1a">
               <property role="1pa3iD" value="lane_distance_left" />
-              <property role="2gRgW$" value="1495285752" />
+              <property role="2gRgW$" value="1738596713" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9KA" role="1pap1a">
               <property role="1pa3iD" value="lane_distance_right" />
-              <property role="2gRgW$" value="1880697346" />
+              <property role="2gRgW$" value="2056139347" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9KB" role="1pap1a">
               <property role="1pa3iD" value="state_image_processing" />
@@ -3760,35 +3826,39 @@
               <property role="1pa3iD" value="lane_detect" />
               <property role="2gRgW$" value="2147483646" />
             </node>
+            <node concept="1pa3jb" id="4j8iycQYvt1" role="1pap1a">
+              <property role="1pa3iD" value="stroke" />
+              <property role="2gRgW$" value="1421054079" />
+            </node>
           </node>
         </node>
         <node concept="37mRIm" id="16Ng_xNT9gY" role="37mRID">
           <property role="37mO49" value="1275436067144897564" />
           <node concept="gqqVs" id="16Ng_xNT9gX" role="37mO4d">
-            <property role="gqqTZ" value="455.0" />
-            <property role="gqqTW" value="12.032363032743206" />
-            <property role="gqqTX" value="116.0" />
-            <property role="gqqTy" value="146.2558973248862" />
+            <property role="gqqTZ" value="406.0" />
+            <property role="gqqTW" value="128.7117198781532" />
+            <property role="gqqTX" value="105.0" />
+            <property role="gqqTy" value="183.53960190809107" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9KD" role="1pap1a">
               <property role="1pa3iD" value="lane_distance_left" />
-              <property role="2gRgW$" value="256953493" />
+              <property role="2gRgW$" value="956962527" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9KE" role="1pap1a">
               <property role="1pa3iD" value="lane_distance_right" />
-              <property role="2gRgW$" value="491882402" />
+              <property role="2gRgW$" value="1073741823" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9KF" role="1pap1a">
               <property role="1pa3iD" value="state_image_processing" />
-              <property role="2gRgW$" value="726811311" />
+              <property role="2gRgW$" value="1073741823" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9KG" role="1pap1a">
               <property role="1pa3iD" value="lane_detect" />
-              <property role="2gRgW$" value="961740219" />
+              <property role="2gRgW$" value="1073741823" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9KH" role="1pap1a">
               <property role="1pa3iD" value="activate_deactivate" />
-              <property role="2gRgW$" value="1073741823" />
+              <property role="2gRgW$" value="581222639" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9KI" role="1pap1a">
               <property role="1pa3iD" value="steeringWheel_angle" />
@@ -3796,33 +3866,45 @@
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9KJ" role="1pap1a">
               <property role="1pa3iD" value="steeringWheel_torque" />
-              <property role="2gRgW$" value="1073741823" />
+              <property role="2gRgW$" value="769092583" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9KK" role="1pap1a">
               <property role="1pa3iD" value="driver_takeover_request" />
-              <property role="2gRgW$" value="1847538915" />
+              <property role="2gRgW$" value="2147483646" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9KL" role="1pap1a">
               <property role="1pa3iD" value="desired_steeringWheel_angle" />
-              <property role="2gRgW$" value="2147483646" />
+              <property role="2gRgW$" value="2030704350" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9KM" role="1pap1a">
               <property role="1pa3iD" value="vibrate_steeringWheel" />
-              <property role="2gRgW$" value="2147483646" />
+              <property role="2gRgW$" value="1717587776" />
             </node>
             <node concept="1pa3jb" id="1RZJT$oWw9z" role="1pap1a">
               <property role="1pa3iD" value="state_LKA_control" />
-              <property role="2gRgW$" value="1471652661" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYvt2" role="1pap1a">
+              <property role="1pa3iD" value="watchdog_alert" />
+              <property role="2gRgW$" value="393352695" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYvt3" role="1pap1a">
+              <property role="1pa3iD" value="stroke" />
+              <property role="2gRgW$" value="1404471203" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYwL7" role="1pap1a">
+              <property role="1pa3iD" value="monitorchannel_alert" />
+              <property role="2gRgW$" value="205482751" />
             </node>
           </node>
         </node>
         <node concept="37mRIm" id="16Ng_xNT9l0" role="37mRID">
           <property role="37mO49" value="1275436067144897800" />
           <node concept="gqqVs" id="16Ng_xNT9kZ" role="37mO4d">
-            <property role="gqqTZ" value="187.0" />
-            <property role="gqqTW" value="121.1321207434726" />
-            <property role="gqqTX" value="180.0" />
-            <property role="gqqTy" value="31.999999999941792" />
+            <property role="gqqTZ" value="98.0" />
+            <property role="gqqTW" value="81.0728886781684" />
+            <property role="gqqTX" value="164.0" />
+            <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9KO" role="1pap1a">
               <property role="1pa3iD" value="activate_deactivate" />
@@ -3833,47 +3915,35 @@
         <node concept="37mRIm" id="16Ng_xNT9n8" role="37mRID">
           <property role="37mO49" value="1275436067144897929" />
           <node concept="gqqVs" id="16Ng_xNT9n7" role="37mO4d">
-            <property role="gqqTZ" value="150.0" />
-            <property role="gqqTW" value="173.1321207434144" />
-            <property role="gqqTX" value="220.0" />
-            <property role="gqqTy" value="51.09999999940628" />
+            <property role="gqqTZ" value="624.6666666666666" />
+            <property role="gqqTW" value="124.09998054504393" />
+            <property role="gqqTX" value="201.0" />
+            <property role="gqqTy" value="51.13649833202362" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9KP" role="1pap1a">
               <property role="1pa3iD" value="vibrate_steeringWheel" />
-              <property role="2gRgW$" value="1073741823" />
+              <property role="2gRgW$" value="734390523" />
             </node>
             <node concept="1pa3jb" id="16Ng_xNT9KQ" role="1pap1a">
               <property role="1pa3iD" value="desired_steeringWheel_angle" />
-              <property role="2gRgW$" value="735439604" />
+              <property role="2gRgW$" value="1073741823" />
             </node>
-            <node concept="1pa3jb" id="16Ng_xNT9KR" role="1pap1a">
-              <property role="1pa3iD" value="steeringWheel_angle" />
-              <property role="2gRgW$" value="2147483646" />
-            </node>
-            <node concept="1pa3jb" id="16Ng_xNT9KS" role="1pap1a">
-              <property role="1pa3iD" value="steeringWheel_torque" />
-              <property role="2gRgW$" value="1809181427" />
+            <node concept="1pa3jb" id="4j8iycQYw4o" role="1pap1a">
+              <property role="1pa3iD" value="steeringWheel_motor" />
+              <property role="2gRgW$" value="2143853728" />
             </node>
           </node>
         </node>
         <node concept="37mRIm" id="16Ng_xNT9sb" role="37mRID">
           <property role="37mO49" value="edge_1275436067144898229" />
           <node concept="2VclpC" id="16Ng_xNT9sa" role="37mO4d">
-            <node concept="2VclrF" id="16Ng_xNT9sc" role="2Vcluh">
-              <property role="2Vclpx" value="612.0" />
-              <property role="2Vclpz" value="94.71031169488037" />
+            <node concept="2VclrF" id="4j8iycQYwLc" role="2Vcluh">
+              <property role="2Vclpx" value="583.0" />
+              <property role="2Vclpz" value="220.12715270519251" />
             </node>
-            <node concept="2VclrF" id="16Ng_xNT9st" role="2Vcluh">
-              <property role="2Vclpx" value="612.0" />
-              <property role="2Vclpz" value="264.23212074282065" />
-            </node>
-            <node concept="2VclrF" id="16Ng_xNT9sw" role="2Vcluh">
-              <property role="2Vclpx" value="98.0" />
-              <property role="2Vclpz" value="264.23212074282065" />
-            </node>
-            <node concept="2VclrF" id="16Ng_xNT9Lo" role="2Vcluh">
-              <property role="2Vclpx" value="98.0" />
-              <property role="2Vclpz" value="189.13212074282066" />
+            <node concept="2VclrF" id="4j8iycQYwLd" role="2Vcluh">
+              <property role="2Vclpx" value="583.0" />
+              <property role="2Vclpz" value="159.23647887706755" />
             </node>
           </node>
         </node>
@@ -3881,30 +3951,22 @@
           <property role="37mO49" value="edge_1275436067144898149" />
           <node concept="2VclpC" id="16Ng_xNT9s$" role="37mO4d">
             <node concept="2VclrF" id="16Ng_xNT9sA" role="2Vcluh">
-              <property role="2Vclpx" value="592.0" />
-              <property role="2Vclpz" value="113.71704997613038" />
+              <property role="2Vclpx" value="563.0" />
+              <property role="2Vclpz" value="201.09448260786007" />
             </node>
             <node concept="2VclrF" id="16Ng_xNT9sW" role="2Vcluh">
-              <property role="2Vclpx" value="592.0" />
-              <property role="2Vclpz" value="244.23212074282065" />
-            </node>
-            <node concept="2VclrF" id="16Ng_xNT9sZ" role="2Vcluh">
-              <property role="2Vclpx" value="118.0" />
-              <property role="2Vclpz" value="244.23212074282065" />
-            </node>
-            <node concept="2VclrF" id="16Ng_xNT9Ln" role="2Vcluh">
-              <property role="2Vclpx" value="118.0" />
-              <property role="2Vclpz" value="208.23212074282065" />
+              <property role="2Vclpx" value="563.0" />
+              <property role="2Vclpz" value="140.13647887706756" />
             </node>
           </node>
         </node>
         <node concept="37mRIm" id="16Ng_xNT9uo" role="37mRID">
           <property role="37mO49" value="1275436067144898371" />
           <node concept="gqqVs" id="16Ng_xNT9un" role="37mO4d">
-            <property role="gqqTZ" value="729.0" />
-            <property role="gqqTW" value="40.510311695206354" />
-            <property role="gqqTX" value="252.0" />
-            <property role="gqqTy" value="51.09999999940628" />
+            <property role="gqqTZ" value="615.0" />
+            <property role="gqqTW" value="353.25132178624426" />
+            <property role="gqqTX" value="230.0" />
+            <property role="gqqTy" value="51.099999999999994" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9KT" role="1pap1a">
               <property role="1pa3iD" value="driver_takeover_request" />
@@ -3951,10 +4013,10 @@
         <node concept="37mRIm" id="16Ng_xNT9Dd" role="37mRID">
           <property role="37mO49" value="box_1275436067144899128" />
           <node concept="gqqVs" id="16Ng_xNT9Dc" role="37mO4d">
-            <property role="gqqTZ" value="1043.0" />
-            <property role="gqqTW" value="12.032363032743206" />
-            <property role="gqqTX" value="111.0" />
-            <property role="gqqTy" value="31.999999999941792" />
+            <property role="gqqTZ" value="909.0" />
+            <property role="gqqTW" value="320.3513217862443" />
+            <property role="gqqTX" value="101.0" />
+            <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9KX" role="1pap1a">
               <property role="1pa3iD" value="" />
@@ -3965,10 +4027,10 @@
         <node concept="37mRIm" id="16Ng_xNT9Df" role="37mRID">
           <property role="37mO49" value="box_1275436067144898780" />
           <node concept="gqqVs" id="16Ng_xNT9De" role="37mO4d">
-            <property role="gqqTZ" value="1043.0" />
-            <property role="gqqTW" value="86.6103116949386" />
-            <property role="gqqTX" value="55.0" />
-            <property role="gqqTy" value="31.999999999941792" />
+            <property role="gqqTZ" value="909.0" />
+            <property role="gqqTW" value="372.3513217862443" />
+            <property role="gqqTX" value="50.0" />
+            <property role="gqqTy" value="32.0" />
             <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
             <node concept="1pa3jb" id="16Ng_xNT9KY" role="1pap1a">
               <property role="1pa3iD" value="" />
@@ -3979,43 +4041,52 @@
         <node concept="37mRIm" id="16Ng_xNT9L0" role="37mRID">
           <property role="37mO49" value="edge_1275436067144897647" />
           <node concept="2VclpC" id="16Ng_xNT9KZ" role="37mO4d">
-            <node concept="2VclrF" id="16Ng_xNT9L1" role="2Vcluh">
-              <property role="2Vclpx" value="383.0" />
-              <property role="2Vclpz" value="47.0253824622226" />
+            <node concept="2VclrF" id="4j8iycQYvwO" role="2Vcluh">
+              <property role="2Vclpx" value="294.0" />
+              <property role="2Vclpz" value="239.14527602524032" />
             </node>
-            <node concept="2VclrF" id="16Ng_xNT9L2" role="2Vcluh">
-              <property role="2Vclpx" value="383.0" />
-              <property role="2Vclpz" value="47.09720948953659" />
+            <node concept="2VclrF" id="4j8iycQYvwP" role="2Vcluh">
+              <property role="2Vclpx" value="294.0" />
+              <property role="2Vclpz" value="239.21260592790787" />
             </node>
           </node>
         </node>
         <node concept="37mRIm" id="16Ng_xNT9L4" role="37mRID">
           <property role="37mO49" value="edge_1275436067144897693" />
           <node concept="2VclpC" id="16Ng_xNT9L3" role="37mO4d">
-            <node concept="2VclrF" id="16Ng_xNT9L5" role="2Vcluh">
-              <property role="2Vclpx" value="383.0" />
-              <property role="2Vclpz" value="66.1253824622226" />
+            <node concept="2VclrF" id="4j8iycQYvwQ" role="2Vcluh">
+              <property role="2Vclpx" value="294.0" />
+              <property role="2Vclpz" value="258.2452760252403" />
             </node>
-            <node concept="2VclrF" id="16Ng_xNT9L6" role="2Vcluh">
-              <property role="2Vclpx" value="383.0" />
-              <property role="2Vclpz" value="66.10433146416446" />
+            <node concept="2VclrF" id="4j8iycQYvwR" role="2Vcluh">
+              <property role="2Vclpx" value="294.0" />
+              <property role="2Vclpz" value="258.2200081193381" />
             </node>
           </node>
         </node>
         <node concept="37mRIm" id="16Ng_xNT9L8" role="37mRID">
           <property role="37mO49" value="edge_1275436067144897744" />
-          <node concept="2VclpC" id="16Ng_xNT9L7" role="37mO4d" />
+          <node concept="2VclpC" id="16Ng_xNT9L7" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYvte" role="2Vcluh">
+              <property role="2Vclpx" value="294.0" />
+              <property role="2Vclpz" value="277.27794612257276" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYvtf" role="2Vcluh">
+              <property role="2Vclpx" value="294.0" />
+              <property role="2Vclpz" value="277.2313708839715" />
+            </node>
+          </node>
         </node>
         <node concept="37mRIm" id="16Ng_xNT9Lc" role="37mRID">
           <property role="37mO49" value="edge_1275436067144897857" />
           <node concept="2VclpC" id="16Ng_xNT9Lb" role="37mO4d">
-            <node concept="2VclrF" id="16Ng_xNT9Ld" role="2Vcluh">
-              <property role="2Vclpx" value="383.0" />
-              <property role="2Vclpz" value="137.1321207434144" />
+            <node concept="2VclrF" id="4j8iycQYw7m" role="2Vcluh">
+              <property role="2Vclpx" value="334.0" />
+              <property role="2Vclpz" value="97.0728886781684" />
             </node>
-            <node concept="2VclrF" id="16Ng_xNT9Le" role="2Vcluh">
-              <property role="2Vclpx" value="383.0" />
-              <property role="2Vclpz" value="104.16019055055101" />
+            <node concept="2VclrF" id="4j8iycQYw7n" role="2Vcluh">
+              <property role="2Vclpx" value="334.0" />
+              <property role="2Vclpz" value="182.1017621182507" />
             </node>
           </node>
         </node>
@@ -4023,12 +4094,12 @@
           <property role="37mO49" value="edge_1275436067144898004" />
           <node concept="2VclpC" id="16Ng_xNT9Lf" role="37mO4d">
             <node concept="2VclrF" id="16Ng_xNTa68" role="2Vcluh">
-              <property role="2Vclpx" value="403.0" />
-              <property role="2Vclpz" value="208.23212074282065" />
+              <property role="2Vclpx" value="294.0" />
+              <property role="2Vclpz" value="254.1598368175677" />
             </node>
             <node concept="2VclrF" id="16Ng_xNTa69" role="2Vcluh">
-              <property role="2Vclpx" value="403.0" />
-              <property role="2Vclpz" value="123.26019055055102" />
+              <property role="2Vclpx" value="294.0" />
+              <property role="2Vclpz" value="199.14482200542056" />
             </node>
           </node>
         </node>
@@ -4036,12 +4107,20 @@
           <property role="37mO49" value="edge_1275436067144898074" />
           <node concept="2VclpC" id="16Ng_xNT9Lj" role="37mO4d">
             <node concept="2VclrF" id="1RZJT$oWwjx" role="2Vcluh">
-              <property role="2Vclpx" value="423.0" />
-              <property role="2Vclpz" value="189.13212074282066" />
+              <property role="2Vclpx" value="578.0" />
+              <property role="2Vclpz" value="254.1598368175677" />
             </node>
             <node concept="2VclrF" id="1RZJT$oWwjy" role="2Vcluh">
-              <property role="2Vclpx" value="423.0" />
-              <property role="2Vclpz" value="142.2882603576294" />
+              <property role="2Vclpx" value="578.0" />
+              <property role="2Vclpz" value="274.1598368175677" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYvti" role="2Vcluh">
+              <property role="2Vclpx" value="374.0" />
+              <property role="2Vclpz" value="274.1598368175677" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYvtj" role="2Vcluh">
+              <property role="2Vclpx" value="374.0" />
+              <property role="2Vclpz" value="218.1598368175677" />
             </node>
           </node>
         </node>
@@ -4060,7 +4139,16 @@
         </node>
         <node concept="37mRIm" id="16Ng_xNT9Ox" role="37mRID">
           <property role="37mO49" value="edge_1275436067144899504" />
-          <node concept="2VclpC" id="16Ng_xNT9Ow" role="37mO4d" />
+          <node concept="2VclpC" id="16Ng_xNT9Ow" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYwLy" role="2Vcluh">
+              <property role="2Vclpx" value="877.0" />
+              <property role="2Vclpz" value="369.25132178624426" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYwLz" role="2Vcluh">
+              <property role="2Vclpx" value="877.0" />
+              <property role="2Vclpz" value="336.3513217862443" />
+            </node>
+          </node>
         </node>
         <node concept="37mRIm" id="16Ng_xNT9YN" role="37mRID">
           <property role="37mO49" value="edge_1275436067144900420" />
@@ -4068,20 +4156,20 @@
         </node>
         <node concept="37mRIm" id="16Ng_xNTa0L" role="37mRID">
           <property role="37mO49" value="edge_1275436067144898683" />
-          <node concept="2VclpC" id="16Ng_xNTa0K" role="37mO4d" />
+          <node concept="2VclpC" id="16Ng_xNTa0K" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYwPJ" role="2Vcluh">
+              <property role="2Vclpx" value="563.0" />
+              <property role="2Vclpz" value="239.2271527051925" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYwPK" role="2Vcluh">
+              <property role="2Vclpx" value="563.0" />
+              <property role="2Vclpz" value="388.3513217862443" />
+            </node>
+          </node>
         </node>
         <node concept="37mRIm" id="16Ng_xNTa2L" role="37mRID">
           <property role="37mO49" value="edge_1275436067144897606" />
-          <node concept="2VclpC" id="16Ng_xNTa2K" role="37mO4d">
-            <node concept="2VclrF" id="2Q6_IeFkg4a" role="2Vcluh">
-              <property role="2Vclpx" value="383.0" />
-              <property role="2Vclpz" value="28.018644180972604" />
-            </node>
-            <node concept="2VclrF" id="2Q6_IeFkg4b" role="2Vcluh">
-              <property role="2Vclpx" value="383.0" />
-              <property role="2Vclpz" value="28.079878708257606" />
-            </node>
-          </node>
+          <node concept="2VclpC" id="16Ng_xNTa2K" role="37mO4d" />
         </node>
         <node concept="37mRIm" id="1RZJT$oWwh9" role="37mRID">
           <property role="37mO49" value="edge_2161657010430542800" />
@@ -4090,13 +4178,261 @@
         <node concept="37mRIm" id="2Q6_IeFkg4d" role="37mRID">
           <property role="37mO49" value="edge_2161657010430542689" />
           <node concept="2VclpC" id="2Q6_IeFkg4c" role="37mO4d">
-            <node concept="2VclrF" id="2Q6_IeFkg4e" role="2Vcluh">
-              <property role="2Vclpx" value="592.0" />
-              <property role="2Vclpz" value="56.603573413630386" />
+            <node concept="2VclrF" id="4j8iycQYwmP" role="2Vcluh">
+              <property role="2Vclpx" value="543.0" />
+              <property role="2Vclpz" value="258.2598228025249" />
             </node>
-            <node concept="2VclrF" id="2Q6_IeFkg4f" role="2Vcluh">
-              <property role="2Vclpx" value="592.0" />
-              <property role="2Vclpz" value="56.510311694880386" />
+            <node concept="2VclrF" id="4j8iycQYwmQ" role="2Vcluh">
+              <property role="2Vclpx" value="543.0" />
+              <property role="2Vclpz" value="369.25132178624426" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYvkJ" role="37mRID">
+          <property role="37mO49" value="4956292905027892428" />
+          <node concept="gqqVs" id="4j8iycQYvkI" role="37mO4d">
+            <property role="gqqTZ" value="615.0" />
+            <property role="gqqTW" value="33.0" />
+            <property role="gqqTX" value="69.0" />
+            <property role="gqqTy" value="51.09998054504395" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYvt5" role="1pap1a">
+              <property role="1pa3iD" value="shutdownSignal" />
+              <property role="2gRgW$" value="2145383205" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYvxV" role="1pap1a">
+              <property role="1pa3iD" value="stroke_control_unit" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYvxW" role="1pap1a">
+              <property role="1pa3iD" value="stroke_image_processing" />
+              <property role="2gRgW$" value="735440164" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYvt7" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144897458" />
+          <node concept="2VclpC" id="4j8iycQYvt6" role="37mO4d" />
+        </node>
+        <node concept="37mRIm" id="4j8iycQYvtb" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144897477" />
+          <node concept="2VclpC" id="4j8iycQYvta" role="37mO4d" />
+        </node>
+        <node concept="37mRIm" id="4j8iycQYvtn" role="37mRID">
+          <property role="37mO49" value="edge_4956292905027892642" />
+          <node concept="2VclpC" id="4j8iycQYvtm" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYvto" role="2Vcluh">
+              <property role="2Vclpx" value="543.0" />
+              <property role="2Vclpz" value="182.07770694447674" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYvtp" role="2Vcluh">
+              <property role="2Vclpx" value="543.0" />
+              <property role="2Vclpz" value="68.09998054504393" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYvtr" role="37mRID">
+          <property role="37mO49" value="edge_4956292905027892790" />
+          <node concept="2VclpC" id="4j8iycQYvtq" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYwLe" role="2Vcluh">
+              <property role="2Vclpx" value="294.0" />
+              <property role="2Vclpz" value="201.09583026452458" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYwLf" role="2Vcluh">
+              <property role="2Vclpx" value="294.0" />
+              <property role="2Vclpz" value="48.99998054504397" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYvtv" role="37mRID">
+          <property role="37mO49" value="edge_4956292905027892941" />
+          <node concept="2VclpC" id="4j8iycQYvtu" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYvtw" role="2Vcluh">
+              <property role="2Vclpx" value="877.0" />
+              <property role="2Vclpz" value="58.54998054504392" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYvtx" role="2Vcluh">
+              <property role="2Vclpx" value="877.0" />
+              <property role="2Vclpz" value="104.09998054504393" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYwLg" role="2Vcluh">
+              <property role="2Vclpx" value="374.0" />
+              <property role="2Vclpz" value="104.09998054504393" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYwLh" role="2Vcluh">
+              <property role="2Vclpx" value="374.0" />
+              <property role="2Vclpz" value="163.09765350879096" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYvSA" role="37mRID">
+          <property role="37mO49" value="box_4956292905027894773" />
+          <node concept="gqqVs" id="4j8iycQYvS_" role="37mO4d">
+            <property role="gqqTZ" value="117.0" />
+            <property role="gqqTW" value="316.2513828214005" />
+            <property role="gqqTX" value="145.0" />
+            <property role="gqqTy" value="31.99993896484375" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYw4p" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYvSC" role="37mRID">
+          <property role="37mO49" value="box_4956292905027894795" />
+          <node concept="gqqVs" id="4j8iycQYvSB" role="37mO4d">
+            <property role="gqqTZ" value="909.0" />
+            <property role="gqqTW" value="133.6865399122238" />
+            <property role="gqqTX" value="108.0" />
+            <property role="gqqTy" value="31.99993896484375" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYw4r" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYvZZ" role="37mRID">
+          <property role="37mO49" value="box_4956292905027895260" />
+          <node concept="gqqVs" id="4j8iycQYvZY" role="37mO4d">
+            <property role="gqqTZ" value="110.0" />
+            <property role="gqqTW" value="133.0728886781684" />
+            <property role="gqqTX" value="152.0" />
+            <property role="gqqTy" value="31.99993896484375" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYw4q" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYw4x" role="37mRID">
+          <property role="37mO49" value="edge_4956292905027895002" />
+          <node concept="2VclpC" id="4j8iycQYw4w" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYw4y" role="2Vcluh">
+              <property role="2Vclpx" value="578.0" />
+              <property role="2Vclpz" value="310.0973368175677" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYw4z" role="2Vcluh">
+              <property role="2Vclpx" value="578.0" />
+              <property role="2Vclpz" value="307.6273905285052" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYw7r" role="37mRID">
+          <property role="37mO49" value="edge_4956292905027895444" />
+          <node concept="2VclpC" id="4j8iycQYw7q" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYw7s" role="2Vcluh">
+              <property role="2Vclpx" value="578.0" />
+              <property role="2Vclpz" value="362.0348368175677" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYw7t" role="2Vcluh">
+              <property role="2Vclpx" value="578.0" />
+              <property role="2Vclpz" value="326.6341288097552" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYwmU" role="37mRID">
+          <property role="37mO49" value="edge_4956292905027896479" />
+          <node concept="2VclpC" id="4j8iycQYwmT" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYwmV" role="2Vcluh">
+              <property role="2Vclpx" value="294.0" />
+              <property role="2Vclpz" value="332.25132178624426" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYwmW" role="2Vcluh">
+              <property role="2Vclpx" value="294.0" />
+              <property role="2Vclpz" value="296.25132178624426" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYwmY" role="37mRID">
+          <property role="37mO49" value="edge_4956292905027896608" />
+          <node concept="2VclpC" id="4j8iycQYwmX" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYwmZ" role="2Vcluh">
+              <property role="2Vclpx" value="314.0" />
+              <property role="2Vclpz" value="149.07282764301215" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYwn0" role="2Vcluh">
+              <property role="2Vclpx" value="314.0" />
+              <property role="2Vclpz" value="201.10520373647768" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYwsN" role="37mRID">
+          <property role="37mO49" value="4956292905027897015" />
+          <node concept="gqqVs" id="4j8iycQYwsM" role="37mO4d">
+            <property role="gqqTZ" value="909.0" />
+            <property role="gqqTW" value="185.68647887706754" />
+            <property role="gqqTX" value="76.0" />
+            <property role="gqqTy" value="69.48471679687499" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYwL8" role="1pap1a">
+              <property role="1pa3iD" value="steeringWheelAngle" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYwL9" role="1pap1a">
+              <property role="1pa3iD" value="desiredSteeringWheelAngle" />
+              <property role="2gRgW$" value="1044980786" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYwLa" role="1pap1a">
+              <property role="1pa3iD" value="steeringMotor" />
+              <property role="2gRgW$" value="545885485" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYwLb" role="1pap1a">
+              <property role="1pa3iD" value="alert" />
+              <property role="2gRgW$" value="2118722609" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYwLj" role="37mRID">
+          <property role="37mO49" value="edge_4956292905027897377" />
+          <node concept="2VclpC" id="4j8iycQYwLi" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYwLk" role="2Vcluh">
+              <property role="2Vclpx" value="1037.0" />
+              <property role="2Vclpz" value="220.10850036144254" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYwLl" role="2Vcluh">
+              <property role="2Vclpx" value="1037.0" />
+              <property role="2Vclpz" value="12.0" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYwLm" role="2Vcluh">
+              <property role="2Vclpx" value="354.0" />
+              <property role="2Vclpz" value="12.0" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYwLn" role="2Vcluh">
+              <property role="2Vclpx" value="354.0" />
+              <property role="2Vclpz" value="144.08283996855565" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYwLp" role="37mRID">
+          <property role="37mO49" value="edge_4956292905027898004" />
+          <node concept="2VclpC" id="4j8iycQYwLo" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYwLq" role="2Vcluh">
+              <property role="2Vclpx" value="877.0" />
+              <property role="2Vclpz" value="149.68647887706754" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYwLr" role="2Vcluh">
+              <property role="2Vclpx" value="877.0" />
+              <property role="2Vclpz" value="201.02715270519252" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYwLt" role="37mRID">
+          <property role="37mO49" value="edge_4956292905027898284" />
+          <node concept="2VclpC" id="4j8iycQYwLs" role="37mO4d" />
+        </node>
+        <node concept="37mRIm" id="4j8iycQYwPM" role="37mRID">
+          <property role="37mO49" value="edge_4956292905027897690" />
+          <node concept="2VclpC" id="4j8iycQYwPL" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYwPN" role="2Vcluh">
+              <property role="2Vclpx" value="877.0" />
+              <property role="2Vclpz" value="332.25132178624426" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYwPO" role="2Vcluh">
+              <property role="2Vclpx" value="877.0" />
+              <property role="2Vclpz" value="239.17119567394252" />
             </node>
           </node>
         </node>
@@ -4237,34 +4573,6 @@
           <ref role="3Ug1AY" node="16Ng_xNT8Hh" resolve="SteeringWheel_Control_Unit" />
         </node>
       </node>
-      <node concept="3Ug1$w" id="16Ng_xNT9nk" role="3UgYNK">
-        <node concept="3Ug1GC" id="16Ng_xNT9nl" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="16Ng_xNT8IZ" resolve="steeringWheel_angle" />
-          <node concept="3Ug1GJ" id="16Ng_xNT9nm" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="16Ng_xNT9m9" resolve="SteeringWheel_Control_Unit" />
-          </node>
-        </node>
-        <node concept="3Ug1GC" id="16Ng_xNT9nn" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="16Ng_xNT8vE" resolve="steeringWheel_angle" />
-          <node concept="3Ug1GJ" id="16Ng_xNT9no" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="16Ng_xNT9gs" resolve="LKAControlBox" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Ug1$w" id="16Ng_xNT9oq" role="3UgYNK">
-        <node concept="3Ug1GC" id="16Ng_xNT9or" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="16Ng_xNT8Rv" resolve="steeringWheel_torque" />
-          <node concept="3Ug1GJ" id="16Ng_xNT9os" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="16Ng_xNT9m9" resolve="SteeringWheel_Control_Unit" />
-          </node>
-        </node>
-        <node concept="3Ug1GC" id="16Ng_xNT9ot" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="16Ng_xNT8$g" resolve="steeringWheel_torque" />
-          <node concept="3Ug1GJ" id="16Ng_xNT9ou" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="16Ng_xNT9gs" resolve="LKAControlBox" />
-          </node>
-        </node>
-      </node>
       <node concept="3Ug1$w" id="16Ng_xNT9p_" role="3UgYNK">
         <node concept="3Ug1GC" id="16Ng_xNT9pA" role="3Ug1$A">
           <ref role="3Ug1Ha" node="16Ng_xNT8$K" resolve="vibrate_steeringWheel" />
@@ -4323,6 +4631,12 @@
           <ref role="2XJXdw" node="2Q6_IeFkaVR" resolve="enum_state" />
         </node>
       </node>
+      <node concept="3UnI9n" id="4j8iycQYvSb" role="3UnI90">
+        <property role="TrG5h" value="steeringMotor" />
+        <node concept="2XEmfi" id="4j8iycQYvSm" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYvHc" resolve="steeringWheel_motor_range" />
+        </node>
+      </node>
       <node concept="3Ug1$w" id="16Ng_xNT9IK" role="3UgYNK">
         <node concept="3Ug1GC" id="16Ng_xNT9IL" role="3Ug1$A">
           <ref role="3Ug1Ha" node="16Ng_xNT8RK" resolve="alert_signal" />
@@ -4357,6 +4671,158 @@
         </node>
         <node concept="3Ug1Ap" id="1RZJT$oWwfj" role="3Ug1_r">
           <ref role="3Ug1Ao" node="16Ng_xNT9zs" resolve="state" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="4j8iycQYvjc" role="3UgYNK">
+        <property role="TrG5h" value="Watchdog" />
+        <node concept="3Ug1AZ" id="4j8iycQYvjd" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4j8iycQYuMY" resolve="Watchdog" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYvmy" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYvmz" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYviM" resolve="stroke" />
+          <node concept="3Ug1GJ" id="4j8iycQYvm$" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="16Ng_xNT9gs" resolve="LKAControlBox" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYvm_" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYvig" resolve="stroke_control_unit" />
+          <node concept="3Ug1GJ" id="4j8iycQYvmA" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYvjc" resolve="Watchdog" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYvoQ" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYvoR" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYvos" resolve="stroke" />
+          <node concept="3Ug1GJ" id="4j8iycQYvoS" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="16Ng_xNT9eh" resolve="ImageProcessingUnit" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYvxS" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYvxw" resolve="stroke_image_processing" />
+          <node concept="3Ug1GJ" id="4j8iycQYvxR" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYvjc" resolve="Watchdog" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYvrd" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYvre" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYvin" resolve="shutdownSignal" />
+          <node concept="3Ug1GJ" id="4j8iycQYvrf" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYvjc" resolve="Watchdog" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYvrg" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYvqD" resolve="watchdog_alert" />
+          <node concept="3Ug1GJ" id="4j8iycQYvrh" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="16Ng_xNT9gs" resolve="LKAControlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI81" id="4j8iycQYvRP" role="3UnI9m">
+        <property role="TrG5h" value="steeringWheelAngle" />
+        <node concept="2XEmfi" id="4j8iycQYvRW" role="3UnI80">
+          <ref role="2XEmfl" node="2Q6_IeFkbDI" resolve="steeringWheel_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="4j8iycQYvZs" role="3UnI9m">
+        <property role="TrG5h" value="steeringWheelTorque" />
+        <node concept="2XEmfi" id="4j8iycQYvZJ" role="3UnI80">
+          <ref role="2XEmfl" node="2Q6_IeFkbP6" resolve="steeringWheel_torque_range" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYvXp" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYvXq" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYv$6" resolve="steeringWheel_motor" />
+          <node concept="3Ug1GJ" id="4j8iycQYvXr" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="16Ng_xNT9m9" resolve="SteeringWheel_Control_Unit" />
+          </node>
+        </node>
+        <node concept="3Ug1Ap" id="4j8iycQYvXs" role="3Ug1_r">
+          <ref role="3Ug1Ao" node="4j8iycQYvSb" resolve="steeringMotor" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYwiv" role="3UgYNK">
+        <node concept="3Ug1Ap" id="4j8iycQYwiw" role="3Ug1$A">
+          <ref role="3Ug1Ao" node="4j8iycQYvRP" resolve="steeringWheelAngle" />
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYwix" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="16Ng_xNT8vE" resolve="steeringWheel_angle" />
+          <node concept="3Ug1GJ" id="4j8iycQYwiy" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="16Ng_xNT9gs" resolve="LKAControlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYwkw" role="3UgYNK">
+        <node concept="3Ug1Ap" id="4j8iycQYwkx" role="3Ug1$A">
+          <ref role="3Ug1Ao" node="4j8iycQYvZs" resolve="steeringWheelTorque" />
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYwky" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="16Ng_xNT8$g" resolve="steeringWheel_torque" />
+          <node concept="3Ug1GJ" id="4j8iycQYwkz" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="16Ng_xNT9gs" resolve="LKAControlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="4j8iycQYwqR" role="3UgYNK">
+        <property role="TrG5h" value="SteeringMonitor" />
+        <node concept="3Ug1AZ" id="4j8iycQYwqS" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4j8iycQYv2A" resolve="Monitor_Channel" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYwwx" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYwwy" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYwwf" resolve="alert" />
+          <node concept="3Ug1GJ" id="4j8iycQYwwz" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYwqR" resolve="SteeringMonitor" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYww$" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYwv$" resolve="monitorchannel_alert" />
+          <node concept="3Ug1GJ" id="4j8iycQYww_" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="16Ng_xNT9gs" resolve="LKAControlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYw_q" role="3UgYNK">
+        <node concept="3Ug1Ap" id="4j8iycQYw_r" role="3Ug1$A">
+          <ref role="3Ug1Ao" node="4j8iycQYvRP" resolve="steeringWheelAngle" />
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYw_s" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYwzm" resolve="steeringWheelAngle" />
+          <node concept="3Ug1GJ" id="4j8iycQYw_t" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYwqR" resolve="SteeringMonitor" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYwEk" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYwEl" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYv$6" resolve="steeringWheel_motor" />
+          <node concept="3Ug1GJ" id="4j8iycQYwEm" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="16Ng_xNT9m9" resolve="SteeringWheel_Control_Unit" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYwEn" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYw$e" resolve="steeringMotor" />
+          <node concept="3Ug1GJ" id="4j8iycQYwEo" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYwqR" resolve="SteeringMonitor" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYwIG" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYwIH" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="16Ng_xNT8sD" resolve="desired_steeringWheel_angle" />
+          <node concept="3Ug1GJ" id="4j8iycQYwII" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="16Ng_xNT9gs" resolve="LKAControlBox" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYwIJ" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYwzL" resolve="desiredSteeringWheelAngle" />
+          <node concept="3Ug1GJ" id="4j8iycQYwIK" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYwqR" resolve="SteeringMonitor" />
+          </node>
         </node>
       </node>
     </node>
@@ -4470,6 +4936,10 @@
       <node concept="3UnI9n" id="16Ng_xNT8eP" role="3UnI90">
         <property role="TrG5h" value="lane_detect" />
         <node concept="2Hds6S" id="2Q6_IeFkcHP" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYvos" role="3UnI90">
+        <property role="TrG5h" value="stroke" />
+        <node concept="2Hds6S" id="4j8iycQYvoK" role="3UnI80" />
       </node>
       <node concept="0Sh09" id="4j8iycQYmw_" role="lGtFl">
         <ref role="0Sh0a" node="4WLVkAsg6IZ" />
@@ -4839,6 +5309,10 @@
             </node>
           </node>
         </node>
+        <node concept="JlCpM" id="4j8iycQYxYA" role="32O2ov">
+          <property role="TrG5h" value="stroke" />
+          <node concept="1yCjRe" id="4j8iycQYxZg" role="1zoetD" />
+        </node>
       </node>
       <node concept="2Hdtzr" id="2Q6_IeFkfLc" role="2Hdtzq">
         <property role="TrG5h" value="lane_distance_left" />
@@ -4860,6 +5334,12 @@
       </node>
       <node concept="2Hdtzr" id="2Q6_IeFkfLB" role="2Hdtzq">
         <property role="TrG5h" value="steeringWheel_torque" />
+      </node>
+      <node concept="2Hdtzr" id="4j8iycQYxZp" role="2Hdtzq">
+        <property role="TrG5h" value="watchdog_alert" />
+      </node>
+      <node concept="2Hdtzr" id="4j8iycQYy0c" role="2Hdtzq">
+        <property role="TrG5h" value="monitorchannel_alert" />
       </node>
     </node>
     <node concept="eml0t" id="2Q6_IeFkfMd" role="2HcuB8">
@@ -4913,14 +5393,8 @@
       <property role="TrG5h" value="Steering_Wheel_Control_Unit_Impl" />
       <node concept="32O2o0" id="4j8iycQYnZ4" role="2HcbjO">
         <node concept="JlCpM" id="4j8iycQYnZK" role="32O2ov">
-          <property role="TrG5h" value="steeringWheel_angle" />
+          <property role="TrG5h" value="steeringWheel_motor" />
           <node concept="2IPVmt" id="4j8iycQYo1m" role="1zoetD">
-            <property role="2IPVms" value="0" />
-          </node>
-        </node>
-        <node concept="JlCpM" id="4j8iycQYo0G" role="32O2ov">
-          <property role="TrG5h" value="steeringWheel_torque" />
-          <node concept="2IPVmt" id="4j8iycQYo1K" role="1zoetD">
             <property role="2IPVms" value="0" />
           </node>
         </node>
@@ -4971,7 +5445,76 @@
       </node>
     </node>
     <node concept="2SQmWS" id="4j8iycQYo6q" role="2HcuB8" />
-    <node concept="2SQmWS" id="4j8iycQYnXc" role="2HcuB8" />
+    <node concept="2Hdtz0" id="4j8iycQYoKn" role="2HcuB8">
+      <property role="TrG5h" value="ImageProcessing_Impl" />
+      <node concept="32O2o0" id="4j8iycQYoLM" role="2HcbjO">
+        <node concept="JlCpM" id="4j8iycQYoLX" role="32O2ov">
+          <property role="TrG5h" value="lane_distance_left" />
+          <node concept="2IPVmt" id="4j8iycQYoNa" role="1zoetD">
+            <property role="2IPVms" value="0" />
+          </node>
+        </node>
+        <node concept="JlCpM" id="4j8iycQYoME" role="32O2ov">
+          <property role="TrG5h" value="lane_distance_right" />
+          <node concept="2IPVmt" id="4j8iycQYoN$" role="1zoetD">
+            <property role="2IPVms" value="0" />
+          </node>
+        </node>
+        <node concept="JlCpM" id="4j8iycQYoO0" role="32O2ov">
+          <property role="TrG5h" value="state_image_processing" />
+          <node concept="2HeeqP" id="4j8iycQYoOQ" role="1zoetD">
+            <ref role="2HeeqO" node="2cE4ICdOt5W" resolve="ok" />
+          </node>
+        </node>
+        <node concept="JlCpM" id="4j8iycQYoP6" role="32O2ov">
+          <property role="TrG5h" value="lane_detect" />
+          <node concept="1yCjRe" id="4j8iycQYoPN" role="1zoetD" />
+        </node>
+        <node concept="JlCpM" id="4j8iycQYxXI" role="32O2ov">
+          <property role="TrG5h" value="stroke" />
+          <node concept="1yCjRe" id="4j8iycQYxYe" role="1zoetD" />
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="4j8iycQYoLD" role="2Hdtzq">
+        <property role="TrG5h" value="connectivity" />
+      </node>
+      <node concept="2Hdtzr" id="4j8iycQYoLF" role="2Hdtzq">
+        <property role="TrG5h" value="operation" />
+      </node>
+      <node concept="2Hdtzr" id="4j8iycQYoLI" role="2Hdtzq">
+        <property role="TrG5h" value="image" />
+      </node>
+    </node>
+    <node concept="eml0t" id="4j8iycQYoPW" role="2HcuB8">
+      <property role="TrG5h" value="imageProcessing_unit" />
+      <node concept="3Ug1AZ" id="4j8iycQYoRt" role="eml14">
+        <ref role="3Ug1AY" node="16Ng_xNT87r" resolve="ImageProcessingUnit" />
+      </node>
+      <node concept="eml1q" id="4j8iycQYoRw" role="eml13">
+        <ref role="eml1l" node="4j8iycQYoKn" resolve="ImageProcessing_Impl" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYoRz" role="2HcuB8" />
+    <node concept="2Hdtz0" id="4j8iycQYoUu" role="2HcuB8">
+      <property role="TrG5h" value="activationButton_Impl" />
+      <node concept="32O2o0" id="4j8iycQYoVZ" role="2HcbjO">
+        <node concept="JlCpM" id="4j8iycQYoW4" role="32O2ov">
+          <property role="TrG5h" value="activate_deactivate" />
+          <node concept="1yCjRe" id="4j8iycQYoXf" role="1zoetD" />
+        </node>
+      </node>
+    </node>
+    <node concept="eml0t" id="4j8iycQYoZ0" role="2HcuB8">
+      <property role="TrG5h" value="activationButton_unit" />
+      <node concept="3Ug1AZ" id="4j8iycQYp0D" role="eml14">
+        <ref role="3Ug1AY" node="16Ng_xNT8tc" resolve="LKA_Activation_Button" />
+      </node>
+      <node concept="eml1q" id="4j8iycQYp0G" role="eml13">
+        <ref role="eml1l" node="4j8iycQYoUu" resolve="activationButton_Impl" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYp0J" role="2HcuB8" />
+    <node concept="2SQmWS" id="4j8iycQYp2k" role="2HcuB8" />
   </node>
   <node concept="1QQeGf" id="2NJwv_HFGH$">
     <property role="TrG5h" value="_303_TechnicalSafetyRequirements_LKA_Controller" />
@@ -5285,6 +5828,1386 @@
         </node>
       </node>
       <node concept="DA$zP" id="4j8iycQYlpy" role="0nOlf" />
+    </node>
+  </node>
+  <node concept="2HdtXS" id="4j8iycQYuqM">
+    <property role="TrG5h" value="_206_functional_architecture_backup_copy" />
+    <property role="3GE5qa" value="" />
+    <node concept="2XJXe5" id="4j8iycQYuqN" role="2HcuB8">
+      <property role="TrG5h" value="enum_state" />
+      <node concept="2Hdrtq" id="4j8iycQYuqO" role="2XJXdW">
+        <property role="TrG5h" value="camera_fail" />
+      </node>
+      <node concept="2Hdrtq" id="4j8iycQYuqP" role="2XJXdW">
+        <property role="TrG5h" value="image_process_fail" />
+      </node>
+      <node concept="2Hdrtq" id="4j8iycQYuqQ" role="2XJXdW">
+        <property role="TrG5h" value="ok" />
+      </node>
+      <node concept="2Hdrtq" id="4j8iycQYuqR" role="2XJXdW">
+        <property role="TrG5h" value="lane_keeping_fail" />
+      </node>
+      <node concept="2Hdrtq" id="4j8iycQYuqS" role="2XJXdW">
+        <property role="TrG5h" value="degraded_mode" />
+      </node>
+      <node concept="2Hdrtq" id="4j8iycQYuqT" role="2XJXdW">
+        <property role="TrG5h" value="emergency_stop_required" />
+      </node>
+      <node concept="2Hdrtq" id="4j8iycQYuqU" role="2XJXdW">
+        <property role="TrG5h" value="dirt_detected" />
+      </node>
+      <node concept="2Hdrtq" id="4j8iycQYuqV" role="2XJXdW">
+        <property role="TrG5h" value="driver_engages" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYuqW" role="2HcuB8" />
+    <node concept="2XEm0_" id="4j8iycQYuqX" role="2HcuB8">
+      <property role="TrG5h" value="lane_distance" />
+      <node concept="2IPVmt" id="4j8iycQYuqY" role="2XEmf_">
+        <property role="2IPVms" value="-50" />
+      </node>
+      <node concept="2IPVmt" id="4j8iycQYuqZ" role="2XEmfA">
+        <property role="2IPVms" value="200" />
+      </node>
+    </node>
+    <node concept="2XEm0_" id="4j8iycQYur0" role="2HcuB8">
+      <property role="TrG5h" value="brightness" />
+      <node concept="2IPVmt" id="4j8iycQYur1" role="2XEmf_">
+        <property role="2IPVms" value="0" />
+      </node>
+      <node concept="2IPVmt" id="4j8iycQYur2" role="2XEmfA">
+        <property role="2IPVms" value="255" />
+      </node>
+    </node>
+    <node concept="2XEm0_" id="4j8iycQYur3" role="2HcuB8">
+      <property role="TrG5h" value="steeringWheel_range" />
+      <node concept="2IPVmt" id="4j8iycQYur4" role="2XEmf_">
+        <property role="2IPVms" value="-720" />
+      </node>
+      <node concept="2IPVmt" id="4j8iycQYur5" role="2XEmfA">
+        <property role="2IPVms" value="720" />
+      </node>
+    </node>
+    <node concept="2XEm0_" id="4j8iycQYur6" role="2HcuB8">
+      <property role="TrG5h" value="steeringWheel_torque_range" />
+      <node concept="2IPVmt" id="4j8iycQYur7" role="2XEmf_">
+        <property role="2IPVms" value="-5" />
+      </node>
+      <node concept="2IPVmt" id="4j8iycQYur8" role="2XEmfA">
+        <property role="2IPVms" value="5" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYur9" role="2HcuB8" />
+    <node concept="2dDAVa" id="4j8iycQYura" role="2HcuB8">
+      <property role="TrG5h" value="Camera" />
+      <node concept="3UnI9n" id="4j8iycQYurb" role="3UnI90">
+        <property role="TrG5h" value="connectivity" />
+        <node concept="2Hds6S" id="4j8iycQYurc" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYurd" role="3UnI90">
+        <property role="TrG5h" value="operation" />
+        <node concept="2Hds6S" id="4j8iycQYure" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYurf" role="3UnI90">
+        <property role="TrG5h" value="image" />
+        <node concept="sZLQy" id="4j8iycQYurg" role="3UnI80">
+          <node concept="2IPVmt" id="4j8iycQYurh" role="sZLUY">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="4j8iycQYuri" role="sZLUN">
+            <property role="2IPVms" value="1024" />
+          </node>
+          <node concept="2XEmfi" id="4j8iycQYurj" role="sZLK0">
+            <ref role="2XEmfl" node="4j8iycQYur0" resolve="brightness" />
+          </node>
+        </node>
+      </node>
+      <node concept="0Sh09" id="4j8iycQYurk" role="lGtFl">
+        <ref role="0Sh0a" node="4j8iycQYmv5" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYurl" role="2HcuB8" />
+    <node concept="2dDAVa" id="4j8iycQYurm" role="2HcuB8">
+      <property role="TrG5h" value="LKAControlBox" />
+      <node concept="3UTh7Y" id="4j8iycQYurn" role="3UnIb_">
+        <property role="TrG5h" value="state_forward_1" />
+        <node concept="2SafMM" id="4j8iycQYuro" role="1yBDGv">
+          <node concept="32OYss" id="4j8iycQYurp" role="1yBIc4">
+            <node concept="1yyYsf" id="4j8iycQYurq" role="32OYtT">
+              <node concept="32OYss" id="4j8iycQYurr" role="2H9Iav">
+                <node concept="2HbLFT" id="4j8iycQYurs" role="32OYtT">
+                  <node concept="3Ug1Ap" id="4j8iycQYurt" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYutf" resolve="state_image_processing" />
+                  </node>
+                  <node concept="2HeeqP" id="4j8iycQYuru" role="2H9Ial">
+                    <ref role="2HeeqO" node="4j8iycQYuqO" resolve="camera_fail" />
+                  </node>
+                </node>
+              </node>
+              <node concept="32OYss" id="4j8iycQYurv" role="2H9Ial">
+                <node concept="2HbLFT" id="4j8iycQYurw" role="32OYtT">
+                  <node concept="3Ug1Ap" id="4j8iycQYurx" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYutv" resolve="state_LKA_control" />
+                  </node>
+                  <node concept="2HeeqP" id="4j8iycQYury" role="2H9Ial">
+                    <ref role="2HeeqO" node="4j8iycQYuqO" resolve="camera_fail" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYurz" role="3UnIb_">
+        <property role="TrG5h" value="state_forward_2" />
+        <node concept="2SafMM" id="4j8iycQYur$" role="1yBDGv">
+          <node concept="32OYss" id="4j8iycQYur_" role="1yBIc4">
+            <node concept="1yyYsf" id="4j8iycQYurA" role="32OYtT">
+              <node concept="32OYss" id="4j8iycQYurB" role="2H9Iav">
+                <node concept="2HbLFT" id="4j8iycQYurC" role="32OYtT">
+                  <node concept="3Ug1Ap" id="4j8iycQYurD" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYuth" resolve="lane_detect" />
+                  </node>
+                  <node concept="1yCjT0" id="4j8iycQYurE" role="2H9Ial" />
+                </node>
+              </node>
+              <node concept="32OYss" id="4j8iycQYurF" role="2H9Ial">
+                <node concept="2HbLFT" id="4j8iycQYurG" role="32OYtT">
+                  <node concept="3Ug1Ap" id="4j8iycQYurH" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYutv" resolve="state_LKA_control" />
+                  </node>
+                  <node concept="2HeeqP" id="4j8iycQYurI" role="2H9Ial">
+                    <ref role="2HeeqO" node="4j8iycQYuqR" resolve="lane_keeping_fail" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYurJ" role="3UnIb_">
+        <property role="TrG5h" value="no_lane_detected" />
+        <node concept="2SafMM" id="4j8iycQYurK" role="1yBDGv">
+          <node concept="32OYss" id="4j8iycQYurL" role="1yBIc4">
+            <node concept="1yyYsf" id="4j8iycQYurM" role="32OYtT">
+              <node concept="32OYss" id="4j8iycQYurN" role="2H9Iav">
+                <node concept="2HbMbg" id="4j8iycQYurO" role="32OYtT">
+                  <node concept="2HbLFT" id="4j8iycQYurP" role="2H9Iav">
+                    <node concept="3Ug1Ap" id="4j8iycQYurQ" role="2H9Iav">
+                      <ref role="3Ug1Ao" node="4j8iycQYutj" resolve="activate_deactivate" />
+                    </node>
+                    <node concept="1yCjRe" id="4j8iycQYurR" role="2H9Ial" />
+                  </node>
+                  <node concept="2HbLFT" id="4j8iycQYurS" role="2H9Ial">
+                    <node concept="3Ug1Ap" id="4j8iycQYurT" role="2H9Iav">
+                      <ref role="3Ug1Ao" node="4j8iycQYuth" resolve="lane_detect" />
+                    </node>
+                    <node concept="1yCjT0" id="4j8iycQYurU" role="2H9Ial" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2HbMbg" id="4j8iycQYurV" role="2H9Ial">
+                <node concept="2HbLFT" id="4j8iycQYurW" role="2H9Iav">
+                  <node concept="3Ug1Ap" id="4j8iycQYurX" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYutp" resolve="driver_takeover_request" />
+                  </node>
+                  <node concept="1yCjRe" id="4j8iycQYurY" role="2H9Ial" />
+                </node>
+                <node concept="2HbLFT" id="4j8iycQYurZ" role="2H9Ial">
+                  <node concept="1yCjRe" id="4j8iycQYus0" role="2H9Ial" />
+                  <node concept="3Ug1Ap" id="4j8iycQYus1" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYutt" resolve="vibrate_steeringWheel" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYus2" role="3UnIb_">
+        <property role="TrG5h" value="state_forward_3" />
+        <node concept="1yyYsf" id="4j8iycQYus3" role="1yBDGv">
+          <node concept="2SafMM" id="4j8iycQYus4" role="2H9Iav">
+            <node concept="32OYss" id="4j8iycQYus5" role="1yBIc4">
+              <node concept="2HbLFT" id="4j8iycQYus6" role="32OYtT">
+                <node concept="3Ug1Ap" id="4j8iycQYus7" role="2H9Iav">
+                  <ref role="3Ug1Ao" node="4j8iycQYutf" resolve="state_image_processing" />
+                </node>
+                <node concept="2HeeqP" id="4j8iycQYus8" role="2H9Ial">
+                  <ref role="2HeeqO" node="4j8iycQYuqP" resolve="image_process_fail" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="32OYss" id="4j8iycQYus9" role="2H9Ial">
+            <node concept="2HbLFT" id="4j8iycQYusa" role="32OYtT">
+              <node concept="3Ug1Ap" id="4j8iycQYusb" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYutv" resolve="state_LKA_control" />
+              </node>
+              <node concept="2HeeqP" id="4j8iycQYusc" role="2H9Ial">
+                <ref role="2HeeqO" node="4j8iycQYuqP" resolve="image_process_fail" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYusd" role="3UnIb_">
+        <property role="TrG5h" value="state_forward_4" />
+        <node concept="1yyYsf" id="4j8iycQYuse" role="1yBDGv">
+          <node concept="2SafMM" id="4j8iycQYusf" role="2H9Iav">
+            <node concept="32OYss" id="4j8iycQYusg" role="1yBIc4">
+              <node concept="2HbLFT" id="4j8iycQYush" role="32OYtT">
+                <node concept="3Ug1Ap" id="4j8iycQYusi" role="2H9Iav">
+                  <ref role="3Ug1Ao" node="4j8iycQYutf" resolve="state_image_processing" />
+                </node>
+                <node concept="2HeeqP" id="4j8iycQYusj" role="2H9Ial">
+                  <ref role="2HeeqO" node="4j8iycQYuqQ" resolve="ok" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="32OYss" id="4j8iycQYusk" role="2H9Ial">
+            <node concept="2HbLFT" id="4j8iycQYusl" role="32OYtT">
+              <node concept="3Ug1Ap" id="4j8iycQYusm" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYutv" resolve="state_LKA_control" />
+              </node>
+              <node concept="2HeeqP" id="4j8iycQYusn" role="2H9Ial">
+                <ref role="2HeeqO" node="4j8iycQYuqQ" resolve="ok" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYuso" role="3UnIb_">
+        <property role="TrG5h" value="emergency_stop" />
+        <node concept="1yyYsf" id="4j8iycQYusp" role="1yBDGv">
+          <node concept="2Sa3Mo" id="4j8iycQYusq" role="2H9Iav">
+            <node concept="32OYss" id="4j8iycQYusr" role="1yBIc4">
+              <node concept="2HbMbg" id="4j8iycQYuss" role="32OYtT">
+                <node concept="2HbLFT" id="4j8iycQYust" role="2H9Iav">
+                  <node concept="3Ug1Ap" id="4j8iycQYusu" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYutn" resolve="steeringWheel_torque" />
+                  </node>
+                  <node concept="2IPVmt" id="4j8iycQYusv" role="2H9Ial">
+                    <property role="2IPVms" value="0" />
+                  </node>
+                </node>
+                <node concept="2HbLFT" id="4j8iycQYusw" role="2H9Ial">
+                  <node concept="3Ug1Ap" id="4j8iycQYusx" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYutp" resolve="driver_takeover_request" />
+                  </node>
+                  <node concept="1yCjRe" id="4j8iycQYusy" role="2H9Ial" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="32OYss" id="4j8iycQYusz" role="2H9Ial">
+            <node concept="2HbLFT" id="4j8iycQYus$" role="32OYtT">
+              <node concept="3Ug1Ap" id="4j8iycQYus_" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYutv" resolve="state_LKA_control" />
+              </node>
+              <node concept="2HeeqP" id="4j8iycQYusA" role="2H9Ial">
+                <ref role="2HeeqO" node="4j8iycQYuqT" resolve="emergency_stop_required" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYusB" role="3UnIb_">
+        <property role="TrG5h" value="driver_override" />
+        <node concept="1yyYsf" id="4j8iycQYusC" role="1yBDGv">
+          <node concept="2SafMM" id="4j8iycQYusD" role="2H9Iav">
+            <node concept="nE0YI" id="4j8iycQYusE" role="1yBIc4">
+              <node concept="2EDkE1" id="4j8iycQYusF" role="2H9Iav">
+                <node concept="3Ug1Ap" id="4j8iycQYusG" role="32OYtT">
+                  <ref role="3Ug1Ao" node="4j8iycQYutn" resolve="steeringWheel_torque" />
+                </node>
+              </node>
+              <node concept="2IPVmt" id="4j8iycQYusH" role="2H9Ial">
+                <property role="2IPVms" value="2" />
+              </node>
+            </node>
+          </node>
+          <node concept="2HbLFT" id="4j8iycQYusI" role="2H9Ial">
+            <node concept="2HeeqP" id="4j8iycQYusJ" role="2H9Ial">
+              <ref role="2HeeqO" node="4j8iycQYuqV" resolve="driver_engages" />
+            </node>
+            <node concept="3Ug1Ap" id="4j8iycQYusK" role="2H9Iav">
+              <ref role="3Ug1Ao" node="4j8iycQYutv" resolve="state_LKA_control" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYusL" role="3UnIb_">
+        <property role="TrG5h" value="driver_engages" />
+        <node concept="1yyYsf" id="4j8iycQYusM" role="1yBDGv">
+          <node concept="2SafMM" id="4j8iycQYusN" role="2H9Iav">
+            <node concept="2HbLFT" id="4j8iycQYusO" role="1yBIc4">
+              <node concept="3Ug1Ap" id="4j8iycQYusP" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYutv" resolve="state_LKA_control" />
+              </node>
+              <node concept="2HeeqP" id="4j8iycQYusQ" role="2H9Ial">
+                <ref role="2HeeqO" node="4j8iycQYuqV" resolve="driver_engages" />
+              </node>
+            </node>
+          </node>
+          <node concept="2HbMbg" id="4j8iycQYusR" role="2H9Ial">
+            <node concept="2HbLFT" id="4j8iycQYusS" role="2H9Iav">
+              <node concept="3Ug1Ap" id="4j8iycQYusT" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYutp" resolve="driver_takeover_request" />
+              </node>
+              <node concept="1yCjT0" id="4j8iycQYusU" role="2H9Ial" />
+            </node>
+            <node concept="2HbLFT" id="4j8iycQYusV" role="2H9Ial">
+              <node concept="1yCjT0" id="4j8iycQYusW" role="2H9Ial" />
+              <node concept="3Ug1Ap" id="4j8iycQYusX" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYutt" resolve="vibrate_steeringWheel" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYusY" role="3UnIb_">
+        <property role="TrG5h" value="camera_cleaning" />
+        <node concept="1yyYsf" id="4j8iycQYusZ" role="1yBDGv">
+          <node concept="2HbMbg" id="4j8iycQYut0" role="2H9Iav">
+            <node concept="2SafMM" id="4j8iycQYut1" role="2H9Iav">
+              <node concept="2HbLFT" id="4j8iycQYut2" role="1yBIc4">
+                <node concept="3Ug1Ap" id="4j8iycQYut3" role="2H9Iav">
+                  <ref role="3Ug1Ao" node="4j8iycQYutf" resolve="state_image_processing" />
+                </node>
+                <node concept="2HeeqP" id="4j8iycQYut4" role="2H9Ial">
+                  <ref role="2HeeqO" node="4j8iycQYuqU" resolve="dirt_detected" />
+                </node>
+              </node>
+            </node>
+            <node concept="2HbLFT" id="4j8iycQYut5" role="2H9Ial">
+              <node concept="1yCjRe" id="4j8iycQYut6" role="2H9Ial" />
+              <node concept="3Ug1Ap" id="4j8iycQYut7" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYutj" resolve="activate_deactivate" />
+              </node>
+            </node>
+          </node>
+          <node concept="2HbLFT" id="4j8iycQYut8" role="2H9Ial">
+            <node concept="3Ug1Ap" id="4j8iycQYut9" role="2H9Iav">
+              <ref role="3Ug1Ao" node="4j8iycQYutv" resolve="state_LKA_control" />
+            </node>
+            <node concept="2HeeqP" id="4j8iycQYuta" role="2H9Ial">
+              <ref role="2HeeqO" node="4j8iycQYuqS" resolve="degraded_mode" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI81" id="4j8iycQYutb" role="3UnI9m">
+        <property role="TrG5h" value="lane_distance_left" />
+        <node concept="2XEmfi" id="4j8iycQYutc" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYuqX" resolve="lane_distance" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="4j8iycQYutd" role="3UnI9m">
+        <property role="TrG5h" value="lane_distance_right" />
+        <node concept="2XEmfi" id="4j8iycQYute" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYuqX" resolve="lane_distance" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="4j8iycQYutf" role="3UnI9m">
+        <property role="TrG5h" value="state_image_processing" />
+        <node concept="2XJXdx" id="4j8iycQYutg" role="3UnI80">
+          <ref role="2XJXdw" node="4j8iycQYuqN" resolve="enum_state" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="4j8iycQYuth" role="3UnI9m">
+        <property role="TrG5h" value="lane_detect" />
+        <node concept="2Hds6S" id="4j8iycQYuti" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4j8iycQYutj" role="3UnI9m">
+        <property role="TrG5h" value="activate_deactivate" />
+        <node concept="2Hds6S" id="4j8iycQYutk" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4j8iycQYutl" role="3UnI9m">
+        <property role="TrG5h" value="steeringWheel_angle" />
+        <node concept="2XEmfi" id="4j8iycQYutm" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYur3" resolve="steeringWheel_range" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="4j8iycQYutn" role="3UnI9m">
+        <property role="TrG5h" value="steeringWheel_torque" />
+        <node concept="2XEmfi" id="4j8iycQYuto" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYur6" resolve="steeringWheel_torque_range" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYutp" role="3UnI90">
+        <property role="TrG5h" value="driver_takeover_request" />
+        <node concept="2Hds6S" id="4j8iycQYutq" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYutr" role="3UnI90">
+        <property role="TrG5h" value="desired_steeringWheel_angle" />
+        <node concept="2XEmfi" id="4j8iycQYuts" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYur3" resolve="steeringWheel_range" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYutt" role="3UnI90">
+        <property role="TrG5h" value="vibrate_steeringWheel" />
+        <node concept="2Hds6S" id="4j8iycQYutu" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYutv" role="3UnI90">
+        <property role="TrG5h" value="state_LKA_control" />
+        <node concept="2XJXdx" id="4j8iycQYutw" role="3UnI80">
+          <ref role="2XJXdw" node="4j8iycQYuqN" resolve="enum_state" />
+        </node>
+      </node>
+      <node concept="0Sh09" id="4j8iycQYutx" role="lGtFl">
+        <ref role="0Sh0a" node="7NWnpv9rNPc" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYuty" role="2HcuB8" />
+    <node concept="2dDAVa" id="4j8iycQYutz" role="2HcuB8">
+      <property role="TrG5h" value="SteeringWheel_Control_Unit" />
+      <node concept="3UnI81" id="4j8iycQYut$" role="3UnI9m">
+        <property role="TrG5h" value="vibrate_steeringWheel" />
+        <node concept="2Hds6S" id="4j8iycQYut_" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4j8iycQYutA" role="3UnI9m">
+        <property role="TrG5h" value="desired_steeringWheel_angle" />
+        <node concept="2XEmfi" id="4j8iycQYutB" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYur3" resolve="steeringWheel_range" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYutC" role="3UnI90">
+        <property role="TrG5h" value="steeringWheel_angle" />
+        <node concept="2XEmfi" id="4j8iycQYutD" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYur3" resolve="steeringWheel_range" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYutE" role="3UnI90">
+        <property role="TrG5h" value="steeringWheel_torque" />
+        <node concept="2XEmfi" id="4j8iycQYutF" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYur6" resolve="steeringWheel_torque_range" />
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYutG" role="3UnIb_">
+        <property role="TrG5h" value="applyTorque" />
+        <node concept="1yyYsf" id="4j8iycQYutH" role="1yBDGv">
+          <node concept="2SafMM" id="4j8iycQYutI" role="2H9Iav">
+            <node concept="dheZm" id="4j8iycQYutJ" role="1yBIc4">
+              <node concept="3Ug1Ap" id="4j8iycQYutK" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYutC" resolve="steeringWheel_angle" />
+              </node>
+              <node concept="3Ug1Ap" id="4j8iycQYutL" role="2H9Ial">
+                <ref role="3Ug1Ao" node="4j8iycQYutA" resolve="desired_steeringWheel_angle" />
+              </node>
+            </node>
+          </node>
+          <node concept="2Sa8AP" id="4j8iycQYutM" role="2H9Ial">
+            <node concept="3Ug1Ap" id="4j8iycQYutN" role="1yBIc4">
+              <ref role="3Ug1Ao" node="4j8iycQYutE" resolve="steeringWheel_torque" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYutO" role="3UnIb_">
+        <property role="TrG5h" value="noTorque" />
+        <node concept="1yyYsf" id="4j8iycQYutP" role="1yBDGv">
+          <node concept="2SafMM" id="4j8iycQYutQ" role="2H9Iav">
+            <node concept="2HbLFT" id="4j8iycQYutR" role="1yBIc4">
+              <node concept="3Ug1Ap" id="4j8iycQYutS" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYutC" resolve="steeringWheel_angle" />
+              </node>
+              <node concept="3Ug1Ap" id="4j8iycQYutT" role="2H9Ial">
+                <ref role="3Ug1Ao" node="4j8iycQYutA" resolve="desired_steeringWheel_angle" />
+              </node>
+            </node>
+          </node>
+          <node concept="2HbLFT" id="4j8iycQYutU" role="2H9Ial">
+            <node concept="2IPVmt" id="4j8iycQYutV" role="2H9Ial">
+              <property role="2IPVms" value="0" />
+            </node>
+            <node concept="3Ug1Ap" id="4j8iycQYutW" role="2H9Iav">
+              <ref role="3Ug1Ao" node="4j8iycQYutE" resolve="steeringWheel_torque" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0Sh09" id="4j8iycQYutX" role="lGtFl">
+        <ref role="0Sh0a" node="7NWnpv9rNPc" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYutY" role="2HcuB8" />
+    <node concept="2dDAVa" id="4j8iycQYutZ" role="2HcuB8">
+      <property role="TrG5h" value="LKA_Communication_Control_Unit" />
+      <node concept="3UnI81" id="4j8iycQYuu0" role="3UnI9m">
+        <property role="TrG5h" value="driver_takeover_request" />
+        <node concept="2Hds6S" id="4j8iycQYuu1" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4j8iycQYuu2" role="3UnI9m">
+        <property role="TrG5h" value="state_LKA_control" />
+        <node concept="2XJXdx" id="4j8iycQYuu3" role="3UnI80">
+          <ref role="2XJXdw" node="4j8iycQYuqN" resolve="enum_state" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYuu4" role="3UnI90">
+        <property role="TrG5h" value="alert_signal" />
+        <node concept="2Hds6S" id="4j8iycQYuu5" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYuu6" role="3UnI90">
+        <property role="TrG5h" value="state" />
+        <node concept="2XJXdx" id="4j8iycQYuu7" role="3UnI80">
+          <ref role="2XJXdw" node="4j8iycQYuqN" resolve="enum_state" />
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYuu8" role="3UnIb_">
+        <property role="TrG5h" value="takeover_alert" />
+        <node concept="1yyYsf" id="4j8iycQYuu9" role="1yBDGv">
+          <node concept="2SafMM" id="4j8iycQYuua" role="2H9Iav">
+            <node concept="2HbLFT" id="4j8iycQYuub" role="1yBIc4">
+              <node concept="3Ug1Ap" id="4j8iycQYuuc" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYuu0" resolve="driver_takeover_request" />
+              </node>
+              <node concept="1yCjRe" id="4j8iycQYuud" role="2H9Ial" />
+            </node>
+          </node>
+          <node concept="2Sa8AP" id="4j8iycQYuue" role="2H9Ial">
+            <node concept="2HbLFT" id="4j8iycQYuuf" role="1yBIc4">
+              <node concept="1yCjRe" id="4j8iycQYuug" role="2H9Ial" />
+              <node concept="3Ug1Ap" id="4j8iycQYuuh" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYuu4" resolve="alert_signal" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYuui" role="3UnIb_">
+        <property role="TrG5h" value="stop_alert" />
+        <node concept="1yyYsf" id="4j8iycQYuuj" role="1yBDGv">
+          <node concept="2SafMM" id="4j8iycQYuuk" role="2H9Iav">
+            <node concept="2HbLFT" id="4j8iycQYuul" role="1yBIc4">
+              <node concept="3Ug1Ap" id="4j8iycQYuum" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYuu0" resolve="driver_takeover_request" />
+              </node>
+              <node concept="1yCjT0" id="4j8iycQYuun" role="2H9Ial" />
+            </node>
+          </node>
+          <node concept="2Sa8AP" id="4j8iycQYuuo" role="2H9Ial">
+            <node concept="2HbLFT" id="4j8iycQYuup" role="1yBIc4">
+              <node concept="1yCjT0" id="4j8iycQYuuq" role="2H9Ial" />
+              <node concept="3Ug1Ap" id="4j8iycQYuur" role="2H9Iav">
+                <ref role="3Ug1Ao" node="4j8iycQYuu4" resolve="alert_signal" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYuus" role="3UnIb_">
+        <property role="TrG5h" value="state_forward" />
+        <node concept="2SafMM" id="4j8iycQYuut" role="1yBDGv">
+          <node concept="2HbLFT" id="4j8iycQYuuu" role="1yBIc4">
+            <node concept="3Ug1Ap" id="4j8iycQYuuv" role="2H9Ial">
+              <ref role="3Ug1Ao" node="4j8iycQYuu6" resolve="state" />
+            </node>
+            <node concept="3Ug1Ap" id="4j8iycQYuuw" role="2H9Iav">
+              <ref role="3Ug1Ao" node="4j8iycQYuu2" resolve="state_LKA_control" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="0Sh09" id="4j8iycQYuux" role="lGtFl">
+        <ref role="0Sh0a" node="7NWnpv9rNZJ" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYuuy" role="2HcuB8" />
+    <node concept="2dDAVa" id="4j8iycQYuuz" role="2HcuB8">
+      <property role="TrG5h" value="LKA_Activation_Button" />
+      <node concept="3UnI9n" id="4j8iycQYuu$" role="3UnI90">
+        <property role="TrG5h" value="activate_deactivate" />
+        <node concept="2Hds6S" id="4j8iycQYuu_" role="3UnI80" />
+      </node>
+      <node concept="0Sh09" id="4j8iycQYuuA" role="lGtFl">
+        <ref role="0Sh0a" node="7NWnpv9rO2s" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYuuB" role="2HcuB8" />
+    <node concept="2SQmWS" id="4j8iycQYuuC" role="2HcuB8" />
+    <node concept="2dDAV0" id="4j8iycQYuuD" role="2HcuB8">
+      <property role="TrG5h" value="LaneKeeping" />
+      <node concept="3Ug1AV" id="4j8iycQYuuE" role="3UgYNK">
+        <property role="TrG5h" value="Camera" />
+        <node concept="3Ug1AZ" id="4j8iycQYuuF" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4j8iycQYura" resolve="Camera" />
+        </node>
+      </node>
+      <node concept="37mRI7" id="4j8iycQYuuG" role="lGtFl">
+        <node concept="37mRIm" id="4j8iycQYuuH" role="37mRID">
+          <property role="37mO49" value="1275436067144897418" />
+          <node concept="gqqVs" id="4j8iycQYuuI" role="37mO4d">
+            <property role="gqqTZ" value="12.0" />
+            <property role="gqqTW" value="21.475499916076657" />
+            <property role="gqqTX" value="60.0" />
+            <property role="gqqTy" value="70.16257785864595" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYuuJ" role="1pap1a">
+              <property role="1pa3iD" value="connectivity" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuuK" role="1pap1a">
+              <property role="1pa3iD" value="operation" />
+              <property role="2gRgW$" value="2098541579" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuuL" role="1pap1a">
+              <property role="1pa3iD" value="image" />
+              <property role="2gRgW$" value="1609084979" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuuM" role="37mRID">
+          <property role="37mO49" value="1275436067144897425" />
+          <node concept="gqqVs" id="4j8iycQYuuN" role="37mO4d">
+            <property role="gqqTZ" value="179.71428571428572" />
+            <property role="gqqTW" value="12.0" />
+            <property role="gqqTX" value="164.0" />
+            <property role="gqqTy" value="89.1321207434726" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYuuO" role="1pap1a">
+              <property role="1pa3iD" value="connectivity" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuuP" role="1pap1a">
+              <property role="1pa3iD" value="operation" />
+              <property role="2gRgW$" value="999661319" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuuQ" role="1pap1a">
+              <property role="1pa3iD" value="image" />
+              <property role="2gRgW$" value="517896828" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuuR" role="1pap1a">
+              <property role="1pa3iD" value="lane_distance_left" />
+              <property role="2gRgW$" value="1495285752" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuuS" role="1pap1a">
+              <property role="1pa3iD" value="lane_distance_right" />
+              <property role="2gRgW$" value="1880697346" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuuT" role="1pap1a">
+              <property role="1pa3iD" value="state_image_processing" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuuU" role="1pap1a">
+              <property role="1pa3iD" value="lane_detect" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuuV" role="37mRID">
+          <property role="37mO49" value="1275436067144897564" />
+          <node concept="gqqVs" id="4j8iycQYuuW" role="37mO4d">
+            <property role="gqqTZ" value="455.0" />
+            <property role="gqqTW" value="12.032363032743206" />
+            <property role="gqqTX" value="116.0" />
+            <property role="gqqTy" value="146.2558973248862" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYuuX" role="1pap1a">
+              <property role="1pa3iD" value="lane_distance_left" />
+              <property role="2gRgW$" value="256953493" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuuY" role="1pap1a">
+              <property role="1pa3iD" value="lane_distance_right" />
+              <property role="2gRgW$" value="491882402" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuuZ" role="1pap1a">
+              <property role="1pa3iD" value="state_image_processing" />
+              <property role="2gRgW$" value="726811311" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuv0" role="1pap1a">
+              <property role="1pa3iD" value="lane_detect" />
+              <property role="2gRgW$" value="961740219" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuv1" role="1pap1a">
+              <property role="1pa3iD" value="activate_deactivate" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuv2" role="1pap1a">
+              <property role="1pa3iD" value="steeringWheel_angle" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuv3" role="1pap1a">
+              <property role="1pa3iD" value="steeringWheel_torque" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuv4" role="1pap1a">
+              <property role="1pa3iD" value="driver_takeover_request" />
+              <property role="2gRgW$" value="1847538915" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuv5" role="1pap1a">
+              <property role="1pa3iD" value="desired_steeringWheel_angle" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuv6" role="1pap1a">
+              <property role="1pa3iD" value="vibrate_steeringWheel" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuv7" role="1pap1a">
+              <property role="1pa3iD" value="state_LKA_control" />
+              <property role="2gRgW$" value="1471652661" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuv8" role="37mRID">
+          <property role="37mO49" value="1275436067144897800" />
+          <node concept="gqqVs" id="4j8iycQYuv9" role="37mO4d">
+            <property role="gqqTZ" value="187.0" />
+            <property role="gqqTW" value="121.1321207434726" />
+            <property role="gqqTX" value="180.0" />
+            <property role="gqqTy" value="31.999999999941792" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYuva" role="1pap1a">
+              <property role="1pa3iD" value="activate_deactivate" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvb" role="37mRID">
+          <property role="37mO49" value="1275436067144897929" />
+          <node concept="gqqVs" id="4j8iycQYuvc" role="37mO4d">
+            <property role="gqqTZ" value="150.0" />
+            <property role="gqqTW" value="173.1321207434144" />
+            <property role="gqqTX" value="220.0" />
+            <property role="gqqTy" value="51.09999999940628" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYuvd" role="1pap1a">
+              <property role="1pa3iD" value="vibrate_steeringWheel" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuve" role="1pap1a">
+              <property role="1pa3iD" value="desired_steeringWheel_angle" />
+              <property role="2gRgW$" value="735439604" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuvf" role="1pap1a">
+              <property role="1pa3iD" value="steeringWheel_angle" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuvg" role="1pap1a">
+              <property role="1pa3iD" value="steeringWheel_torque" />
+              <property role="2gRgW$" value="1809181427" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvh" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144898229" />
+          <node concept="2VclpC" id="4j8iycQYuvi" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYuvj" role="2Vcluh">
+              <property role="2Vclpx" value="612.0" />
+              <property role="2Vclpz" value="94.71031169488037" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuvk" role="2Vcluh">
+              <property role="2Vclpx" value="612.0" />
+              <property role="2Vclpz" value="264.23212074282065" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuvl" role="2Vcluh">
+              <property role="2Vclpx" value="98.0" />
+              <property role="2Vclpz" value="264.23212074282065" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuvm" role="2Vcluh">
+              <property role="2Vclpx" value="98.0" />
+              <property role="2Vclpz" value="189.13212074282066" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvn" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144898149" />
+          <node concept="2VclpC" id="4j8iycQYuvo" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYuvp" role="2Vcluh">
+              <property role="2Vclpx" value="592.0" />
+              <property role="2Vclpz" value="113.71704997613038" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuvq" role="2Vcluh">
+              <property role="2Vclpx" value="592.0" />
+              <property role="2Vclpz" value="244.23212074282065" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuvr" role="2Vcluh">
+              <property role="2Vclpx" value="118.0" />
+              <property role="2Vclpz" value="244.23212074282065" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuvs" role="2Vcluh">
+              <property role="2Vclpx" value="118.0" />
+              <property role="2Vclpz" value="208.23212074282065" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvt" role="37mRID">
+          <property role="37mO49" value="1275436067144898371" />
+          <node concept="gqqVs" id="4j8iycQYuvu" role="37mO4d">
+            <property role="gqqTZ" value="729.0" />
+            <property role="gqqTW" value="40.510311695206354" />
+            <property role="gqqTX" value="252.0" />
+            <property role="gqqTy" value="51.09999999940628" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYuvv" role="1pap1a">
+              <property role="1pa3iD" value="driver_takeover_request" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuvw" role="1pap1a">
+              <property role="1pa3iD" value="alert_signal" />
+              <property role="2gRgW$" value="1809181427" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuvx" role="1pap1a">
+              <property role="1pa3iD" value="state" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+            <node concept="1pa3jb" id="4j8iycQYuvy" role="1pap1a">
+              <property role="1pa3iD" value="state_LKA_control" />
+              <property role="2gRgW$" value="735439604" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvz" role="37mRID">
+          <property role="37mO49" value="box_1275436067144898512" />
+          <node concept="gqqVs" id="4j8iycQYuv$" role="37mO4d">
+            <property role="gqqTZ" value="12.0" />
+            <property role="gqqTW" value="12.0" />
+            <property role="gqqTX" value="81.0" />
+            <property role="gqqTy" value="31.999999998137355" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYuv_" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvA" role="37mRID">
+          <property role="37mO49" value="box_1275436067144898540" />
+          <node concept="gqqVs" id="4j8iycQYuvB" role="37mO4d">
+            <property role="gqqTZ" value="-25.0" />
+            <property role="gqqTW" value="64.0" />
+            <property role="gqqTX" value="68.0" />
+            <property role="gqqTy" value="30.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvC" role="37mRID">
+          <property role="37mO49" value="box_1275436067144899128" />
+          <node concept="gqqVs" id="4j8iycQYuvD" role="37mO4d">
+            <property role="gqqTZ" value="1043.0" />
+            <property role="gqqTW" value="12.032363032743206" />
+            <property role="gqqTX" value="111.0" />
+            <property role="gqqTy" value="31.999999999941792" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYuvE" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvF" role="37mRID">
+          <property role="37mO49" value="box_1275436067144898780" />
+          <node concept="gqqVs" id="4j8iycQYuvG" role="37mO4d">
+            <property role="gqqTZ" value="1043.0" />
+            <property role="gqqTW" value="86.6103116949386" />
+            <property role="gqqTX" value="55.0" />
+            <property role="gqqTy" value="31.999999999941792" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4j8iycQYuvH" role="1pap1a">
+              <property role="1pa3iD" value="" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvI" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144897647" />
+          <node concept="2VclpC" id="4j8iycQYuvJ" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYuvK" role="2Vcluh">
+              <property role="2Vclpx" value="383.0" />
+              <property role="2Vclpz" value="47.0253824622226" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuvL" role="2Vcluh">
+              <property role="2Vclpx" value="383.0" />
+              <property role="2Vclpz" value="47.09720948953659" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvM" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144897693" />
+          <node concept="2VclpC" id="4j8iycQYuvN" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYuvO" role="2Vcluh">
+              <property role="2Vclpx" value="383.0" />
+              <property role="2Vclpz" value="66.1253824622226" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuvP" role="2Vcluh">
+              <property role="2Vclpx" value="383.0" />
+              <property role="2Vclpz" value="66.10433146416446" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvQ" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144897744" />
+          <node concept="2VclpC" id="4j8iycQYuvR" role="37mO4d" />
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvS" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144897857" />
+          <node concept="2VclpC" id="4j8iycQYuvT" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYuvU" role="2Vcluh">
+              <property role="2Vclpx" value="383.0" />
+              <property role="2Vclpz" value="137.1321207434144" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuvV" role="2Vcluh">
+              <property role="2Vclpx" value="383.0" />
+              <property role="2Vclpz" value="104.16019055055101" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuvW" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144898004" />
+          <node concept="2VclpC" id="4j8iycQYuvX" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYuvY" role="2Vcluh">
+              <property role="2Vclpx" value="403.0" />
+              <property role="2Vclpz" value="208.23212074282065" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuvZ" role="2Vcluh">
+              <property role="2Vclpx" value="403.0" />
+              <property role="2Vclpz" value="123.26019055055102" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuw0" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144898074" />
+          <node concept="2VclpC" id="4j8iycQYuw1" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYuw2" role="2Vcluh">
+              <property role="2Vclpx" value="423.0" />
+              <property role="2Vclpz" value="189.13212074282066" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuw3" role="2Vcluh">
+              <property role="2Vclpx" value="423.0" />
+              <property role="2Vclpz" value="142.2882603576294" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuw4" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144899402" />
+          <node concept="2VclpC" id="4j8iycQYuw5" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYuw6" role="2Vcluh">
+              <property role="2Vclpx" value="1029.0" />
+              <property role="2Vclpz" value="66.06949581764708" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuw7" role="2Vcluh">
+              <property role="2Vclpx" value="1029.0" />
+              <property role="2Vclpz" value="98.96949391029844" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuw8" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144899504" />
+          <node concept="2VclpC" id="4j8iycQYuw9" role="37mO4d" />
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuwa" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144900420" />
+          <node concept="2VclpC" id="4j8iycQYuwb" role="37mO4d" />
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuwc" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144898683" />
+          <node concept="2VclpC" id="4j8iycQYuwd" role="37mO4d" />
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuwe" role="37mRID">
+          <property role="37mO49" value="edge_1275436067144897606" />
+          <node concept="2VclpC" id="4j8iycQYuwf" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYuwg" role="2Vcluh">
+              <property role="2Vclpx" value="383.0" />
+              <property role="2Vclpz" value="28.018644180972604" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuwh" role="2Vcluh">
+              <property role="2Vclpx" value="383.0" />
+              <property role="2Vclpz" value="28.079878708257606" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuwi" role="37mRID">
+          <property role="37mO49" value="edge_2161657010430542800" />
+          <node concept="2VclpC" id="4j8iycQYuwj" role="37mO4d" />
+        </node>
+        <node concept="37mRIm" id="4j8iycQYuwk" role="37mRID">
+          <property role="37mO49" value="edge_2161657010430542689" />
+          <node concept="2VclpC" id="4j8iycQYuwl" role="37mO4d">
+            <node concept="2VclrF" id="4j8iycQYuwm" role="2Vcluh">
+              <property role="2Vclpx" value="592.0" />
+              <property role="2Vclpz" value="56.603573413630386" />
+            </node>
+            <node concept="2VclrF" id="4j8iycQYuwn" role="2Vcluh">
+              <property role="2Vclpx" value="592.0" />
+              <property role="2Vclpz" value="56.510311694880386" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="4j8iycQYuwo" role="3UgYNK">
+        <property role="TrG5h" value="ImageProcessingUnit" />
+        <node concept="3Ug1AZ" id="4j8iycQYuwp" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4j8iycQYuxP" resolve="ImageProcessingUnit" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuwq" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuwr" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYurf" resolve="image" />
+          <node concept="3Ug1GJ" id="4j8iycQYuws" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuuE" resolve="Camera" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuwt" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYuym" resolve="image" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwu" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwo" resolve="ImageProcessingUnit" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuwv" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuww" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYurd" resolve="operation" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwx" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuuE" resolve="Camera" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuwy" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYuyk" resolve="operation" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwz" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwo" resolve="ImageProcessingUnit" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuw$" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuw_" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYurb" resolve="connectivity" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwA" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuuE" resolve="Camera" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuwB" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYuyi" resolve="connectivity" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwC" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwo" resolve="ImageProcessingUnit" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="4j8iycQYuwD" role="3UgYNK">
+        <property role="TrG5h" value="LKAControlBox" />
+        <node concept="3Ug1AZ" id="4j8iycQYuwE" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4j8iycQYurm" resolve="LKAControlBox" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuwF" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuwG" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYuyr" resolve="lane_distance_left" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwH" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwo" resolve="ImageProcessingUnit" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuwI" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYutb" resolve="lane_distance_left" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwJ" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwD" resolve="LKAControlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuwK" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuwL" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYuyt" resolve="lane_distance_right" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwM" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwo" resolve="ImageProcessingUnit" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuwN" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYutd" resolve="lane_distance_right" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwO" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwD" resolve="LKAControlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuwP" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuwQ" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYuyv" resolve="state_image_processing" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwR" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwo" resolve="ImageProcessingUnit" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuwS" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYutf" resolve="state_image_processing" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwT" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwD" resolve="LKAControlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuwU" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuwV" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYuyx" resolve="lane_detect" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwW" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwo" resolve="ImageProcessingUnit" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuwX" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYuth" resolve="lane_detect" />
+          <node concept="3Ug1GJ" id="4j8iycQYuwY" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwD" resolve="LKAControlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="4j8iycQYuwZ" role="3UgYNK">
+        <property role="TrG5h" value="LKA_Activation_Button" />
+        <node concept="3Ug1AZ" id="4j8iycQYux0" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4j8iycQYuuz" resolve="LKA_Activation_Button" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYux1" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYux2" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYuu$" resolve="activate_deactivate" />
+          <node concept="3Ug1GJ" id="4j8iycQYux3" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwZ" resolve="LKA_Activation_Button" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYux4" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYutj" resolve="activate_deactivate" />
+          <node concept="3Ug1GJ" id="4j8iycQYux5" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwD" resolve="LKAControlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="4j8iycQYux6" role="3UgYNK">
+        <property role="TrG5h" value="SteeringWheel_Control_Unit" />
+        <node concept="3Ug1AZ" id="4j8iycQYux7" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4j8iycQYutz" resolve="SteeringWheel_Control_Unit" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYux8" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYux9" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYutC" resolve="steeringWheel_angle" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxa" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYux6" resolve="SteeringWheel_Control_Unit" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuxb" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYutl" resolve="steeringWheel_angle" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxc" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwD" resolve="LKAControlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuxd" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuxe" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYutE" resolve="steeringWheel_torque" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxf" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYux6" resolve="SteeringWheel_Control_Unit" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuxg" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYutn" resolve="steeringWheel_torque" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxh" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwD" resolve="LKAControlBox" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuxi" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuxj" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYutt" resolve="vibrate_steeringWheel" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxk" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwD" resolve="LKAControlBox" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuxl" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYut$" resolve="vibrate_steeringWheel" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxm" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYux6" resolve="SteeringWheel_Control_Unit" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuxn" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuxo" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYutr" resolve="desired_steeringWheel_angle" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxp" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwD" resolve="LKAControlBox" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuxq" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYutA" resolve="desired_steeringWheel_angle" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxr" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYux6" resolve="SteeringWheel_Control_Unit" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="4j8iycQYuxs" role="3UgYNK">
+        <property role="TrG5h" value="LKA_Communication_Control_Unit" />
+        <node concept="3Ug1AZ" id="4j8iycQYuxt" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4j8iycQYutZ" resolve="LKA_Communication_Control_Unit" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuxu" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuxv" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYutp" resolve="driver_takeover_request" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxw" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwD" resolve="LKAControlBox" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuxx" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYuu0" resolve="driver_takeover_request" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxy" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuxs" resolve="LKA_Communication_Control_Unit" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYuxz" role="3UnI90">
+        <property role="TrG5h" value="alert_signal" />
+        <node concept="2Hds6S" id="4j8iycQYux$" role="3UnI80" />
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYux_" role="3UnI90">
+        <property role="TrG5h" value="state" />
+        <node concept="2XJXdx" id="4j8iycQYuxA" role="3UnI80">
+          <ref role="2XJXdw" node="4j8iycQYuqN" resolve="enum_state" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuxB" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuxC" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYuu4" resolve="alert_signal" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxD" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuxs" resolve="LKA_Communication_Control_Unit" />
+          </node>
+        </node>
+        <node concept="3Ug1Ap" id="4j8iycQYuxE" role="3Ug1_r">
+          <ref role="3Ug1Ao" node="4j8iycQYuxz" resolve="alert_signal" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuxF" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuxG" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYutv" resolve="state_LKA_control" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxH" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuwD" resolve="LKAControlBox" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4j8iycQYuxI" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4j8iycQYuu2" resolve="state_LKA_control" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxJ" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuxs" resolve="LKA_Communication_Control_Unit" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4j8iycQYuxK" role="3UgYNK">
+        <node concept="3Ug1GC" id="4j8iycQYuxL" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4j8iycQYuu6" resolve="state" />
+          <node concept="3Ug1GJ" id="4j8iycQYuxM" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4j8iycQYuxs" resolve="LKA_Communication_Control_Unit" />
+          </node>
+        </node>
+        <node concept="3Ug1Ap" id="4j8iycQYuxN" role="3Ug1_r">
+          <ref role="3Ug1Ao" node="4j8iycQYux_" resolve="state" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYuxO" role="2HcuB8" />
+    <node concept="2dDAVa" id="4j8iycQYuxP" role="2HcuB8">
+      <property role="TrG5h" value="ImageProcessingUnit" />
+      <node concept="3UTh7Y" id="4j8iycQYuxQ" role="3UnIb_">
+        <property role="TrG5h" value="camera_failure" />
+        <node concept="1yyYsf" id="4j8iycQYuxR" role="1yBDGv">
+          <node concept="2SafMM" id="4j8iycQYuxS" role="2H9Iav">
+            <node concept="32OYss" id="4j8iycQYuxT" role="1yBIc4">
+              <node concept="2HbMDt" id="4j8iycQYuxU" role="32OYtT">
+                <node concept="2HbLFT" id="4j8iycQYuxV" role="2H9Iav">
+                  <node concept="3Ug1Ap" id="4j8iycQYuxW" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYuyi" resolve="connectivity" />
+                  </node>
+                  <node concept="1yCjT0" id="4j8iycQYuxX" role="2H9Ial" />
+                </node>
+                <node concept="2HbLFT" id="4j8iycQYuxY" role="2H9Ial">
+                  <node concept="3Ug1Ap" id="4j8iycQYuxZ" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYuyk" resolve="operation" />
+                  </node>
+                  <node concept="1yCjT0" id="4j8iycQYuy0" role="2H9Ial" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2HbLFT" id="4j8iycQYuy1" role="2H9Ial">
+            <node concept="3Ug1Ap" id="4j8iycQYuy2" role="2H9Iav">
+              <ref role="3Ug1Ao" node="4j8iycQYuyv" resolve="state_image_processing" />
+            </node>
+            <node concept="2HeeqP" id="4j8iycQYuy3" role="2H9Ial">
+              <ref role="2HeeqO" node="4j8iycQYuqO" resolve="camera_fail" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3UTh7Y" id="4j8iycQYuy4" role="3UnIb_">
+        <property role="TrG5h" value="lane_detect_failure" />
+        <node concept="1yyYsf" id="4j8iycQYuy5" role="1yBDGv">
+          <node concept="2SafMM" id="4j8iycQYuy6" role="2H9Iav">
+            <node concept="32OYss" id="4j8iycQYuy7" role="1yBIc4">
+              <node concept="2HbMDt" id="4j8iycQYuy8" role="32OYtT">
+                <node concept="2HbLFT" id="4j8iycQYuy9" role="2H9Iav">
+                  <node concept="3Ug1Ap" id="4j8iycQYuya" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYuyv" resolve="state_image_processing" />
+                  </node>
+                  <node concept="2HeeqP" id="4j8iycQYuyb" role="2H9Ial">
+                    <ref role="2HeeqO" node="4j8iycQYuqO" resolve="camera_fail" />
+                  </node>
+                </node>
+                <node concept="2HbLFT" id="4j8iycQYuyc" role="2H9Ial">
+                  <node concept="3Ug1Ap" id="4j8iycQYuyd" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="4j8iycQYuyv" resolve="state_image_processing" />
+                  </node>
+                  <node concept="2HeeqP" id="4j8iycQYuye" role="2H9Ial">
+                    <ref role="2HeeqO" node="4j8iycQYuqP" resolve="image_process_fail" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2HbLFT" id="4j8iycQYuyf" role="2H9Ial">
+            <node concept="3Ug1Ap" id="4j8iycQYuyg" role="2H9Iav">
+              <ref role="3Ug1Ao" node="4j8iycQYuyx" resolve="lane_detect" />
+            </node>
+            <node concept="1yCjT0" id="4j8iycQYuyh" role="2H9Ial" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI81" id="4j8iycQYuyi" role="3UnI9m">
+        <property role="TrG5h" value="connectivity" />
+        <node concept="2Hds6S" id="4j8iycQYuyj" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4j8iycQYuyk" role="3UnI9m">
+        <property role="TrG5h" value="operation" />
+        <node concept="2Hds6S" id="4j8iycQYuyl" role="3UnI80" />
+      </node>
+      <node concept="3UnI81" id="4j8iycQYuym" role="3UnI9m">
+        <property role="TrG5h" value="image" />
+        <node concept="sZLQy" id="4j8iycQYuyn" role="3UnI80">
+          <node concept="2IPVmt" id="4j8iycQYuyo" role="sZLUY">
+            <property role="2IPVms" value="0" />
+          </node>
+          <node concept="2IPVmt" id="4j8iycQYuyp" role="sZLUN">
+            <property role="2IPVms" value="1024" />
+          </node>
+          <node concept="2XEmfi" id="4j8iycQYuyq" role="sZLK0">
+            <ref role="2XEmfl" node="4j8iycQYur0" resolve="brightness" />
+          </node>
+        </node>
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYuyr" role="3UnI90">
+        <property role="TrG5h" value="lane_distance_left" />
+        <node concept="2XEmfi" id="4j8iycQYuys" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYuqX" resolve="lane_distance" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYuyt" role="3UnI90">
+        <property role="TrG5h" value="lane_distance_right" />
+        <node concept="2XEmfi" id="4j8iycQYuyu" role="3UnI80">
+          <ref role="2XEmfl" node="4j8iycQYuqX" resolve="lane_distance" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYuyv" role="3UnI90">
+        <property role="TrG5h" value="state_image_processing" />
+        <node concept="2XJXdx" id="4j8iycQYuyw" role="3UnI80">
+          <ref role="2XJXdw" node="4j8iycQYuqN" resolve="enum_state" />
+        </node>
+      </node>
+      <node concept="3UnI9n" id="4j8iycQYuyx" role="3UnI90">
+        <property role="TrG5h" value="lane_detect" />
+        <node concept="2Hds6S" id="4j8iycQYuyy" role="3UnI80" />
+      </node>
+      <node concept="0Sh09" id="4j8iycQYuyz" role="lGtFl">
+        <ref role="0Sh0a" node="4WLVkAsg6IZ" />
+      </node>
     </node>
   </node>
 </model>
