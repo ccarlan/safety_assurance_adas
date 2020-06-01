@@ -4909,6 +4909,69 @@
       </node>
     </node>
     <node concept="2SQmWS" id="2Q6_IeFkfKR" role="2HcuB8" />
+    <node concept="2Hdtz0" id="4j8iycQYnY3" role="2HcuB8">
+      <property role="TrG5h" value="Steering_Wheel_Control_Unit_Impl" />
+      <node concept="32O2o0" id="4j8iycQYnZ4" role="2HcbjO">
+        <node concept="JlCpM" id="4j8iycQYnZK" role="32O2ov">
+          <property role="TrG5h" value="steeringWheel_angle" />
+          <node concept="2IPVmt" id="4j8iycQYo1m" role="1zoetD">
+            <property role="2IPVms" value="0" />
+          </node>
+        </node>
+        <node concept="JlCpM" id="4j8iycQYo0G" role="32O2ov">
+          <property role="TrG5h" value="steeringWheel_torque" />
+          <node concept="2IPVmt" id="4j8iycQYo1K" role="1zoetD">
+            <property role="2IPVms" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="4j8iycQYocc" role="2Hdtzq">
+        <property role="TrG5h" value="vibrate_steeringWheel" />
+      </node>
+      <node concept="2Hdtzr" id="4j8iycQYocf" role="2Hdtzq">
+        <property role="TrG5h" value="desired_steeringWheel_angle" />
+      </node>
+    </node>
+    <node concept="eml0t" id="4j8iycQYo2h" role="2HcuB8">
+      <property role="TrG5h" value="steering_unit" />
+      <node concept="3Ug1AZ" id="4j8iycQYo3k" role="eml14">
+        <ref role="3Ug1AY" node="16Ng_xNT8Hh" resolve="SteeringWheel_Control_Unit" />
+      </node>
+      <node concept="eml1q" id="4j8iycQYo3n" role="eml13">
+        <ref role="eml1l" node="4j8iycQYnY3" resolve="Steering_Wheel_Control_Unit_Impl" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYo3q" role="2HcuB8" />
+    <node concept="2Hdtz0" id="4j8iycQYo7s" role="2HcuB8">
+      <property role="TrG5h" value="Camera_Impl" />
+      <node concept="32O2o0" id="4j8iycQYo8x" role="2HcbjO">
+        <node concept="JlCpM" id="4j8iycQYoa5" role="32O2ov">
+          <property role="TrG5h" value="connectivity" />
+          <node concept="1yCjRe" id="4j8iycQYobM" role="1zoetD" />
+        </node>
+        <node concept="JlCpM" id="4j8iycQYoau" role="32O2ov">
+          <property role="TrG5h" value="operation" />
+          <node concept="1yCjRe" id="4j8iycQYoc2" role="1zoetD" />
+        </node>
+        <node concept="JlCpM" id="4j8iycQYob5" role="32O2ov">
+          <property role="TrG5h" value="image" />
+          <node concept="2IPVmt" id="4j8iycQYonT" role="1zoetD">
+            <property role="2IPVms" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="eml0t" id="4j8iycQYo8Q" role="2HcuB8">
+      <property role="TrG5h" value="camera_unit" />
+      <node concept="3Ug1AZ" id="4j8iycQYolz" role="eml14">
+        <ref role="3Ug1AY" node="16Ng_xNT7ZF" resolve="Camera" />
+      </node>
+      <node concept="eml1q" id="4j8iycQYolA" role="eml13">
+        <ref role="eml1l" node="4j8iycQYo7s" resolve="Camera_Impl" />
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4j8iycQYo6q" role="2HcuB8" />
+    <node concept="2SQmWS" id="4j8iycQYnXc" role="2HcuB8" />
   </node>
   <node concept="1QQeGf" id="2NJwv_HFGH$">
     <property role="TrG5h" value="_303_TechnicalSafetyRequirements_LKA_Controller" />
