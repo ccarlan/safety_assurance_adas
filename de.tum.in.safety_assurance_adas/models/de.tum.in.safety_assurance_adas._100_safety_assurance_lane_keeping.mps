@@ -3073,6 +3073,28 @@
         </node>
       </node>
     </node>
+    <node concept="0lhDl" id="4j8iycQYmv5" role="1QQeBF">
+      <property role="0lsPA" value="FSR08" />
+      <property role="0ke_I" value="Jonas&amp;Moritz" />
+      <node concept="1QQeAY" id="4j8iycQYmwk" role="1QQeAC">
+        <node concept="0nzK2" id="4j8iycQYmwm" role="1QQeAV">
+          <node concept="19SGf9" id="4j8iycQYmwo" role="0nzdz">
+            <node concept="19SUe$" id="4j8iycQYmwp" role="19SJt6">
+              <property role="19SUeA" value="The camera works properly and provides suitable images" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="4j8iycQYmv7" role="1QQeG9">
+        <node concept="19SUe$" id="4j8iycQYmv8" role="19SJt6">
+          <property role="19SUeA" value="Camera function " />
+          <node concept="0Sh09" id="4j8iycQYmwb" role="lGtFl">
+            <ref role="0Sh0a" node="4WLVkAsg6Bl" />
+          </node>
+        </node>
+      </node>
+      <node concept="DA$zP" id="4j8iycQYmwf" role="0nOlf" />
+    </node>
     <node concept="0lH3_" id="4j8iycQYhEF" role="1QQeBF" />
   </node>
   <node concept="2HdtXS" id="16Ng_xNT4R6">
@@ -3165,6 +3187,9 @@
             <ref role="2XEmfl" node="2Q6_IeFkbuI" resolve="brightness" />
           </node>
         </node>
+      </node>
+      <node concept="0Sh09" id="4j8iycQYmu4" role="lGtFl">
+        <ref role="0Sh0a" node="4j8iycQYmv5" />
       </node>
     </node>
     <node concept="2SQmWS" id="16Ng_xNT4R7" role="2HcuB8" />
@@ -3497,6 +3522,9 @@
           <ref role="2XJXdw" node="2Q6_IeFkaVR" resolve="enum_state" />
         </node>
       </node>
+      <node concept="0Sh09" id="4j8iycQYmwv" role="lGtFl">
+        <ref role="0Sh0a" node="7NWnpv9rNPc" />
+      </node>
     </node>
     <node concept="2SQmWS" id="4SubkoiBaVV" role="2HcuB8" />
     <node concept="2dDAVa" id="16Ng_xNT8Hh" role="2HcuB8">
@@ -3565,6 +3593,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="0Sh09" id="4j8iycQYmwx" role="lGtFl">
+        <ref role="0Sh0a" node="7NWnpv9rNPc" />
       </node>
     </node>
     <node concept="2SQmWS" id="16Ng_xNT8CO" role="2HcuB8" />
@@ -3645,7 +3676,9 @@
           </node>
         </node>
       </node>
-      <node concept="0Sh09" id="2NJwv_HFJYu" role="lGtFl" />
+      <node concept="0Sh09" id="2NJwv_HFJYu" role="lGtFl">
+        <ref role="0Sh0a" node="7NWnpv9rNZJ" />
+      </node>
     </node>
     <node concept="2SQmWS" id="16Ng_xNT8FL" role="2HcuB8" />
     <node concept="2dDAVa" id="16Ng_xNT8tc" role="2HcuB8">
@@ -3653,6 +3686,9 @@
       <node concept="3UnI9n" id="16Ng_xNT8uo" role="3UnI90">
         <property role="TrG5h" value="activate_deactivate" />
         <node concept="2Hds6S" id="16Ng_xNT8uv" role="3UnI80" />
+      </node>
+      <node concept="0Sh09" id="4j8iycQYmwz" role="lGtFl">
+        <ref role="0Sh0a" node="7NWnpv9rO2s" />
       </node>
     </node>
     <node concept="2SQmWS" id="16Ng_xNT8kz" role="2HcuB8" />
@@ -4434,6 +4470,9 @@
       <node concept="3UnI9n" id="16Ng_xNT8eP" role="3UnI90">
         <property role="TrG5h" value="lane_detect" />
         <node concept="2Hds6S" id="2Q6_IeFkcHP" role="3UnI80" />
+      </node>
+      <node concept="0Sh09" id="4j8iycQYmw_" role="lGtFl">
+        <ref role="0Sh0a" node="4WLVkAsg6IZ" />
       </node>
     </node>
   </node>
