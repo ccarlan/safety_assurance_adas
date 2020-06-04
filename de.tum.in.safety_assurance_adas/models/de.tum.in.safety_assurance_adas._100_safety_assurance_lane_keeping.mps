@@ -5827,7 +5827,7 @@
         <node concept="0nzK2" id="4j8iycQYlkV" role="1QQeAV">
           <node concept="19SGf9" id="4j8iycQYlkX" role="0nzdz">
             <node concept="19SUe$" id="4j8iycQYlkY" role="19SJt6">
-              <property role="19SUeA" value="The watchdog surveillaces the performance of the camera and the processing unit. Both components shall ping the watchdog in a ppredefined frequency. If one of the components does not send a ping, the watchdog switchtes the system into a degraded mode and warns the driver." />
+              <property role="19SUeA" value="The watchdog surveillaces the performance of the camera and the processing unit. Both components shall ping the watchdog in a predefined frequency. If one of the components does not send a ping, the watchdog switchtes the system into a degraded mode and warns the driver." />
             </node>
           </node>
         </node>
