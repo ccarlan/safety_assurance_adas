@@ -5061,7 +5061,7 @@
   <node concept="1QQeGf" id="7NWnpv9rNP9">
     <property role="TrG5h" value="_204_FunctionalSafetyRequirements_LKA_controller" />
     <node concept="0lhDl" id="7NWnpv9rNPc" role="1QQeBF">
-      <property role="0lsPA" value="SG01/FSR01" />
+      <property role="0lsPA" value="FSR01" />
       <property role="0ke_I" value="Caterina&amp;Marcel" />
       <node concept="1QQeAY" id="7NWnpv9rNPr" role="1QQeAC">
         <node concept="0nzK2" id="7NWnpv9rNPt" role="1QQeAV">
@@ -5079,15 +5079,18 @@
       </node>
       <node concept="19SGf9" id="7NWnpv9rNPe" role="1QQeG9">
         <node concept="19SUe$" id="7NWnpv9rNPf" role="19SJt6">
-          <property role="19SUeA" value="Lane keeping" />
+          <property role="19SUeA" value="Lane keeping " />
+          <node concept="0Sh09" id="3OFTjxLQyiR" role="lGtFl">
+            <ref role="0Sh0a" node="7NWnpv9rKoG" />
+          </node>
         </node>
       </node>
     </node>
     <node concept="0lhDl" id="7NWnpv9rNPO" role="1QQeBF">
-      <property role="0lsPA" value="SG02/FSR01" />
+      <property role="0lsPA" value="FSR02" />
       <property role="0ke_I" value="Caterina&amp;Marcel" />
       <node concept="0lhDl" id="7NWnpv9rNQn" role="1VMWzp">
-        <property role="0lsPA" value="SG02/FSR01_1" />
+        <property role="0lsPA" value="FSR03" />
         <property role="0ke_I" value="Caterina&amp;Marcel" />
         <node concept="1QQeAY" id="7NWnpv9rNQ$" role="1QQeAC">
           <node concept="0nzK2" id="7NWnpv9rNQA" role="1QQeAV">
@@ -5105,7 +5108,10 @@
         </node>
         <node concept="19SGf9" id="7NWnpv9rNQp" role="1QQeG9">
           <node concept="19SUe$" id="7NWnpv9rNQq" role="19SJt6">
-            <property role="19SUeA" value="Responsiveness of driver" />
+            <property role="19SUeA" value="Responsiveness of driver " />
+            <node concept="0Sh09" id="3OFTjxLQyiV" role="lGtFl">
+              <ref role="0Sh0a" node="4WLVkAsg6wf" />
+            </node>
           </node>
         </node>
       </node>
@@ -5125,12 +5131,15 @@
       </node>
       <node concept="19SGf9" id="7NWnpv9rNPQ" role="1QQeG9">
         <node concept="19SUe$" id="7NWnpv9rNPR" role="19SJt6">
-          <property role="19SUeA" value="Responsiveness of components" />
+          <property role="19SUeA" value="Responsiveness of components " />
+          <node concept="0Sh09" id="3OFTjxLQyiT" role="lGtFl">
+            <ref role="0Sh0a" node="4WLVkAsg6wf" />
+          </node>
         </node>
       </node>
     </node>
     <node concept="0lhDl" id="7NWnpv9rNTs" role="1QQeBF">
-      <property role="0lsPA" value="SG04/FSR01" />
+      <property role="0lsPA" value="FSR04" />
       <property role="0ke_I" value="Caterina&amp;Marcel" />
       <node concept="1QQeAY" id="7NWnpv9rNUj" role="1QQeAC">
         <node concept="0nzK2" id="7NWnpv9rNUl" role="1QQeAV">
@@ -5148,12 +5157,15 @@
       </node>
       <node concept="19SGf9" id="7NWnpv9rNTu" role="1QQeG9">
         <node concept="19SUe$" id="7NWnpv9rNTv" role="19SJt6">
-          <property role="19SUeA" value="Unintended driver steering" />
+          <property role="19SUeA" value="Unintended driver steering " />
+          <node concept="0Sh09" id="3OFTjxLQyiX" role="lGtFl">
+            <ref role="0Sh0a" node="7NWnpv9rNy8" />
+          </node>
         </node>
       </node>
     </node>
     <node concept="0lhDl" id="7NWnpv9rNZJ" role="1QQeBF">
-      <property role="0lsPA" value="SG07/FSR01" />
+      <property role="0lsPA" value="FSR05" />
       <property role="0ke_I" value="Caterina&amp;Marcel" />
       <node concept="1QQeAY" id="7NWnpv9rO0Y" role="1QQeAC">
         <node concept="0nzK2" id="7NWnpv9rO10" role="1QQeAV">
@@ -5175,11 +5187,14 @@
       <node concept="19SGf9" id="7NWnpv9rNZL" role="1QQeG9">
         <node concept="19SUe$" id="7NWnpv9rNZM" role="19SJt6">
           <property role="19SUeA" value="System-Driver communication" />
+          <node concept="0Sh09" id="3OFTjxLQyiZ" role="lGtFl">
+            <ref role="0Sh0a" node="7NWnpv9rNEv" />
+          </node>
         </node>
       </node>
     </node>
     <node concept="0lhDl" id="7NWnpv9rO2s" role="1QQeBF">
-      <property role="0lsPA" value="SG07/FSR02" />
+      <property role="0lsPA" value="FSR06" />
       <property role="0ke_I" value="Caterina&amp;Marcel" />
       <node concept="1QQeAY" id="7NWnpv9rO3N" role="1QQeAC">
         <node concept="0nzK2" id="7NWnpv9rO3P" role="1QQeAV">
@@ -5200,7 +5215,10 @@
       </node>
       <node concept="19SGf9" id="7NWnpv9rO2u" role="1QQeG9">
         <node concept="19SUe$" id="7NWnpv9rO2v" role="19SJt6">
-          <property role="19SUeA" value="LKA can be powered on/off" />
+          <property role="19SUeA" value="LKA can be powered on/off " />
+          <node concept="0Sh09" id="3OFTjxLQyjg" role="lGtFl">
+            <ref role="0Sh0a" node="7NWnpv9rNEv" />
+          </node>
         </node>
       </node>
     </node>
@@ -5564,7 +5582,7 @@
         <node concept="0nzK2" id="2NJwv_HFGHR" role="1QQeAV">
           <node concept="19SGf9" id="2NJwv_HFGHT" role="0nzdz">
             <node concept="19SUe$" id="2NJwv_HFGHU" role="19SJt6">
-              <property role="19SUeA" value="- Distance to lanes&#10;- Car centered&#10;- Steering&#10;- Continous operability testing of interface devices.&#10;&#10;Operational domain must meet system design. --&gt;&#10;If a situation/condition does not meet the operational design domain of the system, the driver should be triggered to take over control of the car." />
+              <property role="19SUeA" value="Distance to lanes of at least 30 cm is guaranted at all times, if driver is not engaging. &#10;LKA system keeps the car centered in the lane if right and left lane are detected.&#10;The driver can override the LKA input by applying torque on the steering wheel for changing lanes. &#10;The driver has to get continous LKA system feedback through interface devices when LKA system is activated. &#10;&#10;" />
             </node>
           </node>
         </node>
@@ -5572,11 +5590,11 @@
       <node concept="DA$zP" id="2NJwv_HFGHK" role="0nOlf" />
       <node concept="19SGf9" id="2NJwv_HFGHD" role="1QQeG9">
         <node concept="19SUe$" id="2NJwv_HFGHE" role="19SJt6">
-          <property role="19SUeA" value="Lane keeping" />
+          <property role="19SUeA" value="Lane keeping " />
+          <node concept="0Sh09" id="3OFTjxLQyiF" role="lGtFl">
+            <ref role="0Sh0a" node="7NWnpv9rNPc" />
+          </node>
         </node>
-      </node>
-      <node concept="0Sh09" id="2NJwv_HFJYy" role="lGtFl">
-        <ref role="0Sh0a" node="7NWnpv9rNPc" />
       </node>
     </node>
     <node concept="0lhDl" id="2NJwv_HFGIc" role="1QQeBF">
@@ -5586,7 +5604,7 @@
         <node concept="0nzK2" id="2NJwv_HFJYM" role="1QQeAV">
           <node concept="19SGf9" id="2NJwv_HFJYO" role="0nzdz">
             <node concept="19SUe$" id="2NJwv_HFJYP" role="19SJt6">
-              <property role="19SUeA" value="HW and SW functionality should be observed. If a component fails and the failure can be recognized (e.g. error message), redundant components should take over the task. If the system doesn't behave correct although a failure could not be recognized, the driver should be triggered to take over control of the car." />
+              <property role="19SUeA" value="HW and SW functionality should be observed. If a component fails and the failure can be recognized (e.g. error message), redundant components should take over the task. &#10;If the system doesn't behave correct although a failure could not be recognized, the driver should be triggered to take over control of the car." />
             </node>
           </node>
         </node>
@@ -5594,10 +5612,10 @@
       <node concept="19SGf9" id="2NJwv_HFGIe" role="1QQeG9">
         <node concept="19SUe$" id="2NJwv_HFGIf" role="19SJt6">
           <property role="19SUeA" value="HW and SW should function correctly." />
+          <node concept="0Sh09" id="3OFTjxLQyiH" role="lGtFl">
+            <ref role="0Sh0a" node="7NWnpv9rNPc" />
+          </node>
         </node>
-      </node>
-      <node concept="0Sh09" id="2NJwv_HFJYV" role="lGtFl">
-        <ref role="0Sh0a" node="7NWnpv9rNPc" />
       </node>
       <node concept="DA$zP" id="2NJwv_HFK0c" role="0nOlf" />
     </node>
@@ -5615,11 +5633,11 @@
       </node>
       <node concept="19SGf9" id="2NJwv_HFGK6" role="1QQeG9">
         <node concept="19SUe$" id="2NJwv_HFGK7" role="19SJt6">
-          <property role="19SUeA" value="Responsiveness of components" />
+          <property role="19SUeA" value="Responsiveness of components " />
+          <node concept="0Sh09" id="3OFTjxLQyiJ" role="lGtFl">
+            <ref role="0Sh0a" node="7NWnpv9rNPO" />
+          </node>
         </node>
-      </node>
-      <node concept="0Sh09" id="2NJwv_HFK0f" role="lGtFl">
-        <ref role="0Sh0a" node="7NWnpv9rNPO" />
       </node>
       <node concept="DA$zP" id="2NJwv_HFK0x" role="0nOlf" />
     </node>
@@ -5637,11 +5655,11 @@
       </node>
       <node concept="19SGf9" id="2NJwv_HFGO4" role="1QQeG9">
         <node concept="19SUe$" id="2NJwv_HFGO5" role="19SJt6">
-          <property role="19SUeA" value="Driver control actions" />
+          <property role="19SUeA" value="Driver control actions " />
+          <node concept="0Sh09" id="3OFTjxLQyiL" role="lGtFl">
+            <ref role="0Sh0a" node="7NWnpv9rNTs" />
+          </node>
         </node>
-      </node>
-      <node concept="0Sh09" id="2NJwv_HFK1t" role="lGtFl">
-        <ref role="0Sh0a" node="7NWnpv9rNTs" />
       </node>
       <node concept="DA$zP" id="2NJwv_HFK1x" role="0nOlf" />
     </node>
@@ -5659,13 +5677,13 @@
       </node>
       <node concept="19SGf9" id="2NJwv_HFK2c" role="1QQeG9">
         <node concept="19SUe$" id="2NJwv_HFK2d" role="19SJt6">
-          <property role="19SUeA" value="System-Driver communication" />
+          <property role="19SUeA" value="System-Driver communication " />
+          <node concept="0Sh09" id="3OFTjxLQyiN" role="lGtFl">
+            <ref role="0Sh0a" node="7NWnpv9rNZJ" />
+          </node>
         </node>
       </node>
       <node concept="DA$zP" id="2NJwv_HFK2T" role="0nOlf" />
-      <node concept="0Sh09" id="2NJwv_HFK6c" role="lGtFl">
-        <ref role="0Sh0a" node="7NWnpv9rNZJ" />
-      </node>
     </node>
     <node concept="0lhDl" id="2NJwv_HFK5l" role="1QQeBF">
       <property role="0lsPA" value="TSR06" />
@@ -5681,11 +5699,11 @@
       </node>
       <node concept="19SGf9" id="2NJwv_HFK5n" role="1QQeG9">
         <node concept="19SUe$" id="2NJwv_HFK5o" role="19SJt6">
-          <property role="19SUeA" value="LKA can be powered on/off" />
+          <property role="19SUeA" value="LKA can be powered on/off " />
+          <node concept="0Sh09" id="3OFTjxLQyiP" role="lGtFl">
+            <ref role="0Sh0a" node="7NWnpv9rO2s" />
+          </node>
         </node>
-      </node>
-      <node concept="0Sh09" id="2NJwv_HFK6a" role="lGtFl">
-        <ref role="0Sh0a" node="7NWnpv9rO2s" />
       </node>
       <node concept="DA$zP" id="2NJwv_HFK6v" role="0nOlf" />
     </node>
