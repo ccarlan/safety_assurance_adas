@@ -3179,7 +3179,6 @@
         <property role="TrG5h" value="driver_engages" />
       </node>
     </node>
-    <node concept="2SQmWS" id="2Q6_IeFkfed" role="2HcuB8" />
     <node concept="2XEm0_" id="2Q6_IeFkbjg" role="2HcuB8">
       <property role="TrG5h" value="lane_distance" />
       <node concept="2IPVmt" id="2Q6_IeFkbo$" role="2XEmf_">
@@ -3794,7 +3793,7 @@
     </node>
     <node concept="2SQmWS" id="16Ng_xNT9a3" role="2HcuB8" />
     <node concept="2dDAVa" id="7LZOTnQWCZs" role="2HcuB8">
-      <property role="TrG5h" value="MontiorChannel_IC" />
+      <property role="TrG5h" value="MonitorChannel_IC" />
       <node concept="3UnI81" id="7LZOTnQWD9x" role="3UnI9m">
         <property role="TrG5h" value="image_In" />
         <node concept="sZLQy" id="7LZOTnQWDa2" role="3UnI80">
@@ -4964,7 +4963,7 @@
       <node concept="3Ug1AV" id="7LZOTnQWFgv" role="3UgYNK">
         <property role="TrG5h" value="MonitorChannel_IC" />
         <node concept="3Ug1AZ" id="7LZOTnQWFgw" role="3Ug1A_">
-          <ref role="3Ug1AY" node="7LZOTnQWCZs" resolve="MontiorChannel_IC" />
+          <ref role="3Ug1AY" node="7LZOTnQWCZs" resolve="MonitorChannel_IC" />
         </node>
       </node>
       <node concept="3Ug1$w" id="7LZOTnQWFlO" role="3UgYNK">
@@ -5001,29 +5000,31 @@
       <property role="TrG5h" value="Image_Processing_Unit" />
       <node concept="3UTh7Y" id="7_EPz_EQ1mN" role="3UnIb_">
         <property role="TrG5h" value="camera_failure" />
-        <node concept="2SafMM" id="5ARJOALx7Vf" role="1yBDGv">
-          <node concept="32OYss" id="5ARJOALx7Vg" role="1yBIc4">
-            <node concept="1yyYsf" id="5ARJOALx7Vh" role="32OYtT">
-              <node concept="32OYss" id="5ARJOALx7Vi" role="2H9Iav">
-                <node concept="2HbMDt" id="5ARJOALx7Vj" role="32OYtT">
-                  <node concept="1yA0yd" id="5ARJOALx7Vk" role="2H9Iav">
+        <node concept="2SafMM" id="6jXiwtO8OoO" role="1yBDGv">
+          <node concept="32OYss" id="6jXiwtO8OoP" role="1yBIc4">
+            <node concept="1yyYsf" id="6jXiwtO8OoQ" role="32OYtT">
+              <node concept="32OYss" id="6jXiwtO8OoR" role="2H9Iav">
+                <node concept="2HbMDt" id="6jXiwtO8OoS" role="32OYtT">
+                  <node concept="1yA0yd" id="6jXiwtO8OoT" role="2H9Iav">
                     <node concept="3Ug1Ap" id="7_EPz_EQ1n8" role="32OYtT">
                       <ref role="3Ug1Ao" node="16Ng_xNT88k" resolve="connectivity" />
                     </node>
                   </node>
-                  <node concept="1yA0yd" id="5ARJOALx7Vl" role="2H9Ial">
+                  <node concept="1yA0yd" id="6jXiwtO8OoU" role="2H9Ial">
                     <node concept="3Ug1Ap" id="7_EPz_EQ1oc" role="32OYtT">
                       <ref role="3Ug1Ao" node="16Ng_xNT88_" resolve="operation" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="2HbLFT" id="5ARJOALx7Vm" role="2H9Ial">
-                <node concept="3Ug1Ap" id="7_EPz_EQ1pV" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="16Ng_xNT8cY" resolve="state_image_processing" />
-                </node>
-                <node concept="2HeeqP" id="7_EPz_EQ1qi" role="2H9Ial">
-                  <ref role="2HeeqO" node="2Q6_IeFkb1A" resolve="camera_fail" />
+              <node concept="32OYss" id="6jXiwtO8OoV" role="2H9Ial">
+                <node concept="2HbLFT" id="6jXiwtO8OoW" role="32OYtT">
+                  <node concept="3Ug1Ap" id="7_EPz_EQ1pV" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="16Ng_xNT8cY" resolve="state_image_processing" />
+                  </node>
+                  <node concept="2HeeqP" id="7_EPz_EQ1qi" role="2H9Ial">
+                    <ref role="2HeeqO" node="2Q6_IeFkb1A" resolve="camera_fail" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -5032,34 +5033,40 @@
       </node>
       <node concept="3UTh7Y" id="7_EPz_EQ1qG" role="3UnIb_">
         <property role="TrG5h" value="lane_detect_failure" />
-        <node concept="2SafMM" id="5ARJOALx895" role="1yBDGv">
-          <node concept="32OYss" id="5ARJOALx896" role="1yBIc4">
-            <node concept="1yyYsf" id="5ARJOALx897" role="32OYtT">
-              <node concept="32OYss" id="5ARJOALx898" role="2H9Iav">
-                <node concept="2HbMDt" id="5ARJOALx899" role="32OYtT">
-                  <node concept="2HbLFT" id="5ARJOALx89a" role="2H9Iav">
-                    <node concept="3Ug1Ap" id="7_EPz_EQ1rd" role="2H9Iav">
-                      <ref role="3Ug1Ao" node="16Ng_xNT8cY" resolve="state_image_processing" />
-                    </node>
-                    <node concept="2HeeqP" id="7_EPz_EQ1ry" role="2H9Ial">
-                      <ref role="2HeeqO" node="2Q6_IeFkb1A" resolve="camera_fail" />
+        <node concept="2SafMM" id="6jXiwtO8Usc" role="1yBDGv">
+          <node concept="32OYss" id="6jXiwtO8Usd" role="1yBIc4">
+            <node concept="1yyYsf" id="6jXiwtO8Use" role="32OYtT">
+              <node concept="32OYss" id="6jXiwtO8Usf" role="2H9Iav">
+                <node concept="2HbMDt" id="6jXiwtO8Usg" role="32OYtT">
+                  <node concept="32OYss" id="6jXiwtO8Ush" role="2H9Iav">
+                    <node concept="2HbLFT" id="6jXiwtO8Usi" role="32OYtT">
+                      <node concept="3Ug1Ap" id="7_EPz_EQ1rd" role="2H9Iav">
+                        <ref role="3Ug1Ao" node="16Ng_xNT8cY" resolve="state_image_processing" />
+                      </node>
+                      <node concept="2HeeqP" id="7_EPz_EQ1ry" role="2H9Ial">
+                        <ref role="2HeeqO" node="2Q6_IeFkb1A" resolve="camera_fail" />
+                      </node>
                     </node>
                   </node>
-                  <node concept="2HbLFT" id="5ARJOALx89b" role="2H9Ial">
-                    <node concept="3Ug1Ap" id="7_EPz_EQ1uS" role="2H9Iav">
-                      <ref role="3Ug1Ao" node="16Ng_xNT8cY" resolve="state_image_processing" />
-                    </node>
-                    <node concept="2HeeqP" id="7_EPz_EQ1vc" role="2H9Ial">
-                      <ref role="2HeeqO" node="2Q6_IeFkb1C" resolve="image_process_fail" />
+                  <node concept="32OYss" id="6jXiwtO8Usj" role="2H9Ial">
+                    <node concept="2HbLFT" id="6jXiwtO8Usk" role="32OYtT">
+                      <node concept="3Ug1Ap" id="7_EPz_EQ1uS" role="2H9Iav">
+                        <ref role="3Ug1Ao" node="16Ng_xNT8cY" resolve="state_image_processing" />
+                      </node>
+                      <node concept="2HeeqP" id="7_EPz_EQ1vc" role="2H9Ial">
+                        <ref role="2HeeqO" node="2Q6_IeFkb1C" resolve="image_process_fail" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="2HbLFT" id="5ARJOALx89c" role="2H9Ial">
-                <node concept="3Ug1Ap" id="7_EPz_EQ1s$" role="2H9Iav">
-                  <ref role="3Ug1Ao" node="16Ng_xNT8eP" resolve="lane_detect" />
+              <node concept="32OYss" id="6jXiwtO8Usl" role="2H9Ial">
+                <node concept="2HbLFT" id="6jXiwtO8Usm" role="32OYtT">
+                  <node concept="3Ug1Ap" id="7_EPz_EQ1s$" role="2H9Iav">
+                    <ref role="3Ug1Ao" node="16Ng_xNT8eP" resolve="lane_detect" />
+                  </node>
+                  <node concept="1yCjT0" id="7_EPz_EQ1t1" role="2H9Ial" />
                 </node>
-                <node concept="1yCjT0" id="7_EPz_EQ1t1" role="2H9Ial" />
               </node>
             </node>
           </node>
