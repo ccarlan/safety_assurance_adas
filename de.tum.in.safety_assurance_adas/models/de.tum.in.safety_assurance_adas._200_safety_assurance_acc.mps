@@ -2,10 +2,15 @@
 <model ref="r:282e4eae-a763-4576-932c-62a537eeebd4(de.tum.in.safety_assurance_adas._200_safety_assurance_acc)">
   <persistence version="9" />
   <languages>
+    <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
+    <use id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv" version="0" />
+    <use id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262" version="0" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="7fh7" ref="r:b6d06a0c-5216-4476-a7df-32bb49b8e8da(de.tum.in.safety_assurance_adas._100_safety_assurance_lane_keeping)" />
+  </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -50,6 +55,24 @@
       </concept>
       <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
     </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
+        <property id="3226630706269685486" name="id" index="0lsPB" />
+      </concept>
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
+        <child id="9102875167978228305" name="hazards" index="8gIbH" />
+      </concept>
+      <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc">
+        <reference id="2626862697025873504" name="loss" index="2HxXJk" />
+      </concept>
+      <concept id="9102875167978180681" name="com.mbeddr.formal.safety.hara.structure.HazardsList" flags="ng" index="8gVzP" />
+      <concept id="2626862697025835302" name="com.mbeddr.formal.safety.hara.structure.Losses" flags="ng" index="2HxQMi">
+        <child id="2626862697025835303" name="losses" index="2HxQMj" />
+      </concept>
+      <concept id="2626862697025835278" name="com.mbeddr.formal.safety.hara.structure.Loss" flags="ng" index="2HxQMU">
+        <property id="2626862697025835281" name="id" index="2HxQM_" />
+      </concept>
+    </language>
     <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
       <concept id="1258148499700303837" name="com.mbeddr.formal.nusmv.ext.structure.DocumentationMultiline" flags="ng" index="3I9x2T" />
     </language>
@@ -66,6 +89,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
+      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
+        <property id="2392944874760387687" name="controlability" index="1a6$V8" />
+        <property id="2392944874760387684" name="exposure" index="1a6$Vb" />
+        <property id="2392944874760387682" name="severity" index="1a6$Vd" />
       </concept>
     </language>
   </registry>
@@ -205,6 +235,121 @@
         </node>
       </node>
       <node concept="1QQeFk" id="1HNBDjrJCEE" role="0nOlf" />
+    </node>
+  </node>
+  <node concept="2HxQMi" id="G$XGFsgYc8">
+    <property role="TrG5h" value="_102_acc_losses_list" />
+    <property role="3GE5qa" value="acc_item_definition" />
+    <node concept="2HxQMU" id="G$XGFsgYc9" role="2HxQMj">
+      <property role="2HxQM_" value="L-1" />
+      <property role="TrG5h" value="Loss of life or injury to people" />
+    </node>
+    <node concept="2HxQMU" id="G$XGFsgYca" role="2HxQMj">
+      <property role="2HxQM_" value="L-2" />
+      <property role="TrG5h" value="Loss of or damage to vehicle" />
+    </node>
+    <node concept="2HxQMU" id="G$XGFsgYcd" role="2HxQMj">
+      <property role="TrG5h" value="Loss of damage to objects outside the vehicle" />
+      <property role="2HxQM_" value="L-3" />
+    </node>
+    <node concept="2HxQMU" id="G$XGFsgYch" role="2HxQMj">
+      <property role="TrG5h" value="Loss of mission" />
+      <property role="2HxQM_" value="L-4" />
+    </node>
+    <node concept="2HxQMU" id="G$XGFsgYcm" role="2HxQMj">
+      <property role="TrG5h" value="Loss of customer satisfaction" />
+      <property role="2HxQM_" value="L-5" />
+    </node>
+    <node concept="2HxQMU" id="G$XGFsgYd1" role="2HxQMj">
+      <property role="TrG5h" value="Environmental loss" />
+      <property role="2HxQM_" value="L-6" />
+    </node>
+  </node>
+  <node concept="8gVzP" id="G$XGFsgYdQ">
+    <property role="TrG5h" value="_101_acc_hazard_list_ASIL_B_H02" />
+    <property role="3GE5qa" value="acc_item_definition" />
+    <node concept="1a6Z8w" id="G$XGFsgYdV" role="8gIbH">
+      <property role="0lsPB" value="H01" />
+      <property role="TrG5h" value="Safe distance is violated - ASIL A" />
+      <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
+      <property role="1a6$Vb" value="24PsEXFbNLe/E4" />
+      <property role="1a6$V8" value="24PsEXFbNLm/C1" />
+      <ref role="2HxXJk" node="G$XGFsgYch" resolve="Loss of mission" />
+    </node>
+    <node concept="1a6Z8w" id="1zzp3FunoxR" role="8gIbH">
+      <property role="0lsPB" value="H02" />
+      <property role="TrG5h" value="Car crashes into lead car - ASIL B" />
+      <property role="1a6$Vd" value="24PsEXFbNKU/S3" />
+      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
+      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
+      <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+    </node>
+    <node concept="1a6Z8w" id="1zzp3Funoy0" role="8gIbH">
+      <property role="0lsPB" value="H03" />
+      <property role="TrG5h" value="ACC reacts too slow - ASIL QM" />
+      <property role="1a6$Vd" value="24PsEXFbNKN/S1" />
+      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
+      <property role="1a6$V8" value="24PsEXFbNLm/C1" />
+      <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+    </node>
+    <node concept="1a6Z8w" id="1zzp3Funoya" role="8gIbH">
+      <property role="0lsPB" value="H04" />
+      <property role="TrG5h" value="ACC reacts to harsh - ASIL QM" />
+      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
+      <property role="1a6$V8" value="24PsEXFbNLm/C1" />
+      <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
+    </node>
+    <node concept="1a6Z8w" id="1zzp3Funoym" role="8gIbH">
+      <property role="0lsPB" value="H05" />
+      <property role="TrG5h" value="ACC does not deactivate - ASIL QM" />
+      <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
+      <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
+      <property role="1a6$V8" value="24PsEXFbNLm/C1" />
+      <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+    </node>
+    <node concept="1a6Z8w" id="1zzp3Funoy$" role="8gIbH">
+      <property role="0lsPB" value="H06" />
+      <property role="TrG5h" value="No detection of lead car - ASIL QM" />
+      <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
+      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
+      <property role="1a6$V8" value="24PsEXFbNLm/C1" />
+      <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+    </node>
+    <node concept="1a6Z8w" id="1zzp3Funo$K" role="8gIbH">
+      <property role="0lsPB" value="H07" />
+      <property role="TrG5h" value="Wrong detection of lead car - ASIL QM" />
+      <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
+      <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
+      <property role="1a6$V8" value="24PsEXFbNLp/C2" />
+      <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+    </node>
+    <node concept="1a6Z8w" id="1zzp3Funoz2" role="8gIbH">
+      <property role="0lsPB" value="H08" />
+      <property role="TrG5h" value="Target speed is not maintained - ASIL QM" />
+      <property role="1a6$Vd" value="24PsEXFbNKN/S1" />
+      <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
+      <property role="1a6$V8" value="24PsEXFbNLm/C1" />
+      <ref role="2HxXJk" node="G$XGFsgYch" resolve="Loss of mission" />
+    </node>
+    <node concept="1a6Z8w" id="1zzp3Funozk" role="8gIbH">
+      <property role="0lsPB" value="H09" />
+      <property role="TrG5h" value="Driver not informed about system status - ASIL A" />
+      <property role="1a6$V8" value="24PsEXFbNLt/C3" />
+      <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
+      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
+      <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
+    </node>
+    <node concept="1a6Z8w" id="1zzp3FunozY" role="8gIbH">
+      <property role="0lsPB" value="H10" />
+      <property role="TrG5h" value="Unnecessary warnings - ASIL QM" />
+      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
+      <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
+    </node>
+    <node concept="1a6Z8w" id="1zzp3Funo$m" role="8gIbH">
+      <property role="0lsPB" value="H11" />
+      <property role="TrG5h" value="Complicated interface - ASIL QM" />
+      <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
+      <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
     </node>
   </node>
 </model>
