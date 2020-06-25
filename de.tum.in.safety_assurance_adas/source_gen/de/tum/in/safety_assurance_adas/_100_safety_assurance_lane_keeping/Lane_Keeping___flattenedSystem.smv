@@ -1,0 +1,52 @@
+MODULE Lane_Keeping___flattened(steering_wheel_angle, steering_wheel_torque)
+  VAR
+    Camera_DOT_connectivity : boolean;
+    Camera_DOT_operation : boolean;
+    Camera_DOT_image : array 0..1024 of 0..255;
+    Image_Processing_Unit_DOT_connectivity : boolean;
+    Image_Processing_Unit_DOT_operation : boolean;
+    Image_Processing_Unit_DOT_image : array 0..1024 of 0..255;
+    Image_Processing_Unit_DOT_lane_distance_left : -50..200;
+    Image_Processing_Unit_DOT_lane_distance_right : -50..200;
+    Image_Processing_Unit_DOT_state_image_processing : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    Image_Processing_Unit_DOT_lane_detect : boolean;
+    LKA_Control_Box_DOT_lane_distance_left : -50..200;
+    LKA_Control_Box_DOT_lane_distance_right : -50..200;
+    LKA_Control_Box_DOT_state_image_processing : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    LKA_Control_Box_DOT_lane_detected : boolean;
+    LKA_Control_Box_DOT_activate : boolean;
+    LKA_Control_Box_DOT_steering_wheel_angle : -720..720;
+    LKA_Control_Box_DOT_steering_wheel_torque : -5..5;
+    LKA_Control_Box_DOT_watchdog_alert : boolean;
+    LKA_Control_Box_DOT_monitorchannel_alert : boolean;
+    LKA_Control_Box_DOT_driver_takeover_request : boolean;
+    LKA_Control_Box_DOT_desired_steering_wheel_angle : -720..720;
+    LKA_Control_Box_DOT_vibrate_steering_wheel : boolean;
+    LKA_Control_Box_DOT_state_LKA_control : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    LKA_Control_Box_DOT_stroke : boolean;
+    LKA_Activation_Button_DOT_activate_deactivate : boolean;
+    SteeringWheel_Control_Unit_DOT_vibrate_steering_wheel : boolean;
+    SteeringWheel_Control_Unit_DOT_desired_steering_wheel_angle : -720..720;
+    SteeringWheel_Control_Unit_DOT_steeringWheel_motor : -10..10;
+    LKA_Communication_Control_Unit_DOT_driver_takeover_request : boolean;
+    LKA_Communication_Control_Unit_DOT_state_LKA_control : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    LKA_Communication_Control_Unit_DOT_alert_signal : boolean;
+    LKA_Communication_Control_Unit_DOT_state : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    Watchdog_LKA_DOT_stroke : boolean;
+    Watchdog_LKA_DOT_shutdown : boolean;
+    MonitorChannel_IC_DOT_image_In : array 0..1024 of 0..255;
+    MonitorChannel_IC_DOT_monitor_alert : boolean;
+    
+    alert_signal : boolean;
+    state : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    steering_motor : -10..10;
+  DEFINE
+    arch_wiring := (Camera_DOT_image = Image_Processing_Unit_DOT_image) & (Camera_DOT_operation = Image_Processing_Unit_DOT_operation) & (Camera_DOT_connectivity = Image_Processing_Unit_DOT_connectivity) & (Image_Processing_Unit_DOT_lane_distance_left = LKA_Control_Box_DOT_lane_distance_left) & (Image_Processing_Unit_DOT_lane_distance_right = LKA_Control_Box_DOT_lane_distance_right) & (Image_Processing_Unit_DOT_state_image_processing = LKA_Control_Box_DOT_state_image_processing) & (Image_Processing_Unit_DOT_lane_detect = LKA_Control_Box_DOT_lane_detected) & (LKA_Activation_Button_DOT_activate_deactivate = LKA_Control_Box_DOT_activate) & (LKA_Control_Box_DOT_vibrate_steering_wheel = SteeringWheel_Control_Unit_DOT_vibrate_steering_wheel) & (LKA_Control_Box_DOT_desired_steering_wheel_angle = SteeringWheel_Control_Unit_DOT_desired_steering_wheel_angle) & (LKA_Control_Box_DOT_driver_takeover_request = LKA_Communication_Control_Unit_DOT_driver_takeover_request) & (LKA_Communication_Control_Unit_DOT_alert_signal = alert_signal) & (LKA_Control_Box_DOT_state_LKA_control = LKA_Communication_Control_Unit_DOT_state_LKA_control) & (LKA_Communication_Control_Unit_DOT_state = state) & (LKA_Control_Box_DOT_stroke = Watchdog_LKA_DOT_stroke) & (Watchdog_LKA_DOT_shutdown = LKA_Control_Box_DOT_watchdog_alert) & (SteeringWheel_Control_Unit_DOT_steeringWheel_motor = steering_motor) & (steering_wheel_angle = LKA_Control_Box_DOT_steering_wheel_angle) & (steering_wheel_torque = LKA_Control_Box_DOT_steering_wheel_torque) & (Camera_DOT_image = MonitorChannel_IC_DOT_image_In) & (MonitorChannel_IC_DOT_monitor_alert = LKA_Control_Box_DOT_monitorchannel_alert);
+  
+
+MODULE main
+  VAR
+    steering_wheel_angle : -720..720;
+    steering_wheel_torque : -5..5;
+    flattened : Lane_Keeping___flattened(steering_wheel_angle,steering_wheel_torque);
+

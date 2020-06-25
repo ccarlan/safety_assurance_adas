@@ -1,0 +1,17 @@
+MODULE ImageProcessing_Impl(connectivity, operation, image, shutdown)
+  DEFINE
+    lane_distance_left := 0;
+    lane_distance_right := 0;
+    state_image_processing := ;
+    lane_detect := TRUE;
+    stroke := TRUE;
+
+MODULE main
+  VAR
+    connectivity : boolean;
+    operation : boolean;
+    image : array 0..1024 of 0..255;
+    analyzed_module : ImageProcessing_Impl(connectivity,operation,image);
+  LTLSPEC TRUE -> G  ((!(connectivity) | !(operation)) -> (analyzed_module.state_image_processing = camera_fail))
+  LTLSPEC TRUE -> G  (((analyzed_module.state_image_processing = camera_fail) | (analyzed_module.state_image_processing = image_process_fail)) -> (analyzed_module.lane_detect = FALSE))
+

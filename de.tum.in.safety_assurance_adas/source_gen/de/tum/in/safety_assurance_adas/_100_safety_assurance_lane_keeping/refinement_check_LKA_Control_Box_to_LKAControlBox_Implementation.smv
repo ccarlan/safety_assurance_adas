@@ -1,0 +1,30 @@
+MODULE LKAControlBox_Implementation(lane_distance_left, lane_distance_right, state_image_processing, lane_detected, activate, steering_wheel_angle, steering_wheel_torque, watchdog_alert, monitorchannel_alert)
+  DEFINE
+    driver_takeover_request := FALSE;
+    desired_steering_wheel_angle := 0;
+    vibrate_steering_wheel := FALSE;
+    state_LKA_control := ((lane_detected = TRUE) ? (ok):(lane_keeping_fail));
+    stroke := TRUE;
+
+MODULE main
+  VAR
+    lane_distance_left : -50..200;
+    lane_distance_right : -50..200;
+    state_image_processing : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    lane_detected : boolean;
+    activate : boolean;
+    steering_wheel_angle : -720..720;
+    steering_wheel_torque : -5..5;
+    watchdog_alert : boolean;
+    monitorchannel_alert : boolean;
+    analyzed_module : LKAControlBox_Implementation(lane_distance_left,lane_distance_right,state_image_processing,lane_detected,activate,steering_wheel_angle,steering_wheel_torque,watchdog_alert,monitorchannel_alert);
+  LTLSPEC TRUE -> G  ((state_image_processing = camera_fail) -> (analyzed_module.state_LKA_control = camera_fail))
+  LTLSPEC TRUE -> G  ((lane_detected = FALSE) -> (analyzed_module.state_LKA_control = lane_keeping_fail))
+  LTLSPEC TRUE -> G  ((activate = TRUE & lane_detected = FALSE) -> analyzed_module.driver_takeover_request = TRUE & analyzed_module.vibrate_steering_wheel = TRUE)
+  LTLSPEC TRUE -> G  ((state_image_processing = image_process_fail) -> (analyzed_module.state_LKA_control = image_process_fail))
+  LTLSPEC TRUE -> G  ((state_image_processing = ok) -> (analyzed_module.state_LKA_control = ok))
+  LTLSPEC TRUE -> F  ((steering_wheel_torque = 0 & analyzed_module.driver_takeover_request = TRUE) -> (analyzed_module.state_LKA_control = emergency_stop_required))
+  LTLSPEC TRUE -> G  ((abs(steering_wheel_torque) >= 2) -> (analyzed_module.state_LKA_control = driver_engages))
+  LTLSPEC TRUE -> G  ((analyzed_module.state_LKA_control = driver_engages) -> (analyzed_module.driver_takeover_request = FALSE & analyzed_module.vibrate_steering_wheel = FALSE))
+  LTLSPEC TRUE -> G  ((state_image_processing = dirt_detected & activate = TRUE) -> (analyzed_module.state_LKA_control = degraded_mode))
+

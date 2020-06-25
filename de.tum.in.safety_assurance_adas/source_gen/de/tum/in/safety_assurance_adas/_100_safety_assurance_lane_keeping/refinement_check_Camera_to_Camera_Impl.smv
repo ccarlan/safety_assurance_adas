@@ -1,0 +1,10 @@
+MODULE Camera_Impl
+  DEFINE
+    connectivity := TRUE;
+    operation := TRUE;
+    image := 0;
+
+MODULE main
+  VAR
+    analyzed_module : Camera_Impl;
+

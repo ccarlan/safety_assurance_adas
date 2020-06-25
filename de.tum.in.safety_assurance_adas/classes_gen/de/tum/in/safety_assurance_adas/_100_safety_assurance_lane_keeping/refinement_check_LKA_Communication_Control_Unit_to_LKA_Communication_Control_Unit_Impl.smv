@@ -1,0 +1,14 @@
+MODULE LKA_Communication_Control_Unit_Impl(driver_takeover_request, state_LKA_control)
+  DEFINE
+    alert_signal := driver_takeover_request;
+    state := state_LKA_control;
+
+MODULE main
+  VAR
+    driver_takeover_request : boolean;
+    state_LKA_control : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    analyzed_module : LKA_Communication_Control_Unit_Impl(driver_takeover_request,state_LKA_control);
+  LTLSPEC TRUE -> G  ((driver_takeover_request = TRUE) -> X (analyzed_module.alert_signal = TRUE))
+  LTLSPEC TRUE -> G  ((driver_takeover_request = FALSE) -> X (analyzed_module.alert_signal = FALSE))
+  LTLSPEC TRUE -> G  (state_LKA_control = analyzed_module.state)
+

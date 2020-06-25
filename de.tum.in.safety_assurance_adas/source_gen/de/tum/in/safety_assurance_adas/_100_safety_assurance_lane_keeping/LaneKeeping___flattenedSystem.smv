@@ -1,0 +1,43 @@
+MODULE LaneKeeping___flattened
+  VAR
+    Camera_DOT_connectivity : boolean;
+    Camera_DOT_operation : boolean;
+    Camera_DOT_image : array 0..1024 of 0..255;
+    ImageProcessingUnit_DOT_connectivity : boolean;
+    ImageProcessingUnit_DOT_operation : boolean;
+    ImageProcessingUnit_DOT_image : array 0..1024 of 0..255;
+    ImageProcessingUnit_DOT_lane_distance_left : -50..200;
+    ImageProcessingUnit_DOT_lane_distance_right : -50..200;
+    ImageProcessingUnit_DOT_state_image_processing : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    ImageProcessingUnit_DOT_lane_detect : boolean;
+    LKAControlBox_DOT_lane_distance_left : -50..200;
+    LKAControlBox_DOT_lane_distance_right : -50..200;
+    LKAControlBox_DOT_state_image_processing : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    LKAControlBox_DOT_lane_detect : boolean;
+    LKAControlBox_DOT_activate_deactivate : boolean;
+    LKAControlBox_DOT_steeringWheel_angle : -720..720;
+    LKAControlBox_DOT_steeringWheel_torque : -5..5;
+    LKAControlBox_DOT_driver_takeover_request : boolean;
+    LKAControlBox_DOT_desired_steeringWheel_angle : -720..720;
+    LKAControlBox_DOT_vibrate_steeringWheel : boolean;
+    LKAControlBox_DOT_state_LKA_control : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    LKA_Activation_Button_DOT_activate_deactivate : boolean;
+    SteeringWheel_Control_Unit_DOT_vibrate_steeringWheel : boolean;
+    SteeringWheel_Control_Unit_DOT_desired_steeringWheel_angle : -720..720;
+    SteeringWheel_Control_Unit_DOT_steeringWheel_angle : -720..720;
+    SteeringWheel_Control_Unit_DOT_steeringWheel_torque : -5..5;
+    LKA_Communication_Control_Unit_DOT_driver_takeover_request : boolean;
+    LKA_Communication_Control_Unit_DOT_state_LKA_control : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    LKA_Communication_Control_Unit_DOT_alert_signal : boolean;
+    LKA_Communication_Control_Unit_DOT_state : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+    
+    alert_signal : boolean;
+    state : {camera_fail, image_process_fail, ok, lane_keeping_fail, degraded_mode, emergency_stop_required, dirt_detected, driver_engages};
+  DEFINE
+    arch_wiring := (Camera_DOT_image = ImageProcessingUnit_DOT_image) & (Camera_DOT_operation = ImageProcessingUnit_DOT_operation) & (Camera_DOT_connectivity = ImageProcessingUnit_DOT_connectivity) & (ImageProcessingUnit_DOT_lane_distance_left = LKAControlBox_DOT_lane_distance_left) & (ImageProcessingUnit_DOT_lane_distance_right = LKAControlBox_DOT_lane_distance_right) & (ImageProcessingUnit_DOT_state_image_processing = LKAControlBox_DOT_state_image_processing) & (ImageProcessingUnit_DOT_lane_detect = LKAControlBox_DOT_lane_detect) & (LKA_Activation_Button_DOT_activate_deactivate = LKAControlBox_DOT_activate_deactivate) & (SteeringWheel_Control_Unit_DOT_steeringWheel_angle = LKAControlBox_DOT_steeringWheel_angle) & (SteeringWheel_Control_Unit_DOT_steeringWheel_torque = LKAControlBox_DOT_steeringWheel_torque) & (LKAControlBox_DOT_vibrate_steeringWheel = SteeringWheel_Control_Unit_DOT_vibrate_steeringWheel) & (LKAControlBox_DOT_desired_steeringWheel_angle = SteeringWheel_Control_Unit_DOT_desired_steeringWheel_angle) & (LKAControlBox_DOT_driver_takeover_request = LKA_Communication_Control_Unit_DOT_driver_takeover_request) & (LKA_Communication_Control_Unit_DOT_alert_signal = alert_signal) & (LKAControlBox_DOT_state_LKA_control = LKA_Communication_Control_Unit_DOT_state_LKA_control) & (LKA_Communication_Control_Unit_DOT_state = state);
+  
+
+MODULE main
+  VAR
+    flattened : LaneKeeping___flattened;
+

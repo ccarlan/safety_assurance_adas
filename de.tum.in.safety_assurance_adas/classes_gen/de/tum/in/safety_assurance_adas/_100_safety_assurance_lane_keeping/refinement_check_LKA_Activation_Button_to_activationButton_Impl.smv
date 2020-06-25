@@ -1,0 +1,8 @@
+MODULE activationButton_Impl
+  DEFINE
+    activate_deactivate := TRUE;
+
+MODULE main
+  VAR
+    analyzed_module : activationButton_Impl;
+

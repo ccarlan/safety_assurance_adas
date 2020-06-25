@@ -1,0 +1,39 @@
+
+MODULE LKAControlBox_Implementation(lane_distance_left, lane_distance_right, state_image_processing, lane_detected, activate, steering_wheel_angle, steering_wheel_torque, watchdog_alert, monitorchannel_alert)
+  DEFINE
+    driver_takeover_request := FALSE;
+    desired_steering_wheel_angle := 0;
+    vibrate_steering_wheel := FALSE;
+    state_LKA_control := ((lane_detected = TRUE) ? ():());
+    stroke := TRUE;
+
+
+-- Module that implements the specific logic of the communication control unit.
+MODULE LKA_Communication_Control_Unit_Impl(driver_takeover_request, state_LKA_control)
+  DEFINE
+    alert_signal := driver_takeover_request;
+    state := state_LKA_control;
+
+MODULE Steering_Wheel_Control_Unit_Impl(vibrate_steering_wheel, desired_steering_wheel_angle)
+  DEFINE
+    steeringWheel_motor := 0;
+
+MODULE Camera_Impl
+  DEFINE
+    connectivity := TRUE;
+    operation := TRUE;
+    image := 0;
+
+MODULE ImageProcessing_Impl(connectivity, operation, image, shutdown)
+  DEFINE
+    lane_distance_left := 0;
+    lane_distance_right := 0;
+    state_image_processing := ;
+    lane_detect := TRUE;
+    stroke := TRUE;
+
+MODULE activationButton_Impl
+  DEFINE
+    activate_deactivate := TRUE;
+
+

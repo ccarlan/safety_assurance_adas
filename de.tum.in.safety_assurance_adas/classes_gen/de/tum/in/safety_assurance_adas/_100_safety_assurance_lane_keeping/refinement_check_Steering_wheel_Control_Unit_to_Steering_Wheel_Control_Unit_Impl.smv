@@ -1,0 +1,10 @@
+MODULE Steering_Wheel_Control_Unit_Impl(vibrate_steering_wheel, desired_steering_wheel_angle)
+  DEFINE
+    steeringWheel_motor := 0;
+
+MODULE main
+  VAR
+    vibrate_steering_wheel : boolean;
+    desired_steering_wheel_angle : -720..720;
+    analyzed_module : Steering_Wheel_Control_Unit_Impl(vibrate_steering_wheel,desired_steering_wheel_angle);
+
