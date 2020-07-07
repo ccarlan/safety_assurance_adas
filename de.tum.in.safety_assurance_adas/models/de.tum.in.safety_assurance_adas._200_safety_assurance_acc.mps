@@ -475,6 +475,7 @@
       <property role="TrG5h" value="ACC reacts too harsh - ASIL QM" />
       <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
       <property role="1a6$V8" value="24PsEXFbNLm/C1" />
+      <property role="1a6$Vd" value="24PsEXFbNKN/S1" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
     </node>
     <node concept="1a6Z8w" id="1zzp3Funoym" role="8gIbH">
@@ -489,7 +490,7 @@
       <property role="0lsPB" value="H06" />
       <property role="TrG5h" value="No detection of lead car - ASIL QM" />
       <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
-      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
+      <property role="1a6$Vb" value="24PsEXFbNL9/E3" />
       <property role="1a6$V8" value="24PsEXFbNLm/C1" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
     </node>
@@ -497,7 +498,7 @@
       <property role="0lsPB" value="H07" />
       <property role="TrG5h" value="Wrong detection of lead car - ASIL QM" />
       <property role="1a6$Vd" value="24PsEXFbNKQ/S2" />
-      <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
+      <property role="1a6$Vb" value="24PsEXFbNL5/E2" />
       <property role="1a6$V8" value="24PsEXFbNLp/C2" />
       <ref role="2HxXJk" node="G$XGFsgYc9" resolve="Loss of life or injury to people" />
     </node>
@@ -525,7 +526,7 @@
     </node>
     <node concept="1a6Z8w" id="1zzp3Funo$m" role="8gIbH">
       <property role="0lsPB" value="H11" />
-      <property role="TrG5h" value="Complicated interface - ASIL QM" />
+      <property role="TrG5h" value="Complicated user interface - ASIL QM" />
       <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
     </node>
@@ -1329,7 +1330,7 @@
           <ref role="DABNb" node="1zzp3FunozY" resolve="Unnecessary warnings - ASIL QM" />
         </node>
         <node concept="DABN8" id="4tgWazNvlA7" role="DABNk">
-          <ref role="DABNb" node="1zzp3Funo$m" resolve="Complicated interface - ASIL QM" />
+          <ref role="DABNb" node="1zzp3Funo$m" resolve="Complicated user interface - ASIL QM" />
         </node>
       </node>
       <node concept="19SGf9" id="4tgWazNvlzz" role="1QQeG9">
@@ -2767,7 +2768,7 @@
         </node>
         <node concept="2iDXIW" id="4tgWazNvn9C" role="0nOlf">
           <node concept="DABN8" id="4tgWazNvneh" role="DABNk">
-            <ref role="DABNb" node="1zzp3Funo$m" resolve="Complicated interface - ASIL QM" />
+            <ref role="DABNb" node="1zzp3Funo$m" resolve="Complicated user interface - ASIL QM" />
           </node>
         </node>
         <node concept="19SGf9" id="4tgWazNvn8z" role="1QQeG9">
@@ -2790,7 +2791,7 @@
         </node>
         <node concept="2iDXIW" id="4tgWazNvn9F" role="0nOlf">
           <node concept="DABN8" id="4tgWazNvnej" role="DABNk">
-            <ref role="DABNb" node="1zzp3Funo$m" resolve="Complicated interface - ASIL QM" />
+            <ref role="DABNb" node="1zzp3Funo$m" resolve="Complicated user interface - ASIL QM" />
           </node>
         </node>
         <node concept="19SGf9" id="4tgWazNvn8J" role="1QQeG9">
