@@ -920,7 +920,7 @@
         <node concept="1E0uc6" id="cfX0AaFKUD" role="1E0ucd">
           <node concept="19SGf9" id="cfX0AaFKUF" role="1E0uc7">
             <node concept="19SUe$" id="cfX0AaFKUG" role="19SJt6">
-              <property role="19SUeA" value="Driver falsely assumes that ACC is working correctly " />
+              <property role="19SUeA" value="If the warning is not forwarded to the display, the driver falsely assumes that ACC was working correctly. This might lead to an accident. " />
             </node>
             <node concept="oY6sn" id="cfX0AaFKUB" role="19SJt6">
               <ref role="oTUVg" node="G$XGFsgYdV" resolve="Safe distance is violated - ASIL A" />
@@ -941,7 +941,7 @@
         <node concept="1E0uc6" id="cfX0AaFKWs" role="1E0tWM">
           <node concept="19SGf9" id="cfX0AaFKWu" role="1E0uc7">
             <node concept="19SUe$" id="cfX0AaFKWv" role="19SJt6">
-              <property role="19SUeA" value="Unnecessary warnings " />
+              <property role="19SUeA" value="A false alarm is an unnecessary warning, affecting customer satisfaction " />
             </node>
             <node concept="oY6sn" id="cfX0AaFKWy" role="19SJt6">
               <ref role="oTUVg" node="1zzp3FunozY" resolve="Unnecessary warnings - ASIL QM" />
@@ -952,7 +952,7 @@
         <node concept="1E0uc6" id="cfX0AaFKWB" role="1E0tXe">
           <node concept="19SGf9" id="cfX0AaFKWD" role="1E0uc7">
             <node concept="19SUe$" id="cfX0AaFKWE" role="19SJt6">
-              <property role="19SUeA" value="Driver falsely assumes that ACC is working correctly " />
+              <property role="19SUeA" value="If the warning is displayed too late, the driver falsely assumes that ACC was working correctly for too long. This might lead to an accident. " />
             </node>
             <node concept="oY6sn" id="cfX0AaFKWI" role="19SJt6">
               <ref role="oTUVg" node="G$XGFsgYdV" resolve="Safe distance is violated - ASIL A" />
@@ -977,7 +977,7 @@
         <node concept="1E0uc6" id="cfX0AaFKUR" role="1E0ucd">
           <node concept="19SGf9" id="cfX0AaFKUT" role="1E0uc7">
             <node concept="19SUe$" id="cfX0AaFKUU" role="19SJt6">
-              <property role="19SUeA" value="Driver falsely assumes that ACC is working correctly " />
+              <property role="19SUeA" value="If the warning is not forwarded to the speaker, the driver falsely assumes that ACC was working correctly. This might lead to an accident. " />
             </node>
             <node concept="oY6sn" id="cfX0AaFKV2" role="19SJt6">
               <ref role="oTUVg" node="G$XGFsgYdV" resolve="Safe distance is violated - ASIL A" />
@@ -998,7 +998,7 @@
         <node concept="1E0uc6" id="cfX0AaFKWZ" role="1E0tWM">
           <node concept="19SGf9" id="cfX0AaFKX1" role="1E0uc7">
             <node concept="19SUe$" id="cfX0AaFKX2" role="19SJt6">
-              <property role="19SUeA" value="Unnecessary warnings " />
+              <property role="19SUeA" value="A false alarm is an unnecessary warning, affecting customer satisfaction " />
             </node>
             <node concept="oY6sn" id="cfX0AaFKWY" role="19SJt6">
               <ref role="oTUVg" node="1zzp3FunozY" resolve="Unnecessary warnings - ASIL QM" />
@@ -1012,7 +1012,7 @@
         <node concept="1E0uc6" id="cfX0AaFKXi" role="1E0tXe">
           <node concept="19SGf9" id="cfX0AaFKXk" role="1E0uc7">
             <node concept="19SUe$" id="cfX0AaFKXl" role="19SJt6">
-              <property role="19SUeA" value="Driver falsely assumes that ACC is working correctly " />
+              <property role="19SUeA" value="If the warning is given out too late, the driver falsely assumes that ACC was working correctly for too long. This might lead to an accident. " />
             </node>
             <node concept="oY6sn" id="cfX0AaFKXg" role="19SJt6">
               <ref role="oTUVg" node="G$XGFsgYdV" resolve="Safe distance is violated - ASIL A" />
@@ -1039,7 +1039,7 @@
         <node concept="1E0uc6" id="cfX0AaFKSJ" role="1E0ucd">
           <node concept="19SGf9" id="cfX0AaFKSL" role="1E0uc7">
             <node concept="19SUe$" id="cfX0AaFKSM" role="19SJt6">
-              <property role="19SUeA" value="Driver cannot take over " />
+              <property role="19SUeA" value="The system detects that the driver wants to override the ACC by evaluating if he pushes the brake. If the signal is not available, the driver cannot take over " />
             </node>
             <node concept="oY6sn" id="cfX0AaFKSP" role="19SJt6">
               <ref role="oTUVg" node="1zzp3Funoym" resolve="ACC does not deactivate - ASIL QM" />
@@ -1052,7 +1052,7 @@
         <node concept="1E0uc6" id="cfX0AaFKT9" role="1E0tWM">
           <node concept="19SGf9" id="cfX0AaFKTb" role="1E0uc7">
             <node concept="19SUe$" id="cfX0AaFKTc" role="19SJt6">
-              <property role="19SUeA" value="Unwanted ACC deactivation " />
+              <property role="19SUeA" value="If a driver override is detected falsely, ACC is deactivated by mistake " />
             </node>
             <node concept="oY6sn" id="cfX0AaFKTf" role="19SJt6">
               <ref role="oTUVg" node="G$XGFsgYdV" resolve="Safe distance is violated - ASIL A" />
@@ -1071,7 +1071,7 @@
         <node concept="1E0uc6" id="cfX0AaFKTD" role="1E0tXe">
           <node concept="19SGf9" id="cfX0AaFKTF" role="1E0uc7">
             <node concept="19SUe$" id="cfX0AaFKTG" role="19SJt6">
-              <property role="19SUeA" value="Driver cannot take over on time " />
+              <property role="19SUeA" value="If a driver override is detected too late, the driver cannot take over on time " />
             </node>
             <node concept="oY6sn" id="cfX0AaFKTB" role="19SJt6">
               <ref role="oTUVg" node="1zzp3Funoym" resolve="ACC does not deactivate - ASIL QM" />
@@ -1092,7 +1092,7 @@
         <node concept="1E0uc6" id="cfX0AaFKSc" role="1E0tWM">
           <node concept="19SGf9" id="cfX0AaFKSe" role="1E0uc7">
             <node concept="19SUe$" id="cfX0AaFKSf" role="19SJt6">
-              <property role="19SUeA" value="ACC system is temporaly deactivated in case of false input " />
+              <property role="19SUeA" value="A driver's input on the gas pedal overrides the ACC. If an input is detected falsely, ACC is temporaly deactivated and does not keep the target speed " />
             </node>
             <node concept="oY6sn" id="cfX0AaFKSi" role="19SJt6">
               <ref role="oTUVg" node="1zzp3Funoz2" resolve="Target speed is not maintained - ASIL QM" />
@@ -1103,7 +1103,7 @@
         <node concept="1E0uc6" id="cfX0AaFKSn" role="1E0tXe">
           <node concept="19SGf9" id="cfX0AaFKSp" role="1E0uc7">
             <node concept="19SUe$" id="cfX0AaFKSq" role="19SJt6">
-              <property role="19SUeA" value="ACC system is temporaly deactivated in case of delayed input " />
+              <property role="19SUeA" value="ACC is temporaly deactivated and does not keep the target speed in case of delayed input " />
             </node>
             <node concept="oY6sn" id="cfX0AaFKSt" role="19SJt6">
               <ref role="oTUVg" node="1zzp3Funoz2" resolve="Target speed is not maintained - ASIL QM" />
@@ -1114,7 +1114,7 @@
         <node concept="1E0uc6" id="cfX0AaFKS_" role="1E0tXb">
           <node concept="19SGf9" id="cfX0AaFKSB" role="1E0uc7">
             <node concept="19SUe$" id="cfX0AaFKSC" role="19SJt6">
-              <property role="19SUeA" value="ACC system is temporaly deactivated in case of false input " />
+              <property role="19SUeA" value="ACC is temporaly deactivated and does not keep the target speed in case of false input " />
             </node>
             <node concept="oY6sn" id="cfX0AaFKSz" role="19SJt6">
               <ref role="oTUVg" node="1zzp3Funoz2" resolve="Target speed is not maintained - ASIL QM" />
