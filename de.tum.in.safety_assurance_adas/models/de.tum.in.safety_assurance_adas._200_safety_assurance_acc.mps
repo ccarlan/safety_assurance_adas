@@ -395,7 +395,7 @@
     <property role="TrG5h" value="_020_acc_system_requirements" />
     <property role="3GE5qa" value="acc_item_definition" />
     <node concept="0lhDl" id="5et_HVSMSIF" role="1QQeBF">
-      <property role="0lsPA" value="IR01_LK" />
+      <property role="0lsPA" value="IR01_ACC" />
       <property role="0ke_I" value="Carmen" />
       <node concept="1QQeAY" id="5et_HVSMSIU" role="1QQeAC">
         <node concept="0nzK2" id="5et_HVSMSIW" role="1QQeAV">
@@ -414,7 +414,7 @@
       <node concept="3z6Cyy" id="5et_HVSMSIP" role="0nOlf" />
     </node>
     <node concept="0lhDl" id="5et_HVSMSJf" role="1QQeBF">
-      <property role="0lsPA" value="IR02_LK" />
+      <property role="0lsPA" value="IR02_ACC" />
       <property role="0ke_I" value="Carmen" />
       <node concept="1QQeAY" id="5et_HVSMSJB" role="1QQeAC">
         <node concept="0nzK2" id="5et_HVSMSJD" role="1QQeAV">
@@ -2132,7 +2132,7 @@
         <property role="37mO49" value="5138871783259986939" />
         <node concept="gqqVs" id="4tgWazNvlK9" role="37mO4d">
           <property role="gqqTZ" value="75.45340795338382" />
-          <property role="gqqTW" value="91.0" />
+          <property role="gqqTW" value="92.52641070534222" />
           <property role="gqqTX" value="84.0" />
           <property role="gqqTy" value="30.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -3011,7 +3011,7 @@
             <node concept="0nzK2" id="2l0tHRMMe64" role="1QQeAV">
               <node concept="19SGf9" id="2l0tHRMMe66" role="0nzdz">
                 <node concept="19SUe$" id="2l0tHRMMe67" role="19SJt6">
-                  <property role="19SUeA" value="A Monitor Channel checks if the calculated velocity of the leading car doesn't provide a value (NoVal) even if a leading car is detected." />
+                  <property role="19SUeA" value="A Monitor Channel checks if the calculated velocity of the leading car doesn't provide a value (NoVal) even if a leading car is detected. Additoinally, the driving speed should be in a plausibel range." />
                 </node>
               </node>
             </node>
