@@ -2947,6 +2947,44 @@
       <node concept="0lhDl" id="2l0tHRMMe3x" role="1VMWzp">
         <property role="0lsPA" value="TSR02_01" />
         <property role="0ke_I" value="Marcel&amp;Moritz" />
+        <node concept="0lhDl" id="5L9QjI21i2p" role="1VMWzp">
+          <property role="0lsPA" value="TSR02_01_01" />
+          <property role="0ke_I" value="Jonas" />
+          <node concept="1QQeAY" id="5L9QjI21i2z" role="1QQeAC">
+            <node concept="0nzK2" id="5L9QjI21i2_" role="1QQeAV">
+              <node concept="19SGf9" id="5L9QjI21i2B" role="0nzdz">
+                <node concept="19SUe$" id="5L9QjI21i2C" role="19SJt6">
+                  <property role="19SUeA" value="The system evaluates the distances provided by all (properly working) sensors and uses the lowest value (closest distance) for computation." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1QQeFk" id="5L9QjI21i2q" role="0nOlf" />
+          <node concept="19SGf9" id="5L9QjI21i2r" role="1QQeG9">
+            <node concept="19SUe$" id="5L9QjI21i2s" role="19SJt6">
+              <property role="19SUeA" value="Sensor voter" />
+            </node>
+          </node>
+        </node>
+        <node concept="0lhDl" id="5L9QjI21i2I" role="1VMWzp">
+          <property role="0lsPA" value="TSR02_01_02" />
+          <property role="0ke_I" value="Jonas" />
+          <node concept="1QQeAY" id="5L9QjI21i30" role="1QQeAC">
+            <node concept="0nzK2" id="5L9QjI21i32" role="1QQeAV">
+              <node concept="19SGf9" id="5L9QjI21i34" role="0nzdz">
+                <node concept="19SUe$" id="5L9QjI21i35" role="19SJt6">
+                  <property role="19SUeA" value="If only 1 sensor is working properly, the system switches to a degraded mode.&#10;This means that the distance value provided by the sensor is doubled, to account for possible uncertainties / noise." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1QQeFk" id="5L9QjI21i2J" role="0nOlf" />
+          <node concept="19SGf9" id="5L9QjI21i2K" role="1QQeG9">
+            <node concept="19SUe$" id="5L9QjI21i2L" role="19SJt6">
+              <property role="19SUeA" value="Degraded mode" />
+            </node>
+          </node>
+        </node>
         <node concept="1QQeAY" id="2l0tHRMMe3R" role="1QQeAC">
           <node concept="0nzK2" id="2l0tHRMMe3T" role="1QQeAV">
             <node concept="19SGf9" id="2l0tHRMMe3V" role="0nzdz">
@@ -2956,6 +2994,7 @@
             </node>
           </node>
         </node>
+        <node concept="1QQeAL" id="5L9QjI21i27" role="1QQeAC" />
         <node concept="DA$zP" id="2l0tHRMMe4J" role="0nOlf" />
         <node concept="19SGf9" id="2l0tHRMMe3z" role="1QQeG9">
           <node concept="19SUe$" id="2l0tHRMMe3$" role="19SJt6">
@@ -7091,10 +7130,10 @@
       <node concept="37mRIm" id="36EUxMsBXWx" role="37mRID">
         <property role="37mO49" value="3578930262506987040" />
         <node concept="gqqVs" id="36EUxMsBXWw" role="37mO4d">
-          <property role="gqqTZ" value="529.0" />
+          <property role="gqqTZ" value="522.0" />
           <property role="gqqTW" value="351.0" />
-          <property role="gqqTX" value="273.0" />
-          <property role="gqqTy" value="80.0" />
+          <property role="gqqTX" value="292.0" />
+          <property role="gqqTy" value="128.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -8658,7 +8697,7 @@
           <property role="gqqTZ" value="1641.0" />
           <property role="gqqTW" value="1166.0" />
           <property role="gqqTX" value="271.0" />
-          <property role="gqqTy" value="89.0" />
+          <property role="gqqTy" value="76.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -8693,8 +8732,8 @@
         <node concept="gqqVs" id="36EUxMsC9DY" role="37mO4d">
           <property role="gqqTZ" value="1267.0" />
           <property role="gqqTW" value="903.0" />
-          <property role="gqqTX" value="293.0" />
-          <property role="gqqTy" value="116.0" />
+          <property role="gqqTX" value="250.0" />
+          <property role="gqqTy" value="76.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -8833,7 +8872,7 @@
         <node concept="gqqVs" id="699Xu0c4xI6" role="37mO4d">
           <property role="gqqTZ" value="461.0" />
           <property role="gqqTW" value="110.0" />
-          <property role="gqqTX" value="344.0" />
+          <property role="gqqTX" value="292.0" />
           <property role="gqqTy" value="63.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -9118,6 +9157,12 @@
       <node concept="19SGf9" id="36EUxMsC4Nf" role="2vnaTY">
         <node concept="19SUe$" id="36EUxMsC4Ng" role="19SJt6">
           <property role="19SUeA" value="Mitigate the risk of safe distance violation&#10;by implementing " />
+        </node>
+        <node concept="2aGvr3" id="5L9QjI21i18" role="19SJt6">
+          <ref role="2aGvrx" node="4tgWazNvnb3" />
+        </node>
+        <node concept="19SUe$" id="5L9QjI21i19" role="19SJt6">
+          <property role="19SUeA" value=": ACC-functionality&#10;This is refined by " />
         </node>
         <node concept="2aGvr3" id="36EUxMsC4O3" role="19SJt6">
           <ref role="2aGvrx" node="4WLVkAsg6IZ" />
