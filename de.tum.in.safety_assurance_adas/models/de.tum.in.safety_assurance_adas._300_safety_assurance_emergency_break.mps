@@ -161,7 +161,7 @@
     <property role="TrG5h" value="_000_eb_item_definition" />
     <property role="3GE5qa" value="eb_item_definition" />
     <node concept="3I9x2T" id="1HNBDjrJCC3" role="2HcuB8">
-      <property role="sUxOX" value="####################################################&#10;Item Definition&#10;&#10;The main objective of the emergency break that it can avoid collisions with obstacles. &#10;&#10;The emergency break provides assistance to the driver in case a collision happens in the near future. It therefore first alerts the driver. If the driver does not react and a crash becomes inevitable without further actions, the system brakes automatically.&#10;&#10;It detects obstacles in the front of the vehicle and calculates their distances. &#10;&#10;####################################################&#10;The Operational Design Domain (ODD)&#10;&#10;- Roadway types: highway&#10;&#10;- Speed range: 1-2 m/s&#10;&#10;- Environmental conditions &#9;&#10;-----Daytime/nighttime: daytime&#10;&#10;-----Weather: normal weather conditions, light rain&#10;&#10;####################################################&#10;The System Interfaces&#10;&#10;- Interface to UI (warn driver)&#10;&#10;- Sensors&#10;---- Laser x2 – vehicle front&#10;---- Ultrasound x2 – vehicle front, on the sides&#10;&#10;- Actuators&#10;---- Brake: to stop the vehicle&#10;" />
+      <property role="sUxOX" value="####################################################&#10;Item Definition&#10;&#10;The main objective of the emergency break is that it can avoid collisions with obstacles in emergency situations. &#10;&#10;The emergency break provides assistance to the driver in case a collision happens in the near future. It therefore first alerts the driver. If the driver does not react and a crash becomes inevitable without further actions, the system brakes automatically.&#10;&#10;The emergency break is also active when the ACC is active, as an unexpective failure of the ACC could lead to a situation in which an emergency break is necessary.&#10;&#10;It detects obstacles in the front of the vehicle and calculates their distances. &#10;&#10;####################################################&#10;The Operational Design Domain (ODD)&#10;&#10;- Roadway types: highway&#10;&#10;- Speed range: 1-2 m/s&#10;&#10;- Environmental conditions &#9;&#10;-----Daytime/nighttime: daytime&#10;&#10;-----Weather: normal weather conditions, light rain&#10;&#10;####################################################&#10;The System Interfaces&#10;&#10;- Interface to UI (warn driver)&#10;&#10;- Sensors&#10;---- Laser x2 – vehicle front&#10;---- Ultrasound x2 – vehicle front, on the sides&#10;&#10;- Actuators&#10;---- Brake: to stop the vehicle&#10;" />
     </node>
     <node concept="2SQmWS" id="1HNBDjrJCC6" role="2HcuB8" />
   </node>
@@ -276,7 +276,7 @@
         <node concept="0nzK2" id="1HNBDjrJCEL" role="1QQeAV">
           <node concept="19SGf9" id="1HNBDjrJCEN" role="0nzdz">
             <node concept="19SUe$" id="1HNBDjrJCEO" role="19SJt6">
-              <property role="19SUeA" value="The detection range of the sensors are the following:&#10;- Laser sensor: 40 m&#10;- Ultrasound: 4m" />
+              <property role="19SUeA" value="The detection range of the sensors are the following:&#10;- Laser sensor: 40 m&#10;- Ultrasound: 4 m" />
             </node>
           </node>
         </node>
