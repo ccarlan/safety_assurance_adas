@@ -5548,21 +5548,6 @@
           </node>
         </node>
       </node>
-      <node concept="3UTh7Y" id="5h_trByh97$" role="3UnIb_">
-        <property role="TrG5h" value="else" />
-        <node concept="2SafMM" id="5h_trByh99P" role="1yBDGv">
-          <node concept="32OYss" id="5h_trByh99V" role="1yBIc4">
-            <node concept="nE0YI" id="5h_trByh9az" role="32OYtT">
-              <node concept="2IPVmt" id="5h_trByh9aQ" role="2H9Ial">
-                <property role="2IPVms" value="1" />
-              </node>
-              <node concept="3Ug1Ap" id="5h_trByh9at" role="2H9Iav">
-                <ref role="3Ug1Ao" node="4tgWazNvrvj" resolve="distance_front" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="3UTh7Y" id="5h_trByhtKt" role="3UnIb_">
         <property role="TrG5h" value="accelerating_despite_low_distance" />
         <node concept="2SafMM" id="5h_trByhu2n" role="1yBDGv">
