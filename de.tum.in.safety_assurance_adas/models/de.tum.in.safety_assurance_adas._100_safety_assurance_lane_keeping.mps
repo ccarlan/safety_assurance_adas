@@ -733,7 +733,7 @@
     </node>
     <node concept="1a6Z8w" id="lV44fsLWjR" role="8gIbH">
       <property role="0lsPB" value="H24" />
-      <property role="TrG5h" value="Redundant user interface devices not working properly - ASIL QM" />
+      <property role="TrG5h" value="User interface devices not working properly - ASIL QM" />
       <property role="1a6$Vb" value="24PsEXFbNL2/E1" />
       <property role="1a6$V8" value="24PsEXFbNLt/C3" />
       <ref role="2HxXJk" node="G$XGFsgYcm" resolve="Loss of customer satisfaction" />
@@ -2635,7 +2635,7 @@
               <property role="19SUeA" value="A few (not all) alarm signals not working " />
             </node>
             <node concept="oY6sn" id="4NqRXFNx6RE" role="19SJt6">
-              <ref role="oTUVg" node="lV44fsLWjR" resolve="Redundant user interface devices not working properly - ASIL QM" />
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
             </node>
             <node concept="19SUe$" id="4NqRXFNx6RF" role="19SJt6">
               <property role="19SUeA" value="&#10;  " />
@@ -2649,7 +2649,7 @@
               <property role="19SUeA" value="Alarm signal issues too late " />
             </node>
             <node concept="oY6sn" id="4NqRXFNx6RO" role="19SJt6">
-              <ref role="oTUVg" node="lV44fsLWjR" resolve="Redundant user interface devices not working properly - ASIL QM" />
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
             </node>
             <node concept="19SUe$" id="4NqRXFNx6RP" role="19SJt6" />
           </node>
@@ -2661,7 +2661,7 @@
               <property role="19SUeA" value="Alarm signal stoppes too soon, so driver might not interprete signal. " />
             </node>
             <node concept="oY6sn" id="4NqRXFNx6RT" role="19SJt6">
-              <ref role="oTUVg" node="lV44fsLWjR" resolve="Redundant user interface devices not working properly - ASIL QM" />
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
             </node>
             <node concept="19SUe$" id="4NqRXFNx6RU" role="19SJt6">
               <property role="19SUeA" value="&#10;Alarm signal stoppes too late, so driver might be confused and/or &#10;disturbed. " />
@@ -2796,7 +2796,7 @@
               <property role="19SUeA" value="Driver cannot recognize that he has to intervene. " />
             </node>
             <node concept="oY6sn" id="4NqRXFNx6Tc" role="19SJt6">
-              <ref role="oTUVg" node="lV44fsLWjR" resolve="Redundant user interface devices not working properly - ASIL QM" />
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
             </node>
             <node concept="19SUe$" id="4NqRXFNx6Td" role="19SJt6" />
           </node>
@@ -2832,7 +2832,7 @@
               <property role="19SUeA" value="Vibration stoppes too soon, so driver might not interprete signal. " />
             </node>
             <node concept="oY6sn" id="4NqRXFNx6SO" role="19SJt6">
-              <ref role="oTUVg" node="lV44fsLWjR" resolve="Redundant user interface devices not working properly - ASIL QM" />
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
             </node>
             <node concept="19SUe$" id="4NqRXFNx6SP" role="19SJt6">
               <property role="19SUeA" value="&#10;Vibration stoppes too late -&gt; uncomfortable. " />
@@ -2860,7 +2860,7 @@
               <property role="19SUeA" value="Driver cannot recognize that he has to intervene. " />
             </node>
             <node concept="oY6sn" id="4NqRXFNx6Th" role="19SJt6">
-              <ref role="oTUVg" node="lV44fsLWjR" resolve="Redundant user interface devices not working properly - ASIL QM" />
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
             </node>
             <node concept="19SUe$" id="4NqRXFNx6Ti" role="19SJt6" />
           </node>
@@ -2896,7 +2896,7 @@
               <property role="19SUeA" value="Vibration stoppes too soon, so driver might not interprete signal. " />
             </node>
             <node concept="oY6sn" id="4NqRXFNx6ST" role="19SJt6">
-              <ref role="oTUVg" node="lV44fsLWjR" resolve="Redundant user interface devices not working properly - ASIL QM" />
+              <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
             </node>
             <node concept="19SUe$" id="4NqRXFNx6SU" role="19SJt6">
               <property role="19SUeA" value="&#10;Vibration stoppes too late -&gt; uncomfortable. " />

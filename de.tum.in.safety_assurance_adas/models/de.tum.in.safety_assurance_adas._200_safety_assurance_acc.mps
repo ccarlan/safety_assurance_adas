@@ -409,7 +409,7 @@
         <node concept="0nzK2" id="1Z4anaVRJIw" role="1QQeAV">
           <node concept="19SGf9" id="1Z4anaVRJIy" role="0nzdz">
             <node concept="19SUe$" id="1Z4anaVRJIz" role="19SJt6">
-              <property role="19SUeA" value="The ACC must automatically be deactivated if:&#10;&#10;- The driver manually brakes.&#10;- The emergency brake is activated.&#10;- The driver deactivates ACC using the enabling/disabling ACC button.&#10;" />
+              <property role="19SUeA" value="The driver can change the state of the ACC system when&#10;- activates/deactivates the system via the ACC activation button&#10;- deactivates the system using the brake&#10;- deactivates if emergency brake is activated&#10;- Set the target distance&#10;- Set the target speed&#10;- powers off the engine by pushing the switch-off button or rotating the key&#10;In all other situations the system should not permit the driver to change or control the system state&#10;&#10;" />
             </node>
           </node>
         </node>
@@ -417,7 +417,7 @@
       <node concept="1QQeFk" id="1Z4anaVRJIa" role="0nOlf" />
       <node concept="19SGf9" id="1Z4anaVRJIb" role="1QQeG9">
         <node concept="19SUe$" id="1Z4anaVRJIc" role="19SJt6">
-          <property role="19SUeA" value="ACC Deactivation" />
+          <property role="19SUeA" value="ACC Deactivation and Change" />
         </node>
       </node>
     </node>
@@ -3132,38 +3132,19 @@
     </node>
     <node concept="0lhDl" id="2NJwv_HFGO2" role="1QQeBF">
       <property role="0lsPA" value="TSR03_ACC" />
-      <property role="0ke_I" value="Moritz&amp;Marcel" />
-      <node concept="0lhDl" id="2l0tHRMMen9" role="1VMWzp">
-        <property role="0lsPA" value="TSR03_01_ACC" />
-        <property role="0ke_I" value="Marcel&amp;Moritz" />
-        <node concept="1QQeAY" id="2l0tHRMMenm" role="1QQeAC">
-          <node concept="0nzK2" id="2l0tHRMMeno" role="1QQeAV">
-            <node concept="19SGf9" id="2l0tHRMMenq" role="0nzdz">
-              <node concept="19SUe$" id="2l0tHRMMenr" role="19SJt6">
-                <property role="19SUeA" value="The available speed and distances should be in a safe range (e.g. a minimum distance and a maximum speed). The driver is not allowed to set a higher speed than 2 m/s and a lower distance to a leading car of 'current velocity * 0.55' meters." />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="DA$zP" id="2l0tHRMMenh" role="0nOlf" />
-        <node concept="19SGf9" id="2l0tHRMMenb" role="1QQeG9">
-          <node concept="19SUe$" id="2l0tHRMMenc" role="19SJt6">
-            <property role="19SUeA" value="Safe range of target distance and speed" />
-          </node>
-        </node>
-      </node>
+      <property role="0ke_I" value="Moritz&amp;Jonas" />
       <node concept="1QQeAY" id="2NJwv_HFGO_" role="1QQeAC">
         <node concept="0nzK2" id="2NJwv_HFGOB" role="1QQeAV">
           <node concept="19SGf9" id="2NJwv_HFGOD" role="0nzdz">
             <node concept="19SUe$" id="2NJwv_HFGOE" role="19SJt6">
-              <property role="19SUeA" value="The driver can change the state of the ACC system when&#10;- activates/deactivates the system via the ACC activation button&#10;- deactivates the system using the brake&#10;- deactivates if emergency brake is activated&#10;- Set the target distance&#10;- Set the target speed&#10;- powers off the engine by pushing the switch-off button or rotating the key&#10;In all other situations the system should not permit the driver to change or control the system state." />
+              <property role="19SUeA" value="The available speed and distances should be in a safe range (e.g. a minimum distance and a maximum speed). The driver is not allowed to set a higher speed than 2 m/s and a lower distance to a leading car of 'current velocity * 0.55' meters." />
             </node>
           </node>
         </node>
       </node>
       <node concept="19SGf9" id="2NJwv_HFGO4" role="1QQeG9">
         <node concept="19SUe$" id="2NJwv_HFGO5" role="19SJt6">
-          <property role="19SUeA" value="Driver control actions " />
+          <property role="19SUeA" value="Safe range of target distance and speed " />
           <node concept="0Sh09" id="3OFTjxLQyiL" role="lGtFl">
             <ref role="0Sh0a" node="4tgWazNvnb3" />
           </node>
