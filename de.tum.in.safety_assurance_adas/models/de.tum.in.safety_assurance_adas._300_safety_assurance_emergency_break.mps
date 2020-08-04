@@ -81,6 +81,10 @@
         <reference id="7094415537350220726" name="req" index="2aGvrx" />
       </concept>
       <concept id="6544290145033221524" name="com.mbeddr.formal.req.base.structure.Interface" flags="ng" index="3z6Cyy" />
+      <concept id="815900398743272760" name="com.mbeddr.formal.req.base.structure.Image" flags="ng" index="3OoTgI">
+        <property id="815900398743502458" name="scale" index="3OpxtG" />
+        <child id="815900398743284144" name="imageFile" index="3OoW2A" />
+      </concept>
       <concept id="4908298719893728799" name="com.mbeddr.formal.req.base.structure.EmptySpec" flags="ng" index="1QQeAL" />
       <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
         <child id="4908298719893728789" name="spec" index="1QQeAV" />
@@ -252,6 +256,12 @@
       </concept>
       <concept id="1258148499700303837" name="com.mbeddr.formal.nusmv.ext.structure.DocumentationMultiline" flags="ng" index="3I9x2T" />
     </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+      </concept>
+      <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
@@ -367,7 +377,7 @@
     <property role="TrG5h" value="_000_eb_item_definition" />
     <property role="3GE5qa" value="eb_item_definition" />
     <node concept="3I9x2T" id="1HNBDjrJCC3" role="2HcuB8">
-      <property role="sUxOX" value="####################################################&#10;Item Definition&#10;&#10;The main objective of the emergency break is that it can avoid collisions with obstacles in emergency situations. &#10;&#10;The emergency break provides assistance to the driver in case a collision happens in the near future. It therefore first alerts the driver. If the driver does not react and a crash becomes inevitable without further actions, the system brakes automatically.&#10;&#10;The emergency break is also active when the ACC is active, as an unexpective failure of the ACC could lead to a situation in which an emergency break is necessary.&#10;&#10;It detects obstacles in the front of the vehicle and calculates their distances. &#10;&#10;####################################################&#10;The Operational Design Domain (ODD)&#10;&#10;- Roadway types: highway&#10;&#10;- Speed range: 1-2 m/s&#10;&#10;- Environmental conditions &#9;&#10;-----Daytime/nighttime: daytime&#10;&#10;-----Weather: normal weather conditions, light rain&#10;&#10;####################################################&#10;The System Interfaces&#10;&#10;- Interface to UI (warn driver)&#10;&#10;- Sensors&#10;---- Laser x2 – vehicle front&#10;---- Ultrasound x2 – vehicle front, on the sides&#10;&#10;- Actuators&#10;---- Brake: to stop the vehicle&#10;" />
+      <property role="sUxOX" value="####################################################&#10;Item Definition&#10;&#10;The main objective of the emergency break is that it can avoid collisions with obstacles in emergency situations. &#10;&#10;The emergency break provides assistance to the driver in case a collision happens in the near future. It therefore first alerts the driver. If the driver does not react and a crash becomes inevitable without further actions, the system brakes automatically.&#10;&#10;The emergency break is also active when the ACC is active, as an unexpective failure of the ACC could lead to a situation in which an emergency break is necessary.&#10;&#10;It detects obstacles in the front of the vehicle and calculates their distances. &#10;&#10;####################################################&#10;The Operational Design Domain (ODD)&#10;&#10;- Roadway types: highway&#10;&#10;- Speed range: 1-1,5 m/s&#10;&#10;- Environmental conditions &#9;&#10;-----Daytime/nighttime: daytime&#10;&#10;-----Weather: normal weather conditions, light rain&#10;&#10;####################################################&#10;The System Interfaces&#10;&#10;- Interface to UI (warn driver)&#10;&#10;- Sensors&#10;---- Laser x2 – vehicle front&#10;---- Ultrasound x2 – vehicle front, on the sides&#10;&#10;- Actuators&#10;---- Brake: to stop the vehicle&#10;" />
     </node>
     <node concept="2SQmWS" id="1HNBDjrJCC6" role="2HcuB8" />
   </node>
@@ -386,7 +396,22 @@
           </node>
         </node>
       </node>
-      <node concept="1QQeAL" id="3XLpsf2_y0l" role="1QQeAC" />
+      <node concept="1QQeAY" id="ZwOLW1_Kh4" role="1QQeAC">
+        <node concept="0nzK2" id="ZwOLW1_Kh6" role="1QQeAV">
+          <node concept="19SGf9" id="ZwOLW1_Kh8" role="0nzdz">
+            <node concept="19SUe$" id="ZwOLW1_Khm" role="19SJt6" />
+            <node concept="3OoTgI" id="ZwOLW1_Khl" role="19SJt6">
+              <property role="3OpxtG" value="80" />
+              <node concept="3NXOOs" id="ZwOLW1_Kht" role="3OoW2A">
+                <property role="3N1Lgt" value="ItemDefinition EB.JPG" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="ZwOLW1_Khn" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeAL" id="ZwOLW1_JNF" role="1QQeAC" />
+      <node concept="1QQeAL" id="ZwOLW1_JNL" role="1QQeAC" />
       <node concept="1QQeFk" id="1Z4anaVRJHF" role="0nOlf" />
       <node concept="19SGf9" id="1Z4anaVRJHG" role="1QQeG9">
         <node concept="19SUe$" id="1Z4anaVRJHH" role="19SJt6">
@@ -2555,7 +2580,7 @@
           <node concept="0nzK2" id="54T4ifBJt0R" role="1QQeAV">
             <node concept="19SGf9" id="54T4ifBJt0T" role="0nzdz">
               <node concept="19SUe$" id="54T4ifBJt0U" role="19SJt6">
-                <property role="19SUeA" value="The rover mustn't crash into an obstacle" />
+                <property role="19SUeA" value="The rover shall not crash into an obstacle" />
               </node>
             </node>
           </node>
@@ -2581,7 +2606,7 @@
           <node concept="0nzK2" id="54T4ifBJt0E" role="1QQeAV">
             <node concept="19SGf9" id="54T4ifBJt0G" role="0nzdz">
               <node concept="19SUe$" id="54T4ifBJt0H" role="19SJt6">
-                <property role="19SUeA" value="A following rover mustn't crash into the rover while it brakes." />
+                <property role="19SUeA" value="A following rover shall not crash into the rover while it brakes." />
               </node>
             </node>
           </node>
@@ -2620,7 +2645,7 @@
         <node concept="0nzK2" id="4WLVkAsg3pa" role="1QQeAV">
           <node concept="19SGf9" id="4WLVkAsg3pb" role="0nzdz">
             <node concept="19SUe$" id="4WLVkAsg3pc" role="19SJt6">
-              <property role="19SUeA" value="The rover mustn't crash into an obstacle" />
+              <property role="19SUeA" value="The rover shall not crash into an obstacle" />
             </node>
           </node>
         </node>
@@ -2633,7 +2658,7 @@
         <node concept="0nzK2" id="4tgWazNvl$G" role="1QQeAV">
           <node concept="19SGf9" id="4tgWazNvl$I" role="0nzdz">
             <node concept="19SUe$" id="4tgWazNvl$J" role="19SJt6">
-              <property role="19SUeA" value="Driver should be informed before an initiated braking. Additionally, he should be given the opportunity to react." />
+              <property role="19SUeA" value="Driver shall be informed before an initiated braking. Additionally, he shall be given the opportunity to react." />
             </node>
           </node>
         </node>
@@ -2660,7 +2685,7 @@
         <node concept="0nzK2" id="4tgWazNvl$U" role="1QQeAV">
           <node concept="19SGf9" id="4tgWazNvl$W" role="0nzdz">
             <node concept="19SUe$" id="4tgWazNvl$X" role="19SJt6">
-              <property role="19SUeA" value="Sensor processing  unit must recognize approaching obstacles" />
+              <property role="19SUeA" value="Sensor processing  unit shall recognize approaching obstacles" />
             </node>
           </node>
         </node>
@@ -2695,7 +2720,7 @@
         <node concept="0nzK2" id="4tgWazNvncL" role="1QQeAV">
           <node concept="19SGf9" id="4tgWazNvncN" role="0nzdz">
             <node concept="19SUe$" id="4tgWazNvncO" role="19SJt6">
-              <property role="19SUeA" value="EB functionality should work. The system should initiate emergency braking in case of imminent collsions." />
+              <property role="19SUeA" value="The system shall initiate emergency braking in case of imminent collsions.&#10;The system relies on the time-to-collision TTC to detect the need for emergency braking.&#10;The functionality shall not be influenced by any other driver-assistance systems and shall override any other system." />
             </node>
           </node>
         </node>
@@ -2730,7 +2755,7 @@
           <node concept="0nzK2" id="54T4ifBJt8e" role="1QQeAV">
             <node concept="19SGf9" id="54T4ifBJt8g" role="0nzdz">
               <node concept="19SUe$" id="54T4ifBJt8h" role="19SJt6">
-                <property role="19SUeA" value="In case of an imminent collision, the driver should be warned." />
+                <property role="19SUeA" value="In case of an imminent collision, the driver shall be warned." />
               </node>
             </node>
           </node>
@@ -2753,7 +2778,7 @@
           <node concept="0nzK2" id="54T4ifBJt81" role="1QQeAV">
             <node concept="19SGf9" id="54T4ifBJt83" role="0nzdz">
               <node concept="19SUe$" id="54T4ifBJt84" role="19SJt6">
-                <property role="19SUeA" value="If inconsistent computation is detected, the driver must be warned.&#10;If hardware failure is detected, the driver must be warned." />
+                <property role="19SUeA" value="If inconsistent computation is detected, the driver shall be warned.&#10;If hardware failure is detected, the driver shall be warned." />
               </node>
             </node>
           </node>
@@ -2789,7 +2814,7 @@
         <node concept="0nzK2" id="4WLVkAsg6Hq" role="1QQeAV">
           <node concept="19SGf9" id="4WLVkAsg6Hr" role="0nzdz">
             <node concept="19SUe$" id="4WLVkAsg6Hs" role="19SJt6">
-              <property role="19SUeA" value="Dependend on the situation, the driver should be warned. " />
+              <property role="19SUeA" value="Dependend on the situation, the driver shall be warned. " />
             </node>
           </node>
         </node>
@@ -2802,7 +2827,7 @@
         <node concept="0nzK2" id="4j8iycQYmwm" role="1QQeAV">
           <node concept="19SGf9" id="4j8iycQYmwo" role="0nzdz">
             <node concept="19SUe$" id="4j8iycQYmwp" role="19SJt6">
-              <property role="19SUeA" value="Ultrasound and laser sensors work properly and provide suitable data." />
+              <property role="19SUeA" value="Ultrasound and laser sensors shall detect obstacles in front of the vehicle and provide the distance to them as sensor readings. The laser sensors shall be used to detect obstacles far away (&lt;= 40m), while ultrasound shall be used for small distances (&lt;= 4m)." />
             </node>
           </node>
         </node>
@@ -4562,10 +4587,6 @@
               <property role="2Vclpx" value="371.0" />
               <property role="2Vclpz" value="241.13132014274595" />
             </node>
-            <node concept="2VclrF" id="2jZodG8ccZ6" role="2Vcluh">
-              <property role="2Vclpx" value="190.0" />
-              <property role="2Vclpz" value="111.89772954732177" />
-            </node>
           </node>
         </node>
         <node concept="37mRIm" id="54T4ifBJ_ag" role="37mRID">
@@ -5958,7 +5979,7 @@
         <node concept="0nzK2" id="54T4ifBJ_EV" role="1QQeAV">
           <node concept="19SGf9" id="54T4ifBJ_EX" role="0nzdz">
             <node concept="19SUe$" id="54T4ifBJ_EY" role="19SJt6">
-              <property role="19SUeA" value="The system must consider the relation of the speed of the vehicle and the distance to an object. Smaller distance at high speeds are more likely to cause a collision than at low speeds." />
+              <property role="19SUeA" value="The system shall consider the relation of the speed of the vehicle and the distance to an object. &#10;Smaller distance at high speeds are more likely to cause a collision than at low speeds.&#10;Therefore, the system relies on the time-to-collision TTC." />
             </node>
           </node>
         </node>
@@ -6070,7 +6091,7 @@
         <node concept="0nzK2" id="2NJwv_HFGOB" role="1QQeAV">
           <node concept="19SGf9" id="2NJwv_HFGOD" role="0nzdz">
             <node concept="19SUe$" id="2NJwv_HFGOE" role="19SJt6">
-              <property role="19SUeA" value="The driver can change the state of the EB system when&#10;- deactivates the system using the throttle during the warning period&#10;- powers off the engine by pushing the switch-off button or rotating the key&#10;In all other situations the system should not permit the driver to change or control the system state." />
+              <property role="19SUeA" value="The driver can change the state of the EB system when the driver&#10;- deactivates the system using the throttle during the warning period&#10;- reacts on the warning and initiates braking himself&#10;- changes the lane to avoid a collision&#10;- powers off the engine by pushing the switch-off button or rotating the key&#10;In all other situations the system should not permit the driver to change or control the system state." />
             </node>
           </node>
         </node>
@@ -8829,12 +8850,6 @@
         <node concept="19SUe$" id="36EUxMsCa26" role="19SJt6">
           <property role="19SUeA" value=": Warn driver&#10;" />
         </node>
-        <node concept="2aGvr3" id="36EUxMsCa2y" role="19SJt6">
-          <ref role="2aGvrx" to="44h5:7NWnpv9rO2s" />
-        </node>
-        <node concept="19SUe$" id="36EUxMsCa2z" role="19SJt6">
-          <property role="19SUeA" value=": User Interface" />
-        </node>
       </node>
     </node>
     <node concept="2vmxQI" id="36EUxMsBXSw" role="2vn1q5">
@@ -8850,7 +8865,7 @@
           <property role="19SUeA" value=": ACC-functionality&#10;This is refined by " />
         </node>
         <node concept="2aGvr3" id="36EUxMsC4O3" role="19SJt6">
-          <ref role="2aGvrx" to="44h5:4WLVkAsg6IZ" />
+          <ref role="2aGvrx" to="44h5:2l0tHRMMe38" />
         </node>
         <node concept="19SUe$" id="36EUxMsC4O4" role="19SJt6">
           <property role="19SUeA" value=": Reliable computation" />

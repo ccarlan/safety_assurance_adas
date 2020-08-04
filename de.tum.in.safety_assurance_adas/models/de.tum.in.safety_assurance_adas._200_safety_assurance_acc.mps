@@ -429,7 +429,7 @@
     <property role="TrG5h" value="_000_acc_item_definition" />
     <property role="3GE5qa" value="acc_item_definition" />
     <node concept="3I9x2T" id="1HNBDjrJCC3" role="2HcuB8">
-      <property role="sUxOX" value="####################################################&#10;Item Definition&#10;&#10;The main objective of ACC is to maintain a safe distance so that it can avoid rear end collision. &#10;&#10;ACC system provides assistance to the driver in the task of longitudinal control of their vehicle during driving. Of these the system controls the accelerator, vehicle breaks and engine powertrain to maintain a desired time gap to the vehicle ahead it. &#10;&#10;An ACC system maintains the vehicle at the speed set by driver and when ACC vehicle detects a preceding vehicle running at lower speed than the ACC vehicle, it automatically control the speed of vehicle to match the speed of preceding vehicle. &#10;&#10;It also maintains and calculates the distance between two vehicles which was first set by the driver. &#10;&#10;####################################################&#10;The Operational Design Domain (ODD)&#10;&#10;- Roadway types: highway&#10;&#10;- Speed range: 1-2 m/s&#10;&#10;- Environmental conditions &#9;&#10;-----Daytime/nighttime: daytime&#10;&#10;-----Weather: normal weather conditions, light rain&#10;&#10;####################################################&#10;The System Interfaces&#10;&#10;- Interface to UI (where the user can activate ACC + dashboard)&#10;&#10;- Sensors&#10;---- Laser x2 – vehicle front&#10;---- Ultrasound x2 – vehicle front, on the sides&#10;&#10;- Actuators&#10;---- Brake: to determine the vehicle speed and decelerate the speed of vehicle by controlling by giving signal to throttle actuator of vehicle&#10;" />
+      <property role="sUxOX" value="####################################################&#10;Item Definition&#10;&#10;The main objective of ACC is to maintain a safe distance so that it can avoid rear end collision. &#10;&#10;ACC system provides assistance to the driver in the task of longitudinal control of their vehicle during driving. Of these the system controls the accelerator, vehicle breaks and engine powertrain to maintain a desired time gap to the vehicle ahead it. &#10;&#10;An ACC system maintains the vehicle at the speed set by driver and when ACC vehicle detects a preceding vehicle running at lower speed than the ACC vehicle, it automatically control the speed of vehicle to match the speed of preceding vehicle. &#10;&#10;It also maintains and calculates the distance between two vehicles which was first set by the driver. &#10;&#10;####################################################&#10;The Operational Design Domain (ODD)&#10;&#10;- Roadway types: highway&#10;&#10;- Speed range: 1-1,5 m/s&#10;&#10;- Environmental conditions &#9;&#10;-----Daytime/nighttime: daytime&#10;&#10;-----Weather: normal weather conditions, light rain&#10;&#10;####################################################&#10;The System Interfaces&#10;&#10;- Interface to UI (where the user can activate ACC + dashboard)&#10;&#10;- Sensors&#10;---- Laser x2 – vehicle front&#10;---- Ultrasound x2 – vehicle front, on the sides&#10;&#10;- Actuators&#10;---- Brake: to determine the vehicle speed and decelerate the speed of vehicle by controlling by giving signal to throttle actuator of vehicle&#10;" />
     </node>
     <node concept="2SQmWS" id="1HNBDjrJCC6" role="2HcuB8" />
   </node>
@@ -439,11 +439,80 @@
     <node concept="0lhDl" id="5et_HVSMSIF" role="1QQeBF">
       <property role="0lsPA" value="IR01_ACC" />
       <property role="0ke_I" value="Carmen" />
+      <node concept="0lhDl" id="ZwOLW1_KeA" role="1VMWzp">
+        <property role="0lsPA" value="IR01_1" />
+        <property role="0ke_I" value="Team" />
+        <node concept="1QQeAY" id="ZwOLW1_KeB" role="1QQeAC">
+          <node concept="0nzK2" id="ZwOLW1_KeC" role="1QQeAV">
+            <node concept="19SGf9" id="ZwOLW1_KeD" role="0nzdz">
+              <node concept="19SUe$" id="ZwOLW1_KeE" role="19SJt6">
+                <property role="19SUeA" value="The driver can power off the ACC system completely at any time, e.g. in order to mitigate unnecessary/disturbing driver alerts." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2iDXIW" id="ZwOLW1_KeF" role="0nOlf">
+          <node concept="DABN8" id="ZwOLW1_KeG" role="DABNk">
+            <ref role="DABNb" node="1zzp3Funoym" resolve="ACC does not deactivate - ASIL QM" />
+          </node>
+        </node>
+        <node concept="19SGf9" id="ZwOLW1_KeH" role="1QQeG9">
+          <node concept="19SUe$" id="ZwOLW1_KeI" role="19SJt6">
+            <property role="19SUeA" value="ACC can be powered on/off" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="ZwOLW1_KeJ" role="1VMWzp">
+        <property role="0lsPA" value="IR01_2" />
+        <property role="0ke_I" value="Team" />
+        <node concept="1QQeAY" id="ZwOLW1_KeK" role="1QQeAC">
+          <node concept="0nzK2" id="ZwOLW1_KeL" role="1QQeAV">
+            <node concept="19SGf9" id="ZwOLW1_KeM" role="0nzdz">
+              <node concept="19SUe$" id="ZwOLW1_KeN" role="19SJt6">
+                <property role="19SUeA" value="The driver can adjust the desired distance to leading vehicles." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2iDXIW" id="ZwOLW1_KeO" role="0nOlf">
+          <node concept="DABN8" id="ZwOLW1_KeP" role="DABNk">
+            <ref role="DABNb" node="1zzp3Funo$m" resolve="Complicated user interface - ASIL QM" />
+          </node>
+        </node>
+        <node concept="19SGf9" id="ZwOLW1_KeQ" role="1QQeG9">
+          <node concept="19SUe$" id="ZwOLW1_KeR" role="19SJt6">
+            <property role="19SUeA" value="Adjust ACC distance" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="ZwOLW1_KeS" role="1VMWzp">
+        <property role="0lsPA" value="IR01_3" />
+        <property role="0ke_I" value="Team" />
+        <node concept="1QQeAY" id="ZwOLW1_KeT" role="1QQeAC">
+          <node concept="0nzK2" id="ZwOLW1_KeU" role="1QQeAV">
+            <node concept="19SGf9" id="ZwOLW1_KeV" role="0nzdz">
+              <node concept="19SUe$" id="ZwOLW1_KeW" role="19SJt6">
+                <property role="19SUeA" value="The driver can adjust the desired speed of the vehicle." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2iDXIW" id="ZwOLW1_KeX" role="0nOlf">
+          <node concept="DABN8" id="ZwOLW1_KeY" role="DABNk">
+            <ref role="DABNb" node="1zzp3Funo$m" resolve="Complicated user interface - ASIL QM" />
+          </node>
+        </node>
+        <node concept="19SGf9" id="ZwOLW1_KeZ" role="1QQeG9">
+          <node concept="19SUe$" id="ZwOLW1_Kf0" role="19SJt6">
+            <property role="19SUeA" value="Adjust ACC speed" />
+          </node>
+        </node>
+      </node>
       <node concept="1QQeAY" id="5et_HVSMSIU" role="1QQeAC">
         <node concept="0nzK2" id="5et_HVSMSIW" role="1QQeAV">
           <node concept="19SGf9" id="5et_HVSMSIY" role="0nzdz">
             <node concept="19SUe$" id="5et_HVSMSIZ" role="19SJt6">
-              <property role="19SUeA" value="The system shall be activated/deactivated by the user via a display." />
+              <property role="19SUeA" value="The ACC system shall provide a user interface to the driver." />
             </node>
           </node>
         </node>
@@ -2765,41 +2834,6 @@
         </node>
       </node>
     </node>
-    <node concept="0lhDl" id="4WLVkAsg6IZ" role="1QQeBF">
-      <property role="0lsPA" value="FSR03" />
-      <property role="0ke_I" value="Team" />
-      <node concept="2iDXIW" id="4WLVkAsg6Jx" role="0nOlf">
-        <node concept="DABN8" id="4tgWazNvndD" role="DABNk">
-          <ref role="DABNb" node="G$XGFsgYdV" resolve="Safe distance is violated - ASIL A" />
-        </node>
-        <node concept="DABN8" id="4tgWazNvndI" role="DABNk">
-          <ref role="DABNb" node="1zzp3FunoxR" resolve="Car crashes into lead car - ASIL B" />
-        </node>
-        <node concept="DABN8" id="4tgWazNvndQ" role="DABNk">
-          <ref role="DABNb" node="1zzp3Funoya" resolve="ACC reacts too harsh - ASIL QM" />
-        </node>
-        <node concept="DABN8" id="4tgWazNvne0" role="DABNk">
-          <ref role="DABNb" node="1zzp3Funoy0" resolve="ACC reacts too slow - ASIL QM" />
-        </node>
-      </node>
-      <node concept="19SGf9" id="4WLVkAsg6J1" role="1QQeG9">
-        <node concept="19SUe$" id="4WLVkAsg6J2" role="19SJt6">
-          <property role="19SUeA" value="Reliable and appropiate computation " />
-          <node concept="0Sh09" id="4j8iycQYkXy" role="lGtFl">
-            <ref role="0Sh0a" node="4WLVkAsg3oT" />
-          </node>
-        </node>
-      </node>
-      <node concept="1QQeAY" id="4WLVkAsg6JB" role="1QQeAC">
-        <node concept="0nzK2" id="4WLVkAsg6JC" role="1QQeAV">
-          <node concept="19SGf9" id="4WLVkAsg6JD" role="0nzdz">
-            <node concept="19SUe$" id="4WLVkAsg6JE" role="19SJt6">
-              <property role="19SUeA" value="The soft- and hardware must be reliable to ensure an appropiate computation at all time. The software must prioritize which of its computations are most time critical.  " />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="0lhDl" id="4j8iycQYmv5" role="1QQeBF">
       <property role="0lsPA" value="FSR04" />
       <property role="0ke_I" value="Team" />
@@ -2829,104 +2863,6 @@
         </node>
       </node>
     </node>
-    <node concept="0lhDl" id="7NWnpv9rO2s" role="1QQeBF">
-      <property role="0lsPA" value="FSR05" />
-      <property role="0ke_I" value="Team" />
-      <node concept="0lhDl" id="4tgWazNvn8p" role="1VMWzp">
-        <property role="0lsPA" value="FSR05_1" />
-        <property role="0ke_I" value="Team" />
-        <node concept="1QQeAY" id="4tgWazNvn8Z" role="1QQeAC">
-          <node concept="0nzK2" id="4tgWazNvn91" role="1QQeAV">
-            <node concept="19SGf9" id="4tgWazNvn93" role="0nzdz">
-              <node concept="19SUe$" id="4tgWazNvn94" role="19SJt6">
-                <property role="19SUeA" value="The driver can power off the ACC system completely at any time, e.g. in order to mitigate unnecessary/disturbing driver alerts." />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2iDXIW" id="4tgWazNvn9_" role="0nOlf">
-          <node concept="DABN8" id="4tgWazNvnef" role="DABNk">
-            <ref role="DABNb" node="1zzp3Funoym" resolve="ACC does not deactivate - ASIL QM" />
-          </node>
-        </node>
-        <node concept="19SGf9" id="4tgWazNvn8r" role="1QQeG9">
-          <node concept="19SUe$" id="4tgWazNvn8s" role="19SJt6">
-            <property role="19SUeA" value="ACC can be powered on/off" />
-          </node>
-        </node>
-      </node>
-      <node concept="0lhDl" id="4tgWazNvn8x" role="1VMWzp">
-        <property role="0lsPA" value="FSR05_2" />
-        <property role="0ke_I" value="Team" />
-        <node concept="1QQeAY" id="4tgWazNvn9c" role="1QQeAC">
-          <node concept="0nzK2" id="4tgWazNvn9e" role="1QQeAV">
-            <node concept="19SGf9" id="4tgWazNvn9g" role="0nzdz">
-              <node concept="19SUe$" id="4tgWazNvn9h" role="19SJt6">
-                <property role="19SUeA" value="The driver can adjust the desired distance to leading vehicles." />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2iDXIW" id="4tgWazNvn9C" role="0nOlf">
-          <node concept="DABN8" id="4tgWazNvneh" role="DABNk">
-            <ref role="DABNb" node="1zzp3Funo$m" resolve="Complicated user interface - ASIL QM" />
-          </node>
-        </node>
-        <node concept="19SGf9" id="4tgWazNvn8z" role="1QQeG9">
-          <node concept="19SUe$" id="4tgWazNvn8$" role="19SJt6">
-            <property role="19SUeA" value="Adjust ACC distance" />
-          </node>
-        </node>
-      </node>
-      <node concept="0lhDl" id="4tgWazNvn8H" role="1VMWzp">
-        <property role="0lsPA" value="FSR05_3" />
-        <property role="0ke_I" value="Team" />
-        <node concept="1QQeAY" id="4tgWazNvn9p" role="1QQeAC">
-          <node concept="0nzK2" id="4tgWazNvn9r" role="1QQeAV">
-            <node concept="19SGf9" id="4tgWazNvn9t" role="0nzdz">
-              <node concept="19SUe$" id="4tgWazNvn9u" role="19SJt6">
-                <property role="19SUeA" value="The driver can adjust the desired speed of the vehicle." />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2iDXIW" id="4tgWazNvn9F" role="0nOlf">
-          <node concept="DABN8" id="4tgWazNvnej" role="DABNk">
-            <ref role="DABNb" node="1zzp3Funo$m" resolve="Complicated user interface - ASIL QM" />
-          </node>
-        </node>
-        <node concept="19SGf9" id="4tgWazNvn8J" role="1QQeG9">
-          <node concept="19SUe$" id="4tgWazNvn8K" role="19SJt6">
-            <property role="19SUeA" value="Adjust ACC speed" />
-          </node>
-        </node>
-      </node>
-      <node concept="1QQeAY" id="7NWnpv9rO3N" role="1QQeAC">
-        <node concept="0nzK2" id="7NWnpv9rO3P" role="1QQeAV">
-          <node concept="19SGf9" id="7NWnpv9rO3R" role="0nzdz">
-            <node concept="19SUe$" id="7NWnpv9rO3S" role="19SJt6">
-              <property role="19SUeA" value="The ACC system must provide a user interface to the driver." />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2iDXIW" id="7NWnpv9rO3I" role="0nOlf">
-        <node concept="DABN8" id="4tgWazNvnel" role="DABNk">
-          <ref role="DABNb" node="1zzp3FunozY" resolve="Unnecessary warnings - ASIL QM" />
-        </node>
-        <node concept="DABN8" id="4tgWazNvneq" role="DABNk">
-          <ref role="DABNb" node="1zzp3Funozk" resolve="Driver not informed about system status - ASIL A" />
-        </node>
-      </node>
-      <node concept="19SGf9" id="7NWnpv9rO2u" role="1QQeG9">
-        <node concept="19SUe$" id="7NWnpv9rO2v" role="19SJt6">
-          <property role="19SUeA" value="ACC User interface " />
-          <node concept="0Sh09" id="3OFTjxLQyjg" role="lGtFl">
-            <ref role="0Sh0a" node="4tgWazNvlzx" />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="0lH3_" id="4j8iycQYhEF" role="1QQeBF" />
   </node>
   <node concept="1QQeGf" id="4j8iycQYhGR">
@@ -2942,7 +2878,7 @@
           <node concept="0nzK2" id="2l0tHRMMevm" role="1QQeAV">
             <node concept="19SGf9" id="2l0tHRMMevo" role="0nzdz">
               <node concept="19SUe$" id="2l0tHRMMevp" role="19SJt6">
-                <property role="19SUeA" value="The system must not violate the safe distance to a front obstacle.&#10;It therefore should accelerate/brake within small intervals in order to keep the distance accordingly. The safe distance is defined by the distance that is mandatory to safely stop the car in an emergency situation avoiding a crash." />
+                <property role="19SUeA" value="The rover shall not violate the safe distance to a front obstacle.&#10;It therefore shall accelerate/brake within small intervals in order to keep the distance accordingly. The safe distance is defined by the distance that is mandatory to safely stop the rover in an emergency situation avoiding a crash." />
               </node>
             </node>
           </node>
@@ -2961,7 +2897,7 @@
           <node concept="0nzK2" id="2l0tHRMMevz" role="1QQeAV">
             <node concept="19SGf9" id="2l0tHRMMev_" role="0nzdz">
               <node concept="19SUe$" id="2l0tHRMMevA" role="19SJt6">
-                <property role="19SUeA" value="If there is no obstacle within the safe distance in front of the car, the system should keep the speed that was set by the driver. Technically, the car should accelerate/brake within small intervals. So if the car moves slower than the target speed, the system accelerates, whereas if the velocity needs to be reduced, the car brakes." />
+                <property role="19SUeA" value="If there is no obstacle within the safe distance in front of the rover, the rover shall keep the speed that was set by the driver. Technically, the rover shall accelerate/brake within small intervals. So if the rover moves slower than the target speed, the rover accelerates, whereas if the velocity needs to be reduced, the rover brakes." />
               </node>
             </node>
           </node>
@@ -3144,7 +3080,16 @@
         <node concept="19SUe$" id="2l0tHRMMe3b" role="19SJt6">
           <property role="19SUeA" value="HW and SW should function correctly " />
           <node concept="0Sh09" id="2l0tHRMMeer" role="lGtFl">
-            <ref role="0Sh0a" node="4WLVkAsg6IZ" />
+            <ref role="0Sh0a" node="4tgWazNvnb3" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeAY" id="ZwOLW1_K07" role="1QQeAC">
+        <node concept="0nzK2" id="ZwOLW1_K08" role="1QQeAV">
+          <node concept="19SGf9" id="ZwOLW1_K09" role="0nzdz">
+            <node concept="19SUe$" id="ZwOLW1_K0a" role="19SJt6">
+              <property role="19SUeA" value="The soft- and hardware shall be reliable to ensure an appropiate computation at all time. The software must prioritize which of its computations are most time critical." />
+            </node>
           </node>
         </node>
       </node>
@@ -3184,7 +3129,7 @@
         <node concept="19SUe$" id="2NJwv_HFGO5" role="19SJt6">
           <property role="19SUeA" value="Driver control actions " />
           <node concept="0Sh09" id="3OFTjxLQyiL" role="lGtFl">
-            <ref role="0Sh0a" node="7NWnpv9rO2s" />
+            <ref role="0Sh0a" node="4tgWazNvnb3" />
           </node>
         </node>
       </node>
@@ -3245,7 +3190,7 @@
         <node concept="19SUe$" id="2NJwv_HFK2d" role="19SJt6">
           <property role="19SUeA" value="System-Driver communication " />
           <node concept="0Sh09" id="3OFTjxLQyiN" role="lGtFl">
-            <ref role="0Sh0a" node="7NWnpv9rO2s" />
+            <ref role="0Sh0a" node="4WLVkAsg6H2" />
           </node>
         </node>
       </node>
@@ -8665,9 +8610,9 @@
         <property role="37mO49" value="3578930262506987040" />
         <node concept="gqqVs" id="36EUxMsBXWw" role="37mO4d">
           <property role="gqqTZ" value="522.0" />
-          <property role="gqqTW" value="351.0" />
+          <property role="gqqTW" value="341.0" />
           <property role="gqqTX" value="292.0" />
-          <property role="gqqTy" value="128.0" />
+          <property role="gqqTy" value="138.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -10678,12 +10623,6 @@
         <node concept="19SUe$" id="36EUxMsCa26" role="19SJt6">
           <property role="19SUeA" value=": Warn driver&#10;" />
         </node>
-        <node concept="2aGvr3" id="36EUxMsCa2y" role="19SJt6">
-          <ref role="2aGvrx" node="7NWnpv9rO2s" />
-        </node>
-        <node concept="19SUe$" id="36EUxMsCa2z" role="19SJt6">
-          <property role="19SUeA" value=": User Interface" />
-        </node>
       </node>
     </node>
     <node concept="2vmxQI" id="36EUxMsBXSw" role="2vn1q5">
@@ -10699,7 +10638,7 @@
           <property role="19SUeA" value=": ACC-functionality&#10;This is refined by " />
         </node>
         <node concept="2aGvr3" id="36EUxMsC4O3" role="19SJt6">
-          <ref role="2aGvrx" node="4WLVkAsg6IZ" />
+          <ref role="2aGvrx" node="2l0tHRMMe38" />
         </node>
         <node concept="19SUe$" id="36EUxMsC4O4" role="19SJt6">
           <property role="19SUeA" value=": Reliable computation" />
