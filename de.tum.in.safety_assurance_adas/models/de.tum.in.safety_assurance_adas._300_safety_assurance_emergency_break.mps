@@ -381,26 +381,18 @@
         <node concept="0nzK2" id="3XLpsf2_y0q" role="1QQeAV">
           <node concept="19SGf9" id="3XLpsf2_y0s" role="0nzdz">
             <node concept="19SUe$" id="3XLpsf2_y0t" role="19SJt6">
-              <property role="19SUeA" value="The vehicle must be able to detect obstacles in the direction of travel. Emergency brake must be enabled, if under continious present conditions, a crash would be invevitable in the followoing 2 seconds." />
+              <property role="19SUeA" value="The vehicle must be able to detect obstacles in the direction of travel. Emergency brake must be enabled, if under continious present conditions, a crash would be invevitable in the followoing 2 seconds.&#10;" />
             </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1QQeAY" id="ZwOLW1_Kh4" role="1QQeAC">
-        <node concept="0nzK2" id="ZwOLW1_Kh6" role="1QQeAV">
-          <node concept="19SGf9" id="ZwOLW1_Kh8" role="0nzdz">
-            <node concept="19SUe$" id="ZwOLW1_Khm" role="19SJt6" />
-            <node concept="3OoTgI" id="ZwOLW1_Khl" role="19SJt6">
+            <node concept="3OoTgI" id="3wiRqYJYJbQ" role="19SJt6">
               <property role="3OpxtG" value="80" />
-              <node concept="3NXOOs" id="ZwOLW1_Kht" role="3OoW2A">
-                <property role="3N1Lgt" value="ItemDefinition EB.JPG" />
+              <node concept="3NXOOs" id="3wiRqYJYJbV" role="3OoW2A">
+                <property role="3N1Lgt" value="figures/SD_EB.JPG" />
               </node>
             </node>
-            <node concept="19SUe$" id="ZwOLW1_Khn" role="19SJt6" />
+            <node concept="19SUe$" id="3wiRqYJYJbR" role="19SJt6" />
           </node>
         </node>
       </node>
-      <node concept="1QQeAL" id="ZwOLW1_JNF" role="1QQeAC" />
       <node concept="1QQeAL" id="ZwOLW1_JNL" role="1QQeAC" />
       <node concept="1QQeFk" id="1Z4anaVRJHF" role="0nOlf" />
       <node concept="19SGf9" id="1Z4anaVRJHG" role="1QQeG9">
@@ -2732,7 +2724,7 @@
         <node concept="0nzK2" id="4tgWazNvncL" role="1QQeAV">
           <node concept="19SGf9" id="4tgWazNvncN" role="0nzdz">
             <node concept="19SUe$" id="4tgWazNvncO" role="19SJt6">
-              <property role="19SUeA" value="The system shall initiate emergency braking in case of imminent collsions.&#10;The system relies on the time-to-collision TTC to detect the need for emergency braking.&#10;The functionality shall not be influenced by any other driver-assistance systems and shall override any other system." />
+              <property role="19SUeA" value="The system shall initiate emergency braking in case of imminent collsions.&#10;The system relies on the safe-distance SD to detect the need for emergency braking. The safe-distance depends on the speed and acceleration of the driving and leading rover. &#10;The functionality shall not be influenced by any other driver-assistance systems and shall override any other system." />
             </node>
           </node>
         </node>
@@ -2896,15 +2888,15 @@
       </node>
     </node>
     <node concept="hx8Co" id="6MaWlu$kyrV" role="2HcuB8">
-      <property role="TrG5h" value="TTC_THRESHOLD_ALERT" />
+      <property role="TrG5h" value="SD_THRESHOLD_ALERT" />
       <node concept="2IPVmt" id="6MaWlu$kyYb" role="hx87_">
-        <property role="2IPVms" value="3" />
+        <property role="2IPVms" value="1.5" />
       </node>
     </node>
     <node concept="hx8Co" id="6MaWlu$kyMH" role="2HcuB8">
-      <property role="TrG5h" value="TTC_THRESHOLD_BRAKE" />
+      <property role="TrG5h" value="SD_THRESHOLD_BRAKE" />
       <node concept="2IPVmt" id="6MaWlu$kyYs" role="hx87_">
-        <property role="2IPVms" value="2" />
+        <property role="2IPVms" value="1.3" />
       </node>
     </node>
     <node concept="hx8Co" id="6MaWlu$kAfV" role="2HcuB8">
@@ -5348,7 +5340,7 @@
                     </node>
                   </node>
                   <node concept="hx854" id="6MaWlu$kCEB" role="2H9Ial">
-                    <ref role="hx9HS" node="6MaWlu$kyrV" resolve="TTC_THRESHOLD_ALERT" />
+                    <ref role="hx9HS" node="6MaWlu$kyrV" resolve="SD_THRESHOLD_ALERT" />
                   </node>
                 </node>
               </node>
@@ -5391,7 +5383,7 @@
                     </node>
                   </node>
                   <node concept="hx854" id="6MaWlu$kE$R" role="2H9Ial">
-                    <ref role="hx9HS" node="6MaWlu$kyMH" resolve="TTC_THRESHOLD_BRAKE" />
+                    <ref role="hx9HS" node="6MaWlu$kyMH" resolve="SD_THRESHOLD_BRAKE" />
                   </node>
                 </node>
               </node>
@@ -9022,7 +9014,7 @@
                             </node>
                           </node>
                           <node concept="hx854" id="4pSWRNV3XuI" role="2H9Ial">
-                            <ref role="hx9HS" node="6MaWlu$kyrV" resolve="TTC_THRESHOLD_ALERT" />
+                            <ref role="hx9HS" node="6MaWlu$kyrV" resolve="SD_THRESHOLD_ALERT" />
                           </node>
                         </node>
                       </node>
@@ -9040,7 +9032,7 @@
                           </node>
                         </node>
                         <node concept="hx854" id="4pSWRNV3XuP" role="2H9Ial">
-                          <ref role="hx9HS" node="6MaWlu$kyMH" resolve="TTC_THRESHOLD_BRAKE" />
+                          <ref role="hx9HS" node="6MaWlu$kyMH" resolve="SD_THRESHOLD_BRAKE" />
                         </node>
                       </node>
                     </node>
@@ -9077,7 +9069,7 @@
                         </node>
                       </node>
                       <node concept="hx854" id="4pSWRNV3SQ7" role="2H9Ial">
-                        <ref role="hx9HS" node="6MaWlu$kyrV" resolve="TTC_THRESHOLD_ALERT" />
+                        <ref role="hx9HS" node="6MaWlu$kyrV" resolve="SD_THRESHOLD_ALERT" />
                       </node>
                     </node>
                   </node>
@@ -9095,7 +9087,7 @@
                       </node>
                     </node>
                     <node concept="hx854" id="4pSWRNV3STy" role="2H9Ial">
-                      <ref role="hx9HS" node="6MaWlu$kyMH" resolve="TTC_THRESHOLD_BRAKE" />
+                      <ref role="hx9HS" node="6MaWlu$kyMH" resolve="SD_THRESHOLD_BRAKE" />
                     </node>
                   </node>
                 </node>
@@ -9122,7 +9114,7 @@
               </node>
             </node>
             <node concept="hx854" id="4pSWRNV3TpZ" role="2H9Ial">
-              <ref role="hx9HS" node="6MaWlu$kyMH" resolve="TTC_THRESHOLD_BRAKE" />
+              <ref role="hx9HS" node="6MaWlu$kyMH" resolve="SD_THRESHOLD_BRAKE" />
             </node>
           </node>
         </node>
